@@ -1,0 +1,47 @@
+{
+  "brand": "Acme",
+  "tagline": "Build better products",
+  "cta": {
+    "label": "Get Started",
+    "url": "https://example.com"
+  },
+  "navigation": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "https://example.com"
+    },
+    {
+      "id": "product",
+      "label": "Product",
+      "children": [
+        { "id": "features", "label": "Features", "url": "https://www.wikipedia.org/wiki/Software_feature" },
+        { "id": "pricing", "label": "Pricing", "url": "https://en.wikipedia.org/wiki/Pricing" },
+        { "id": "integrations", "label": "Integrations", "url": "https://en.wikipedia.org/wiki/System_integration" }
+      ]
+    },
+    {
+      "id": "solutions",
+      "label": "Solutions",
+      "children": [
+        { "id": "enterprise", "label": "Enterprise", "url": "https://en.wikipedia.org/wiki/Enterprise_software" },
+        { "id": "startups", "label": "Startups", "url": "https://en.wikipedia.org/wiki/Startup_company" },
+        { "id": "agencies", "label": "Agencies", "url": "https://en.wikipedia.org/wiki/Advertising_agency" }
+      ]
+    },
+    {
+      "id": "resources",
+      "label": "Resources",
+      "children": [
+        { "id": "blog", "label": "Blog", "url": "https://www.wikipedia.org" },
+        { "id": "docs", "label": "Documentation", "url": "https://en.wikipedia.org/wiki/Technical_documentation" },
+        { "id": "support", "label": "Support", "url": "https://en.wikipedia.org/wiki/Technical_support" }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "url": "https://en.wikipedia.org/wiki/About_us"
+    }
+  ]
+}

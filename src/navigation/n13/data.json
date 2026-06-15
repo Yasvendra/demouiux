@@ -3,36 +3,12 @@
   "tagline": "Executive software for modern teams",
   "edition": "Enterprise",
   "navbar": {
-    "layout": "atlas-rail",
-    "searchPlaceholder": "Search products, docs, solutions, and resources…",
+    "layout": "command-deck",
+    "searchPlaceholder": "Find pages, docs, and features…",
     "showTrustBadges": true,
-    "promo": {
-      "label": "Suite 4.0",
-      "linkId": "changelog"
-    },
-    "stats": [
-      { "label": "Regions", "value": "42" },
-      { "label": "Uptime", "value": "99.99%" }, 
-      { "label": "Clients", "value": "12k+" }
-    ],
-    "highlights": [
-      { "id": "features", "label": "Capabilities" },
-      { "id": "docs", "label": "API Docs" },
-      { "id": "enterprise", "label": "Enterprise" },
-      { "id": "pricing", "label": "Pricing" },
-      { "id": "integrations", "label": "Integrations" }
-    ],
-    "searchShortcuts": [
-      "governance",
-      "SSO",
-      "audit logs",
-      "webhooks"
-    ],
     "quickAccess": [
       { "id": "docs", "label": "Docs" },
-      { "id": "changelog", "label": "What's New" },
-      { "id": "status", "label": "Status" },
-      { "id": "support", "label": "Help" }
+      { "id": "changelog", "label": "What's New" }
     ]
   },
   "announcement": {
@@ -44,10 +20,10 @@
     "status": "All systems operational",
     "supportLabel": "Support",
     "supportUrl": "https://en.wikipedia.org/wiki/Technical_support",
-    "docsLabel": "API Docs",
+    "docsLabel": "API Docs",                                                                                                                                                                                  
     "docsId": "docs"
   },
-  "trust": ["SOC 2 Type II", "ISO 27001", "GDPR Ready", "99.99% Uptime SLA", "HIPAA"],
+  "trust": ["SOC 2 Type II", "ISO 27001", "GDPR Ready", "99.99% Uptime SLA"],
   "cta": {
     "label": "Request Demo",
     "url": "https://example.com"
@@ -65,7 +41,6 @@
     {
       "id": "product",
       "label": "Platform",
-      "badge": "Core",
       "children": [
         {
           "id": "features",
@@ -87,17 +62,10 @@
           "url": "https://en.wikipedia.org/wiki/System_integration"
         },
         {
-          "id": "security",
-          "label": "Security",
-          "description": "Encryption, SSO, SCIM, and audit trails",
-          "url": "https://en.wikipedia.org/wiki/Computer_security"
-        },
-        {
           "id": "changelog",
           "label": "Release Notes",
           "description": "Quarterly updates and security patches",
-          "url": "https://en.wikipedia.org/wiki/Changelog",
-          "badge": "New"
+          "url": "https://en.wikipedia.org/wiki/Changelog"
         }
       ]
     },
@@ -123,50 +91,6 @@
           "label": "Professional Services",
           "description": "Multi-tenant delivery for client portfolios",
           "url": "https://en.wikipedia.org/wiki/Advertising_agency"
-        },
-        {
-          "id": "finance",
-          "label": "Financial Services",
-          "description": "Compliance-ready workflows for regulated industries",
-          "url": "https://en.wikipedia.org/wiki/Financial_services"
-        },
-        {
-          "id": "healthcare",
-          "label": "Healthcare",
-          "description": "HIPAA-aligned data handling and patient workflows",
-          "url": "https://en.wikipedia.org/wiki/Health_care"
-        }
-      ]
-    },
-    {
-      "id": "developers",
-      "label": "Developers",
-      "badge": "Beta",
-      "children": [
-        {
-          "id": "docs",
-          "label": "Documentation",
-          "description": "Architecture guides and API reference",
-          "url": "https://en.wikipedia.org/wiki/Technical_documentation",
-          "featured": true
-        },
-        {
-          "id": "api",
-          "label": "REST API",
-          "description": "Versioned endpoints with OpenAPI specs",
-          "url": "https://en.wikipedia.org/wiki/Representational_state_transfer"
-        },
-        {
-          "id": "sdks",
-          "label": "SDKs",
-          "description": "Official libraries for TypeScript, Python, and Go",
-          "url": "https://en.wikipedia.org/wiki/Software_development_kit"
-        },
-        {
-          "id": "webhooks",
-          "label": "Webhooks",
-          "description": "Real-time event delivery and retry policies",
-          "url": "https://en.wikipedia.org/wiki/Webhook"
         }
       ]
     },
@@ -181,35 +105,19 @@
           "url": "https://www.wikipedia.org"
         },
         {
-          "id": "case-studies",
-          "label": "Case Studies",
-          "description": "How global teams deploy Acme at scale",
-          "url": "https://en.wikipedia.org/wiki/Case_study"
-        },
-        {
-          "id": "webinars",
-          "label": "Webinars",
-          "description": "Live sessions with product and solutions teams",
-          "url": "https://en.wikipedia.org/wiki/Webinar"
+          "id": "docs",
+          "label": "Documentation",
+          "description": "Architecture guides and API reference",
+          "url": "https://en.wikipedia.org/wiki/Technical_documentation",
+          "featured": true
         },
         {
           "id": "support",
           "label": "Help Center",
           "description": "24/7 priority support for enterprise clients",
           "url": "https://en.wikipedia.org/wiki/Technical_support"
-        },
-        {
-          "id": "status",
-          "label": "System Status",
-          "description": "Live incident history and maintenance windows",
-          "url": "https://en.wikipedia.org/wiki/High_availability"
         }
       ]
-    },
-    {
-      "id": "partners",
-      "label": "Partners",
-      "url": "https://en.wikipedia.org/wiki/Partnership"
     },
     {
       "id": "about",
@@ -225,7 +133,6 @@
         "links": [
           { "id": "features", "label": "Capabilities", "url": "https://www.wikipedia.org/wiki/Software_feature" },
           { "id": "integrations", "label": "Integrations", "url": "https://en.wikipedia.org/wiki/System_integration" },
-          { "id": "security", "label": "Security", "url": "https://en.wikipedia.org/wiki/Computer_security" },
           { "id": "changelog", "label": "Release Notes", "url": "https://en.wikipedia.org/wiki/Changelog" }
         ]
       },
@@ -233,18 +140,8 @@
         "title": "Solutions",
         "links": [
           { "id": "enterprise", "label": "Enterprise", "url": "https://en.wikipedia.org/wiki/Enterprise_software" },
-          { "id": "finance", "label": "Financial Services", "url": "https://en.wikipedia.org/wiki/Financial_services" },
-          { "id": "healthcare", "label": "Healthcare", "url": "https://en.wikipedia.org/wiki/Health_care" },
+          { "id": "startups", "label": "Growth Teams", "url": "https://en.wikipedia.org/wiki/Startup_company" },
           { "id": "agencies", "label": "Professional Services", "url": "https://en.wikipedia.org/wiki/Advertising_agency" }
-        ]
-      },
-      {
-        "title": "Developers",
-        "links": [
-          { "id": "docs", "label": "Documentation", "url": "https://en.wikipedia.org/wiki/Technical_documentation" },
-          { "id": "api", "label": "REST API", "url": "https://en.wikipedia.org/wiki/Representational_state_transfer" },
-          { "id": "sdks", "label": "SDKs", "url": "https://en.wikipedia.org/wiki/Software_development_kit" },
-          { "id": "webhooks", "label": "Webhooks", "url": "https://en.wikipedia.org/wiki/Webhook" }
         ]
       },
       {

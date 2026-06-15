@@ -1,0 +1,50 @@
+{
+  "brand": "Acme Panel",
+  "tagline": "Executive Control Suite",
+  "navigation": [
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "sideTabs": [
+        { "id": "dash-overview", "label": "Overview", "url": "https://example.com" },
+        { "id": "dash-metrics", "label": "Metrics", "url": "https://www.wikipedia.org/wiki/Performance_indicator" },
+        { "id": "dash-summary", "label": "Summary", "url": "https://www.wikipedia.org/wiki/Management" }
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "Analytics",
+      "sideTabs": [
+        { "id": "analytics-home", "label": "Home", "url": "https://www.wikipedia.org" },
+        { "id": "analytics-traffic", "label": "Traffic", "url": "https://en.wikipedia.org/wiki/Web_traffic" },
+        { "id": "analytics-goals", "label": "Goals", "url": "https://en.wikipedia.org/wiki/Conversion_marketing" }
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "sideTabs": [
+        { "id": "users", "label": "Users", "url": "https://en.wikipedia.org/wiki/User_interface" },
+        { "id": "orders", "label": "Orders", "url": "https://en.wikipedia.org/wiki/Order_management" },
+        { "id": "products", "label": "Products", "url": "https://en.wikipedia.org/wiki/Product_(business)" }
+      ]
+    },
+    {
+      "id": "reports",
+      "label": "Reports",
+      "sideTabs": [
+        { "id": "reports-main", "label": "All Reports", "url": "https://en.wikipedia.org/wiki/Management_reporting" },
+        { "id": "reports-logs", "label": "Activity Logs", "url": "https://en.wikipedia.org/wiki/Log_file" }
+      ]
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "sideTabs": [
+        { "id": "general", "label": "General", "url": "https://en.wikipedia.org/wiki/Configuration_management" },
+        { "id": "security", "label": "Security", "url": "https://en.wikipedia.org/wiki/Computer_security" },
+        { "id": "support", "label": "Support", "url": "https://en.wikipedia.org/wiki/Technical_support" }
+      ]
+    }
+  ]
+}

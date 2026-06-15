@@ -1,0 +1,150 @@
+{
+  "title": "Admin Dashboard",
+  "brand": "Acme Panel",
+  "tagline": "Executive Control Suite",
+  "brandIcon": "admin_panel_settings",
+  "sections": [
+    {
+      "label": "Overview",
+      "items": [
+        {
+          "id": "dashboard",
+          "label": "Dashboard",
+          "icon": "dashboard",
+          "url": "https://example.com"
+        },
+        {
+          "id": "analytics",
+          "label": "Analytics",
+          "icon": "analytics",
+          "url": "https://www.wikipedia.org"
+        }
+      ]
+    },
+    {
+      "label": "Management",
+      "items": [
+        {
+          "id": "users-menu",
+          "label": "User Management",
+          "icon": "manage_accounts",
+          "children": [
+            {
+              "id": "users",
+              "label": "All Users",
+              "icon": "group",
+              "url": "https://en.wikipedia.org/wiki/User_interface"
+            },
+            {
+              "id": "roles",
+              "label": "Roles & Permissions",
+              "icon": "admin_panel_settings",
+              "url": "https://en.wikipedia.org/wiki/Role-based_access_control"
+            },
+            {
+              "id": "customers",
+              "label": "Customers",
+              "icon": "contacts",
+              "url": "https://en.wikipedia.org/wiki/Customer"
+            }
+          ]
+        },
+        {
+          "id": "commerce-menu",
+          "label": "Commerce",
+          "icon": "storefront",
+          "children": [
+            {
+              "id": "orders",
+              "label": "Orders",
+              "icon": "shopping_cart",
+              "url": "https://en.wikipedia.org/wiki/Order_management"
+            },
+            {
+              "id": "products",
+              "label": "Products",
+              "icon": "inventory_2",
+              "url": "https://en.wikipedia.org/wiki/Product_(business)"
+            },
+            {
+              "id": "inventory",
+              "label": "Inventory",
+              "icon": "warehouse",
+              "url": "https://en.wikipedia.org/wiki/Inventory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Insights",
+      "items": [
+        {
+          "id": "reports",
+          "label": "Reports",
+          "icon": "assessment",
+          "url": "https://en.wikipedia.org/wiki/Management_reporting"
+        },
+        {
+          "id": "logs",
+          "label": "Activity Logs",
+          "icon": "history",
+          "url": "https://en.wikipedia.org/wiki/Log_file"
+        }
+      ]
+    },
+    {
+      "label": "Communication",
+      "items": [
+        {
+          "id": "messages",
+          "label": "Messages",
+          "icon": "mail",
+          "url": "https://en.wikipedia.org/wiki/Email"
+        },
+        {
+          "id": "notifications",
+          "label": "Notifications",
+          "icon": "notifications",
+          "url": "https://en.wikipedia.org/wiki/Push_notification"
+        }
+      ]
+    },
+    {
+      "label": "System",
+      "items": [
+        {
+          "id": "billing",
+          "label": "Billing",
+          "icon": "payments",
+          "url": "https://en.wikipedia.org/wiki/Billing"
+        },
+        {
+          "id": "settings-menu",
+          "label": "Settings",
+          "icon": "settings",
+          "children": [
+            {
+              "id": "general-settings",
+              "label": "General",
+              "icon": "tune",
+              "url": "https://en.wikipedia.org/wiki/Configuration_management"
+            },
+            {
+              "id": "security",
+              "label": "Security",
+              "icon": "shield",
+              "url": "https://en.wikipedia.org/wiki/Computer_security"
+            },
+            {
+              "id": "support",
+              "label": "Support",
+              "icon": "support_agent",
+              "url": "https://en.wikipedia.org/wiki/Technical_support"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "brand": "Acme",
+  "tagline": "Executive software for modern teams",
+  "announcement": {
+    "text": "New enterprise suite now available",
+    "linkLabel": "Explore",
+    "linkId": "enterprise"
+  },
+  "cta": {
+    "label": "Get Started",
+    "url": "https://example.com"
+  },
+  "secondaryCta": {
+    "label": "Sign In",
+    "url": "https://en.wikipedia.org/wiki/Login"
+  },
+  "navigation": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "https://example.com"
+    },
+    {
+      "id": "product",
+      "label": "Product",
+      "children": [
+        {
+          "id": "features",
+          "label": "Features",
+          "description": "Core platform capabilities",
+          "url": "https://www.wikipedia.org/wiki/Software_feature"
+        },
+        {
+          "id": "pricing",
+          "label": "Pricing",
+          "description": "Plans for every team size",
+          "url": "https://en.wikipedia.org/wiki/Pricing"
+        },
+        {
+          "id": "integrations",
+          "label": "Integrations",
+          "description": "Connect your existing tools",
+          "url": "https://en.wikipedia.org/wiki/System_integration"
+        },
+        {
+          "id": "changelog",
+          "label": "Changelog",
+          "description": "Latest product updates",
+          "url": "https://en.wikipedia.org/wiki/Changelog"
+        }
+      ]
+    },
+    {
+      "id": "solutions",
+      "label": "Solutions",
+      "children": [
+        {
+          "id": "enterprise",
+          "label": "Enterprise",
+          "description": "Security, scale, and support",
+          "url": "https://en.wikipedia.org/wiki/Enterprise_software"
+        },
+        {
+          "id": "startups",
+          "label": "Startups",
+          "description": "Launch and grow faster",
+          "url": "https://en.wikipedia.org/wiki/Startup_company"
+        },
+        {
+          "id": "agencies",
+          "label": "Agencies",
+          "description": "Deliver for every client",
+          "url": "https://en.wikipedia.org/wiki/Advertising_agency"
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "label": "Resources",
+      "children": [
+        {
+          "id": "blog",
+          "label": "Blog",
+          "description": "Insights and announcements",
+          "url": "https://www.wikipedia.org"
+        },
+        {
+          "id": "docs",
+          "label": "Documentation",
+          "description": "Guides and API reference",
+          "url": "https://en.wikipedia.org/wiki/Technical_documentation"
+        },
+        {
+          "id": "support",
+          "label": "Support",
+          "description": "Help center and contact",
+          "url": "https://en.wikipedia.org/wiki/Technical_support"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "url": "https://en.wikipedia.org/wiki/About_us"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 Acme. All rights reserved.",
+    "links": [
+      { "id": "privacy", "label": "Privacy", "url": "https://en.wikipedia.org/wiki/Privacy_policy" },
+      { "id": "terms", "label": "Terms", "url": "https://en.wikipedia.org/wiki/Terms_of_service" },
+      { "id": "contact", "label": "Contact", "url": "https://en.wikipedia.org/wiki/Contact_us" }
+    ]
+  }
+}

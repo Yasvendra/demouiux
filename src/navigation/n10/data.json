@@ -1,0 +1,148 @@
+{
+  "brand": "Acme",
+  "tagline": "Executive software for modern teams",
+  "edition": "Enterprise",
+  "announcement": {
+    "text": "Acme Enterprise Suite 4.0 — now with advanced governance controls",
+    "linkLabel": "Release notes",
+    "linkId": "changelog"
+  },
+  "utility": {
+    "status": "All systems operational",
+    "supportLabel": "Support",
+    "supportUrl": "https://en.wikipedia.org/wiki/Technical_support",
+    "docsLabel": "API Docs",
+    "docsId": "docs"
+  },
+  "trust": ["SOC 2 Type II", "ISO 27001", "GDPR Ready", "99.99% Uptime SLA"],
+  "cta": {
+    "label": "Request Demo",
+    "url": "https://example.com"
+  },
+  "secondaryCta": {
+    "label": "Client Portal",
+    "url": "https://en.wikipedia.org/wiki/Login"
+  },
+  "navigation": [
+    {
+      "id": "home",
+      "label": "Overview",
+      "url": "https://example.com"
+    },
+    {
+      "id": "product",
+      "label": "Platform",
+      "children": [
+        {
+          "id": "features",
+          "label": "Capabilities",
+          "description": "Workflow automation, analytics, and governance",
+          "url": "https://www.wikipedia.org/wiki/Software_feature",
+          "featured": true
+        },
+        {
+          "id": "pricing",
+          "label": "Licensing",
+          "description": "Volume pricing and enterprise agreements",
+          "url": "https://en.wikipedia.org/wiki/Pricing"
+        },
+        {
+          "id": "integrations",
+          "label": "Integrations",
+          "description": "SAP, Salesforce, Microsoft 365, and more",
+          "url": "https://en.wikipedia.org/wiki/System_integration"
+        },
+        {
+          "id": "changelog",
+          "label": "Release Notes",
+          "description": "Quarterly updates and security patches",
+          "url": "https://en.wikipedia.org/wiki/Changelog"
+        }
+      ]
+    },
+    {
+      "id": "solutions",
+      "label": "Solutions",
+      "children": [
+        {
+          "id": "enterprise",
+          "label": "Enterprise",
+          "description": "Dedicated infrastructure and white-glove onboarding",
+          "url": "https://en.wikipedia.org/wiki/Enterprise_software",
+          "featured": true
+        },
+        {
+          "id": "startups",
+          "label": "Growth Teams",
+          "description": "Scale operations without adding headcount",
+          "url": "https://en.wikipedia.org/wiki/Startup_company"
+        },
+        {
+          "id": "agencies",
+          "label": "Professional Services",
+          "description": "Multi-tenant delivery for client portfolios",
+          "url": "https://en.wikipedia.org/wiki/Advertising_agency"
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "label": "Resources",
+      "children": [
+        {
+          "id": "blog",
+          "label": "Insights",
+          "description": "Executive briefings and industry analysis",
+          "url": "https://www.wikipedia.org"
+        },
+        {
+          "id": "docs",
+          "label": "Documentation",
+          "description": "Architecture guides and API reference",
+          "url": "https://en.wikipedia.org/wiki/Technical_documentation",
+          "featured": true
+        },
+        {
+          "id": "support",
+          "label": "Help Center",
+          "description": "24/7 priority support for enterprise clients",
+          "url": "https://en.wikipedia.org/wiki/Technical_support"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "Company",
+      "url": "https://en.wikipedia.org/wiki/About_us"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 Acme Corporation. All rights reserved.",
+    "columns": [
+      {
+        "title": "Platform",
+        "links": [
+          { "id": "features", "label": "Capabilities", "url": "https://www.wikipedia.org/wiki/Software_feature" },
+          { "id": "integrations", "label": "Integrations", "url": "https://en.wikipedia.org/wiki/System_integration" },
+          { "id": "changelog", "label": "Release Notes", "url": "https://en.wikipedia.org/wiki/Changelog" }
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          { "id": "enterprise", "label": "Enterprise", "url": "https://en.wikipedia.org/wiki/Enterprise_software" },
+          { "id": "startups", "label": "Growth Teams", "url": "https://en.wikipedia.org/wiki/Startup_company" },
+          { "id": "agencies", "label": "Professional Services", "url": "https://en.wikipedia.org/wiki/Advertising_agency" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "id": "privacy", "label": "Privacy Policy", "url": "https://en.wikipedia.org/wiki/Privacy_policy" },
+          { "id": "terms", "label": "Terms of Service", "url": "https://en.wikipedia.org/wiki/Terms_of_service" },
+          { "id": "contact", "label": "Contact", "url": "https://en.wikipedia.org/wiki/Contact_us" }
+        ]
+      }
+    ]
+  }
+}

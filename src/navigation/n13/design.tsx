@@ -7,14 +7,12 @@ interface NavLink {
   url: string
   description?: string
   featured?: boolean
-  badge?: string
 }
 
 interface NavItem {
   id: string
   label: string
   url?: string
-  badge?: string
   children?: NavLink[]
 }
 
@@ -31,10 +29,6 @@ interface DashboardData {
     layout?: string
     searchPlaceholder?: string
     showTrustBadges?: boolean
-    promo?: { label?: string; linkId?: string }
-    stats?: { label: string; value: string }[]
-    highlights?: { id: string; label: string }[]
-    searchShortcuts?: string[]
     quickAccess?: { id: string; label: string }[]
   }
   announcement?: { text?: string; linkLabel?: string; linkId?: string }
@@ -142,15 +136,6 @@ function ExternalIcon({ className = '' }: { className?: string }) {
   )
 }
 
-function NavBadge({ label }: { label: string }) {
-  const isNew = label.toLowerCase() === 'new'
-  return (
-    <span className={`atlas-badge ml-1.5 inline-flex ${isNew ? 'atlas-badge-new' : ''}`}>
-      {label}
-    </span>
-  )
-}
-
 export default function Design() {
   const brand = data.brand?.trim() || 'Acme'
   const edition = data.edition?.trim() || ''
@@ -158,10 +143,6 @@ export default function Design() {
   const searchPlaceholder = navbarConfig.searchPlaceholder?.trim() || 'Search the catalogue…'
   const showTrustBadges = navbarConfig.showTrustBadges !== false
   const quickAccess = (navbarConfig.quickAccess ?? []).filter((entry) => entry?.id && entry?.label)
-  const highlights = (navbarConfig.highlights ?? []).filter((entry) => entry?.id && entry?.label)
-  const navStats = (navbarConfig.stats ?? []).filter((stat) => stat?.label && stat?.value)
-  const searchShortcuts = (navbarConfig.searchShortcuts ?? []).filter((term) => typeof term === 'string' && term.trim())
-  const navPromo = navbarConfig.promo
   const trustBadges = (data.trust ?? []).filter((badge) => typeof badge === 'string' && badge.trim())
   const announcementText = data.announcement?.text?.trim()
   const announcementLinkLabel = data.announcement?.linkLabel?.trim()
@@ -170,6 +151,8 @@ export default function Design() {
   const utilityStatus = data.utility?.status?.trim() || 'All systems operational'
   const utilitySupportLabel = data.utility?.supportLabel?.trim() || 'Support'
   const utilitySupportUrl = isValidUrl(data.utility?.supportUrl) ? data.utility!.supportUrl! : ''
+  const utilityDocsLabel = data.utility?.docsLabel?.trim() || 'Documentation'
+  const utilityDocsId = data.utility?.docsId?.trim() || ''
 
   const ctaLabel = data.cta?.label?.trim() || 'Get Started'
   const ctaUrl = isValidUrl(data.cta?.url) ? data.cta!.url! : ''
@@ -197,7 +180,6 @@ export default function Design() {
   const [iframeLoading, setIframeLoading] = useState(true)
   const [announcementDismissed, setAnnouncementDismissed] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
-  const [searchFocused, setSearchFocused] = useState(false)
   const [iframeKey, setIframeKey] = useState(0)
   const dropdownCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const navMenuRef = useRef<HTMLDivElement>(null)
@@ -338,13 +320,17 @@ export default function Design() {
 
   const showAnnouncement = announcementText && !announcementDismissed
 
-  const openFlyoutItem = openDropdown ? navigation.find((item) => item.id === openDropdown) : undefined
-  const openFlyoutFeatured = openFlyoutItem?.children?.find((child) => child.featured)
+  const openMegaItem = openDropdown ? navigation.find((item) => item.id === openDropdown) : undefined
+  const openMegaFeatured = openMegaItem?.children?.find((child) => child.featured)
 
-  const searchField = (className = '') => (
+  const searchField = (variant: 'light' | 'dark' = 'light', className = '') => (
     <>
-      <div className={`pointer-events-none absolute inset-y-0 left-3.5 flex items-center text-[#9a9488] ${className}`}>
-        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden>
+      <div
+        className={`pointer-events-none absolute inset-y-0 left-3.5 flex items-center ${
+          variant === 'dark' ? 'text-[#9a9488]/70' : 'text-[#9a9488]'
+        } ${className}`}
+      >
+        <svg width="14" height="14" viewBox="0 0 15 15" fill="none" aria-hidden>
           <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" strokeWidth="1.2" />
           <path d="M10 10l3 3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
         </svg>
@@ -353,46 +339,48 @@ export default function Design() {
         type="search"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        onFocus={() => setSearchFocused(true)}
-        onBlur={() => setTimeout(() => setSearchFocused(false), 150)}
         placeholder={searchPlaceholder}
-        className="atlas-command-search w-full py-2.5 pl-10 pr-4 text-sm text-[#14120f] placeholder:text-[#9a9488]"
+        className={`w-full py-2 pl-10 pr-4 text-sm transition-all ${
+          variant === 'dark'
+            ? 'command-search'
+            : 'premium-search rounded-sm text-base text-[#14120f] placeholder:text-[#9a9488] sm:text-sm'
+        }`}
       />
       {searchQuery.trim() && searchResults.length > 0 && (
-        <div className="premium-dropdown premium-popover absolute left-0 right-0 top-full z-50 mt-1.5 max-h-[min(60dvh,360px)] overflow-y-auto rounded-md py-1 shadow-lg">
-          {searchResults.slice(0, 10).map((link) => (
+        <div
+          className={`absolute left-0 right-0 top-full mt-1.5 max-h-[min(60dvh,320px)] overflow-y-auto rounded-md py-1 shadow-lg ${
+            variant === 'dark'
+              ? 'border border-white/10 bg-[#1e1c18]'
+              : 'premium-dropdown premium-popover rounded-sm'
+          }`}
+        >
+          {searchResults.slice(0, 8).map((link) => (
             <button
               key={link.id}
               type="button"
               onClick={() => selectPage(link.id)}
-              className="touch-target block w-full px-4 py-2.5 text-left transition-colors hover:bg-[#f0ebe2]"
+              className={`touch-target block w-full px-4 py-2.5 text-left transition-colors ${
+                variant === 'dark' ? 'hover:bg-white/5' : 'hover:bg-[#f0ebe2]'
+              }`}
             >
-              <span className="flex items-center font-display text-sm font-semibold text-[#14120f]">
+              <span
+                className={`font-display block text-sm font-semibold ${
+                  variant === 'dark' ? 'text-[#e8d9a8]' : 'text-[#14120f]'
+                }`}
+              >
                 {link.label}
-                {link.badge && <NavBadge label={link.badge} />}
               </span>
               {link.description && (
-                <span className="mt-0.5 block truncate text-xs text-[#5c574f]">{link.description}</span>
+                <span
+                  className={`mt-0.5 block truncate text-xs ${
+                    variant === 'dark' ? 'text-[#a8a095]' : 'text-[#5c574f]'
+                  }`}
+                >
+                  {link.description}
+                </span>
               )}
             </button>
           ))}
-        </div>
-      )}
-      {!searchQuery.trim() && searchFocused && searchShortcuts.length > 0 && (
-        <div className="absolute left-0 right-0 top-full z-50 mt-1.5 rounded-md border border-[#d8d2c6] bg-[#fdfbf7] p-3 shadow-lg">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a9488]">Popular searches</p>
-          <div className="mt-2 flex flex-wrap gap-1.5">
-            {searchShortcuts.map((term) => (
-              <button
-                key={term}
-                type="button"
-                onClick={() => setSearchQuery(term)}
-                className="rounded-full border border-[#d8d2c6] bg-white px-2.5 py-1 text-xs text-[#5c574f] transition-colors hover:border-[#c4a035] hover:text-[#14120f]"
-              >
-                {term}
-              </button>
-            ))}
-          </div>
         </div>
       )}
     </>
@@ -431,67 +419,28 @@ export default function Design() {
         </div>
       )}
 
-      <header className="atlas-header sticky top-0 shrink-0">
-        <div className="atlas-search-band">
-          <div className="mx-auto max-w-7xl px-3 py-3 safe-area-x sm:px-6 sm:py-4 lg:px-8">
-            <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:gap-6">
-              <div className="relative min-w-0 flex-1 overflow-visible">
-                {searchField()}
-                {highlights.length > 0 && (
-                  <div className="mt-2.5 flex items-center gap-2 overflow-x-auto pb-0.5 scrollbar-hide">
-                    <span className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#9a9488]">
-                      Quick
-                    </span>
-                    {highlights.map((entry) => (
-                      <button
-                        key={entry.id}
-                        type="button"
-                        onClick={() => selectPage(entry.id)}
-                        className="atlas-highlight shrink-0 rounded-full px-3 py-1 text-xs font-medium text-[#5c574f]"
-                      >
-                        {entry.label}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {navStats.length > 0 && (
-                <div className="hidden shrink-0 items-center gap-0 lg:flex">
-                  {navStats.map((stat, index) => (
-                    <div
-                      key={stat.label}
-                      className={`atlas-stat px-5 py-1 text-center ${index === 0 ? 'border-l-0 pl-0' : ''}`}
-                    >
-                      <p className="font-display text-lg font-semibold leading-none text-[#14120f]">{stat.value}</p>
-                      <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-[#9a9488]">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-
-        <div className="hidden border-b border-[#d8d2c6]/60 bg-[#2a2620] md:block">
-          <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-1.5 text-[10px] uppercase tracking-[0.12em] text-[#a8a095] safe-area-x sm:px-6 lg:px-8">
-            <div className="flex min-w-0 items-center gap-3">
-              <span className="flex items-center gap-2 text-[#d8d2c6]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#6b9e6b] shadow-[0_0_6px_rgba(107,158,107,0.6)]" />
-                {utilityStatus}
+      <header className="premium-command-header sticky top-0 shrink-0 backdrop-blur-md">
+        <div className="command-deck hidden shrink-0 md:block">
+          <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-2 safe-area-x sm:px-6 lg:px-8">
+            <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+              <span className="flex min-w-0 items-center gap-2 text-[10px] uppercase tracking-[0.14em] text-[#d8d2c6]">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#6b9e6b] shadow-[0_0_8px_rgba(107,158,107,0.7)]" />
+                <span className="truncate font-medium">{utilityStatus}</span>
               </span>
               {edition && (
                 <>
-                  <span className="text-[#4a4640]">|</span>
-                  <span className="text-[#c4a035]">{edition}</span>
+                  <span className="hidden text-[#4a4640] lg:inline">|</span>
+                  <span className="hidden text-[10px] uppercase tracking-[0.2em] text-[#c4a035] lg:inline">
+                    {edition}
+                  </span>
                 </>
               )}
               {showTrustBadges && trustBadges.length > 0 && (
                 <div className="hidden items-center gap-2 xl:flex">
-                  {trustBadges.slice(0, 4).map((badge) => (
+                  {trustBadges.slice(0, 3).map((badge) => (
                     <span
                       key={badge}
-                      className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[9px] text-[#e8d9a8]/75"
+                      className="trust-badge rounded-full px-2.5 py-0.5 text-[9px] font-medium uppercase text-[#e8d9a8]/80"
                     >
                       {badge}
                     </span>
@@ -499,17 +448,26 @@ export default function Design() {
                 </div>
               )}
             </div>
-            <div className="flex shrink-0 items-center gap-4">
+            <div className="flex shrink-0 items-center gap-4 text-[10px] uppercase tracking-[0.12em] text-[#a8a095]">
               {quickAccess.map((entry) => (
                 <button
                   key={entry.id}
                   type="button"
                   onClick={() => selectPage(entry.id)}
-                  className="transition-colors hover:text-[#e8d9a8]"
+                  className="hidden transition-colors hover:text-[#e8d9a8] sm:inline"
                 >
                   {entry.label}
                 </button>
               ))}
+              {utilityDocsId && (
+                <button
+                  type="button"
+                  onClick={() => selectPage(utilityDocsId)}
+                  className="transition-colors hover:text-[#e8d9a8]"
+                >
+                  {utilityDocsLabel}
+                </button>
+              )}
               {utilitySupportUrl && (
                 <a
                   href={utilitySupportUrl}
@@ -525,32 +483,28 @@ export default function Design() {
           </div>
         </div>
 
-        <div className="atlas-tab-rail">
-          <div className="mx-auto flex max-w-7xl items-center gap-3 px-3 py-0 safe-area-x sm:px-6 lg:px-8">
+        <div className="nav-deck">
+          <div className="mx-auto flex max-w-7xl items-center gap-3 px-3 py-3 safe-area-x sm:gap-4 sm:px-6 sm:py-3.5 lg:gap-5 lg:px-8">
             <button
               type="button"
               aria-label={brand}
               onClick={() => selectPage(allLinks[0]?.id ?? 'home')}
-              className="group my-2.5 shrink-0"
+              className="group shrink-0"
             >
-              <span className="premium-logo relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-md transition-transform group-hover:scale-[1.04] sm:h-10 sm:w-10">
-                <span className="font-display text-lg font-bold text-[#e8d9a8] sm:text-xl">{brand.charAt(0)}</span>
+              <span className="premium-logo relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full transition-transform group-hover:scale-[1.04] sm:h-10 sm:w-10">
+                <span className="font-display relative text-lg font-bold text-[#e8d9a8] sm:text-xl">
+                  {brand.charAt(0)}
+                </span>
               </span>
             </button>
 
-            {navPromo?.label && navPromo.linkId && (
-              <button
-                type="button"
-                onClick={() => selectPage(navPromo.linkId!)}
-                className="atlas-promo-chip hidden shrink-0 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase text-[#7a6020] sm:inline-flex"
-              >
-                {navPromo.label}
-              </button>
-            )}
+            <div className="relative hidden min-w-0 flex-1 overflow-visible lg:block xl:max-w-2xl">
+              {searchField('dark')}
+            </div>
 
             <nav
               ref={navMenuRef}
-              className="scrollbar-hide flex min-w-0 flex-1 items-center gap-0 overflow-x-auto overflow-y-visible"
+              className="hidden shrink-0 items-center justify-center gap-1 lg:flex"
             >
               {navigation.map((item) => {
                 const hasChildren = (item.children?.length ?? 0) > 0
@@ -564,108 +518,46 @@ export default function Design() {
                       key={item.id}
                       type="button"
                       onClick={() => selectPage(item.id)}
-                      className={`atlas-tab touch-target flex items-center px-3 py-3.5 sm:px-4 ${
-                        item.id === activeId ? 'atlas-tab-active' : ''
+                      className={`nav-pill touch-target whitespace-nowrap px-4 py-2 ${
+                        item.id === activeId ? 'nav-pill-active' : 'text-[#c8c2b6]'
                       }`}
                     >
                       {item.label}
-                      {item.badge && <NavBadge label={item.badge} />}
                     </button>
                   )
                 }
 
                 return (
-                  <div
+                  <button
                     key={item.id}
-                    className="relative shrink-0"
-                    onMouseEnter={() => window.innerWidth >= 1024 && openNavDropdown(item.id)}
-                    onMouseLeave={() => window.innerWidth >= 1024 && scheduleCloseNavDropdown()}
+                    type="button"
+                    aria-expanded={isOpen}
+                    aria-haspopup="menu"
+                    onMouseEnter={() => openNavDropdown(item.id)}
+                    onMouseLeave={scheduleCloseNavDropdown}
+                    onClick={() => toggleNavDropdown(item.id)}
+                    className={`nav-pill flex touch-target items-center gap-1.5 whitespace-nowrap px-4 py-2 ${
+                      isOpen ? 'nav-pill-open' : isActive ? 'nav-pill-active' : 'text-[#c8c2b6]'
+                    }`}
                   >
-                    <button
-                      type="button"
-                      aria-expanded={isOpen}
-                      aria-haspopup="menu"
-                      onClick={() => toggleNavDropdown(item.id)}
-                      className={`atlas-tab touch-target flex items-center gap-1 px-3 py-3.5 sm:px-4 ${
-                        isOpen ? 'atlas-tab-open' : isActive ? 'atlas-tab-active' : ''
-                      }`}
-                    >
-                      {item.label}
-                      {item.badge && <NavBadge label={item.badge} />}
-                      <ChevronDown
-                        className={`opacity-60 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-                      />
-                    </button>
-
-                    {isOpen && (
-                      <div
-                        className="premium-popover absolute left-0 top-full z-50 pt-2 lg:min-w-72"
-                        onMouseEnter={() => openNavDropdown(item.id)}
-                        onMouseLeave={scheduleCloseNavDropdown}
-                      >
-                        <div role="menu" className="atlas-flyout overflow-hidden">
-                          <div className="p-2">
-                            <p className="px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#9a7b2f]">
-                              {item.label}
-                            </p>
-                            {item.children?.map((child) => (
-                              <button
-                                key={child.id}
-                                type="button"
-                                role="menuitem"
-                                onClick={() => selectPage(child.id)}
-                                className={`block w-full rounded-md px-3 py-2.5 text-left transition-all ${
-                                  child.id === activeId
-                                    ? 'bg-[#f5edd8] ring-1 ring-[#c4a035]/35'
-                                    : 'hover:bg-[#f0ebe2]'
-                                }`}
-                              >
-                                <span className="flex items-center text-sm font-medium text-[#14120f]">
-                                  {child.label}
-                                  {child.badge && <NavBadge label={child.badge} />}
-                                </span>
-                                {child.description && (
-                                  <span className="mt-0.5 block text-xs leading-relaxed text-[#5c574f]">
-                                    {child.description}
-                                  </span>
-                                )}
-                              </button>
-                            ))}
-                          </div>
-                          {openFlyoutFeatured && openFlyoutItem?.id === item.id && (
-                            <div className="border-t border-[#d8d2c6] bg-linear-to-br from-[#f5f0e8] to-[#ebe3d0] p-4">
-                              <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#9a7b2f]">
-                                Featured
-                              </p>
-                              <p className="mt-1.5 font-display text-base font-semibold text-[#14120f]">
-                                {openFlyoutFeatured.label}
-                              </p>
-                              <button
-                                type="button"
-                                onClick={() => selectPage(openFlyoutFeatured.id)}
-                                className="mt-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#9a7b2f] hover:text-[#7a6020]"
-                              >
-                                View →
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                    {item.label}
+                    <ChevronDown
+                      className={`text-current opacity-70 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+                    />
+                  </button>
                 )
               })}
             </nav>
 
-            <div className="my-2.5 flex shrink-0 items-center gap-2 border-l border-[#d8d2c6] pl-3 sm:gap-3 sm:pl-4">
+            <div className="action-cluster ml-auto flex shrink-0 items-center justify-end gap-2 sm:gap-3 lg:pl-4">
               {secondaryUrl && (
                 <button
                   type="button"
                   onClick={selectSecondary}
-                  className={`premium-btn-outline premium-nav-link touch-target hidden rounded-md px-3 py-2 text-[11px] transition-all md:inline-flex md:px-4 md:py-2.5 ${
+                  className={`touch-target hidden rounded-full border px-4 py-2 text-[11px] font-medium uppercase tracking-[0.06em] transition-all md:inline-flex ${
                     isSecondaryActive
-                      ? 'border-[#9a7b2f] bg-[#f5edd8] text-[#14120f]'
-                      : 'text-[#5c574f] hover:border-[#9a7b2f] hover:text-[#14120f]'
+                      ? 'border-[#c4a035] bg-[#c4a035]/15 text-[#e8d9a8]'
+                      : 'border-white/15 text-[#c8c2b6] hover:border-[#c4a035]/40 hover:text-[#e8d9a8]'
                   }`}
                 >
                   {secondaryLabel}
@@ -675,8 +567,8 @@ export default function Design() {
                 <button
                   type="button"
                   onClick={selectCta}
-                  className={`premium-btn-gold touch-target hidden rounded-md px-3 py-2 md:inline-flex md:px-4 md:py-2.5 ${
-                    isCtaActive ? 'ring-2 ring-[#c4a035]/45' : ''
+                  className={`premium-btn-gold touch-target hidden rounded-full px-4 py-2 md:inline-flex ${
+                    isCtaActive ? 'ring-2 ring-[#e8d9a8]/40' : ''
                   }`}
                 >
                   {ctaLabel}
@@ -687,7 +579,7 @@ export default function Design() {
                 aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileOpen}
                 onClick={() => setMobileOpen((open) => !open)}
-                className="premium-btn-outline touch-target inline-flex h-10 w-10 items-center justify-center rounded-md lg:hidden"
+                className="touch-target inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-[#e8d9a8] transition-colors hover:border-[#c4a035]/40 hover:bg-white/5 lg:hidden"
               >
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden>
                   {mobileOpen ? (
@@ -701,24 +593,94 @@ export default function Design() {
           </div>
         </div>
 
+        {openMegaItem && (openMegaItem.children?.length ?? 0) > 0 && (
+          <div
+            className="mega-panel hidden lg:block"
+            onMouseEnter={() => openNavDropdown(openMegaItem.id)}
+            onMouseLeave={scheduleCloseNavDropdown}
+          >
+            <div className="mx-auto grid max-w-7xl gap-6 px-6 py-6 lg:grid-cols-[1fr_auto] lg:px-8">
+              <div>
+                <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-[#9a7b2f]">
+                  {openMegaItem.label}
+                </p>
+                <div className="mt-4 grid gap-1 sm:grid-cols-2">
+                  {openMegaItem.children?.map((child) => (
+                    <button
+                      key={child.id}
+                      type="button"
+                      role="menuitem"
+                      onClick={() => selectPage(child.id)}
+                      className={`rounded-md px-4 py-3 text-left transition-all ${
+                        child.id === activeId
+                          ? 'bg-[#f5edd8] ring-1 ring-[#c4a035]/40'
+                          : 'hover:bg-[#f0ebe2]'
+                      }`}
+                    >
+                      <span
+                        className={`block text-sm ${
+                          child.id === activeId ? 'font-semibold text-[#14120f]' : 'font-medium text-[#2a2620]'
+                        }`}
+                      >
+                        {child.label}
+                      </span>
+                      {child.description && (
+                        <span className="mt-1 block text-xs leading-relaxed text-[#5c574f]">
+                          {child.description}
+                        </span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {openMegaFeatured && (
+                <div className="w-full rounded-md border border-[#d8d2c6] bg-linear-to-br from-[#f5f0e8] to-[#ebe3d0] p-5 lg:w-64">
+                  <p className="text-[9px] font-semibold uppercase tracking-[0.25em] text-[#9a7b2f]">
+                    Spotlight
+                  </p>
+                  <p className="mt-2 font-display text-xl font-semibold leading-snug text-[#14120f]">
+                    {openMegaFeatured.label}
+                  </p>
+                  {openMegaFeatured.description && (
+                    <p className="mt-2 text-xs leading-relaxed text-[#5c574f]">
+                      {openMegaFeatured.description}
+                    </p>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => selectPage(openMegaFeatured.id)}
+                    className="mt-4 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#9a7b2f] transition-colors hover:text-[#7a6020]"
+                  >
+                    Explore →
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        <div className="border-t border-white/5 px-3 py-2.5 safe-area-x lg:hidden sm:px-6">
+          <div className="relative overflow-visible">{searchField('dark')}</div>
+        </div>
+
         {mobileOpen && (
           <>
             <button
               type="button"
               aria-label="Close menu overlay"
-              className="fixed inset-0 z-[90] bg-[#14120f]/35 backdrop-blur-[2px] lg:hidden"
+              className="fixed inset-0 z-[90] bg-[#14120f]/60 backdrop-blur-sm lg:hidden"
               onClick={() => setMobileOpen(false)}
             />
-            <aside className="atlas-mobile-panel fixed inset-y-0 right-0 z-[95] flex w-[min(92vw,360px)] flex-col border-l border-[#d8d2c6] lg:hidden">
-              <div className="flex items-center justify-between border-b border-[#d8d2c6] px-4 py-3">
-                <span className="premium-logo relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-md">
+            <aside className="mobile-drawer fixed inset-y-0 right-0 z-[95] flex w-[min(88vw,340px)] flex-col border-l border-white/10 lg:hidden">
+              <div className="flex items-center justify-between border-b border-white/8 px-4 py-4">
+                <span className="premium-logo relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full">
                   <span className="font-display text-lg font-bold text-[#e8d9a8]">{brand.charAt(0)}</span>
                 </span>
                 <button
                   type="button"
                   aria-label="Close menu"
                   onClick={() => setMobileOpen(false)}
-                  className="touch-target flex h-9 w-9 items-center justify-center rounded-md border border-[#d8d2c6] text-[#5c574f]"
+                  className="touch-target flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-[#e8d9a8]"
                 >
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
                     <path d="M4 4l8 8M12 4 4 12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
@@ -726,35 +688,17 @@ export default function Design() {
                 </button>
               </div>
 
-              {highlights.length > 0 && (
-                <div className="border-b border-[#d8d2c6] px-4 py-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a9488]">Quick access</p>
-                  <div className="mt-2 flex flex-wrap gap-1.5">
-                    {highlights.map((entry) => (
-                      <button
-                        key={entry.id}
-                        type="button"
-                        onClick={() => selectPage(entry.id)}
-                        className="atlas-highlight rounded-full px-3 py-1 text-xs font-medium text-[#5c574f]"
-                      >
-                        {entry.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              <nav className="flex-1 overflow-y-auto px-3 py-3">
-                <div className="flex flex-col gap-0.5">
+              <nav className="flex-1 overflow-y-auto px-3 py-4">
+                <div className="flex flex-col gap-1">
                   {searchQuery.trim() && searchResults.length === 0 && (
-                    <p className="px-3 py-4 text-center text-sm text-[#5c574f]">No results found.</p>
+                    <p className="px-3 py-4 text-center text-sm text-[#9a9488]">No results found.</p>
                   )}
                   {(searchQuery.trim() ? searchResults : []).map((link) => (
                     <button
                       key={link.id}
                       type="button"
                       onClick={() => selectPage(link.id)}
-                      className="touch-target rounded-md px-3 py-3 text-left text-sm text-[#5c574f] hover:bg-[#f0ebe2]"
+                      className="touch-target rounded-md px-3 py-3 text-left text-sm text-[#c8c2b6] hover:bg-white/5"
                     >
                       {link.label}
                     </button>
@@ -770,50 +714,53 @@ export default function Design() {
                             key={item.id}
                             type="button"
                             onClick={() => selectPage(item.id)}
-                            className={`touch-target flex items-center rounded-md px-3 py-3 text-left text-sm ${
+                            className={`touch-target rounded-md px-3 py-3 text-left text-sm ${
                               item.id === activeId
-                                ? 'bg-[#f5edd8] font-semibold text-[#14120f]'
-                                : 'text-[#5c574f] hover:bg-[#f0ebe2]'
+                                ? 'bg-[#c4a035]/15 font-semibold text-[#e8d9a8]'
+                                : 'text-[#c8c2b6] hover:bg-white/5'
                             }`}
                           >
                             {item.label}
-                            {item.badge && <NavBadge label={item.badge} />}
                           </button>
                         )
                       }
 
                       return (
-                        <div key={item.id} className="rounded-md border border-[#d8d2c6]">
+                        <div key={item.id} className="rounded-md border border-white/10">
                           <button
                             type="button"
                             onClick={() => toggleNavDropdown(item.id)}
-                            className="touch-target flex w-full items-center justify-between px-3 py-3 text-left text-sm font-semibold text-[#14120f]"
+                            className="touch-target flex w-full items-center justify-between px-3 py-3 text-left text-sm font-medium text-[#f5edd8]"
                           >
-                            <span className="flex items-center">
-                              {item.label}
-                              {item.badge && <NavBadge label={item.badge} />}
-                            </span>
+                            {item.label}
                             <ChevronDown
                               className={`text-[#9a9488] transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
                             />
                           </button>
                           {isDropdownOpen && (
-                            <div className="space-y-0.5 border-t border-[#ebe6dc] p-2">
+                            <div className="space-y-0.5 border-t border-white/8 p-2">
                               {item.children?.map((child) => (
                                 <button
                                   key={child.id}
                                   type="button"
                                   onClick={() => selectPage(child.id)}
-                                  className={`touch-target block w-full rounded-md px-3 py-2.5 text-left ${
-                                    child.id === activeId ? 'bg-[#f5edd8]' : 'hover:bg-[#f0ebe2]'
+                                  className={`touch-target block w-full rounded-md px-3 py-3 text-left ${
+                                    child.id === activeId ? 'bg-[#c4a035]/12' : 'hover:bg-white/5'
                                   }`}
                                 >
-                                  <span className="flex items-center text-sm text-[#14120f]">
+                                  <span
+                                    className={`block text-sm ${
+                                      child.id === activeId
+                                        ? 'font-semibold text-[#e8d9a8]'
+                                        : 'text-[#c8c2b6]'
+                                    }`}
+                                  >
                                     {child.label}
-                                    {child.badge && <NavBadge label={child.badge} />}
                                   </span>
                                   {child.description && (
-                                    <span className="mt-0.5 block text-xs text-[#5c574f]">{child.description}</span>
+                                    <span className="mt-0.5 block text-xs text-[#9a9488]">
+                                      {child.description}
+                                    </span>
                                   )}
                                 </button>
                               ))}
@@ -825,12 +772,12 @@ export default function Design() {
                 </div>
               </nav>
 
-              <div className="shrink-0 space-y-2 border-t border-[#d8d2c6] p-4 safe-area-bottom">
+              <div className="shrink-0 space-y-2 border-t border-white/8 p-4 safe-area-bottom">
                 {secondaryUrl && (
                   <button
                     type="button"
                     onClick={selectSecondary}
-                    className="premium-btn-outline touch-target w-full rounded-md px-4 py-3 text-sm"
+                    className="touch-target w-full rounded-full border border-white/15 px-4 py-3 text-sm text-[#c8c2b6]"
                   >
                     {secondaryLabel}
                   </button>
@@ -839,7 +786,7 @@ export default function Design() {
                   <button
                     type="button"
                     onClick={selectCta}
-                    className="premium-btn-gold touch-target w-full rounded-md px-4 py-3"
+                    className="premium-btn-gold touch-target w-full rounded-full px-4 py-3"
                   >
                     {ctaLabel}
                   </button>

@@ -1,0 +1,46 @@
+{
+  "brand": "Acme Panel",
+  "tagline": "Executive Control Suite",
+  "navigation": [
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "url": "https://example.com"
+    },
+    {
+      "id": "analytics",
+      "label": "Analytics",
+      "url": "https://www.wikipedia.org"
+    },
+    {
+      "id": "users",
+      "label": "Users",
+      "url": "https://en.wikipedia.org/wiki/User_interface"
+    },
+    {
+      "id": "orders",
+      "label": "Orders",
+      "url": "https://en.wikipedia.org/wiki/Order_management"
+    },
+    {
+      "id": "products",
+      "label": "Products",
+      "url": "https://en.wikipedia.org/wiki/Product_(business)"
+    },
+    {
+      "id": "reports",
+      "label": "Reports",
+      "url": "https://en.wikipedia.org/wiki/Management_reporting"
+    },
+    {
+      "id": "general",
+      "label": "General",
+      "url": "https://en.wikipedia.org/wiki/Configuration_management"
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "url": "https://en.wikipedia.org/wiki/Computer_security"
+    }
+  ]
+}
