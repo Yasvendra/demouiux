@@ -1,0 +1,83 @@
+{
+  "theme": {
+    "accent": "#06B6D4",
+    "accentSecondary": "#F59E0B",
+    "accentGlow": "rgba(6, 182, 212, 0.35)",
+    "surface": "#0B1120",
+    "face": "#131C2E"
+  },
+  "prismShift": {
+    "badge": {
+      "text": "Edge fabric · 2.4M devices online",
+      "pulse": true
+    },
+    "eyebrow": "Distributed intelligence mesh",
+    "heading": "Compute at the edge where data is born",
+    "headingAccent": "where data is born",
+    "defaultActive": "device-mesh",
+    "autoRotate": true,
+    "autoRotateMs": 5800,
+    "facets": [
+      {
+        "id": "device-mesh",
+        "tag": "IoT Mesh",
+        "title": "Self-healing device mesh",
+        "description": "Millions of sensors, actuators, and gateways form adaptive clusters — auto-discovering neighbors, rerouting around failures, and maintaining quorum without cloud dependency.",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&h=900&fit=crop",
+        "alt": "Network of connected IoT devices in an industrial setting",
+        "link": "#device-mesh",
+        "metric": { "value": "2.4M", "unit": "", "label": "Active devices" }
+      },
+      {
+        "id": "fog-compute",
+        "tag": "Fog Layer",
+        "title": "Sub-5ms fog computing",
+        "description": "Process sensor streams at the network edge in under 5 milliseconds — filtering noise, aggregating events, and triggering actuators before data ever leaves the facility.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop",
+        "alt": "Edge computing nodes processing data locally",
+        "link": "#fog-compute",
+        "metric": { "value": "<5", "unit": "ms", "label": "Processing latency" }
+      },
+      {
+        "id": "stream-engine",
+        "tag": "Stream AI",
+        "title": "Real-time stream intelligence",
+        "description": "Apache-grade stream processing with built-in ML inference — detecting anomalies, classifying events, and enriching payloads as they flow through the pipeline.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=900&fit=crop",
+        "alt": "Real-time data stream visualization on monitors",
+        "link": "#stream-engine",
+        "metric": { "value": "1.2M", "unit": "/s", "label": "Events processed" }
+      },
+      {
+        "id": "edge-twin",
+        "tag": "Edge Twin",
+        "title": "Edge-native digital twins",
+        "description": "Mirror physical assets locally with lightweight twin runtimes — simulate what-if scenarios and predict failures without round-tripping to centralized cloud infrastructure.",
+        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1600&h=900&fit=crop",
+        "alt": "Digital twin dashboard for industrial equipment",
+        "link": "#edge-twin",
+        "metric": { "value": "1:1", "unit": "", "label": "Twin fidelity" }
+      },
+      {
+        "id": "zero-trust",
+        "tag": "Zero Trust",
+        "title": "Zero-trust edge security",
+        "description": "Every device, packet, and API call is authenticated and encrypted — with micro-segmentation policies that contain breaches before they propagate across the mesh.",
+        "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&h=900&fit=crop",
+        "alt": "Cybersecurity shield protecting edge network infrastructure",
+        "link": "#zero-trust",
+        "metric": { "value": "100%", "unit": "", "label": "Encrypted traffic" }
+      },
+      {
+        "id": "predictive-ops",
+        "tag": "Predict Ops",
+        "title": "Predictive maintenance at the edge",
+        "description": "On-device models analyze vibration, temperature, and acoustic signatures — scheduling maintenance before failures occur and reducing unplanned downtime by up to 70%.",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&h=900&fit=crop",
+        "alt": "Engineer monitoring predictive maintenance alerts",
+        "link": "#predictive-ops",
+        "metric": { "value": "70%", "unit": "", "label": "Downtime reduction" }
+      }
+    ]
+  }
+}

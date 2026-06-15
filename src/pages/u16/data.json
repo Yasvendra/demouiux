@@ -1,0 +1,71 @@
+{
+  "theme": {
+    "accent": "#10B981",
+    "accentAlt": "#818CF8",
+    "accentGlow": "rgba(16, 185, 129, 0.2)",
+    "surface": "#0C0C0E",
+    "panel": "#141416"
+  },
+  "dualLens": {
+    "label": "Autonomous surgery · FDA breakthrough device",
+    "headline": "See the difference precision makes",
+    "legacyTag": "Conventional",
+    "innovationTag": "Autonomous",
+    "defaultActive": "robotic-arm",
+    "autoCycle": true,
+    "autoCycleMs": 7800,
+    "hint": "Drag the lens to compare approaches",
+    "modules": [
+      {
+        "id": "robotic-arm",
+        "code": "01",
+        "title": "Sub-millimeter robotic arms",
+        "description": "Seven-axis manipulators filter hand tremor at 1 kHz — holding steady at 0.1 mm accuracy through hours-long procedures that exceed human endurance.",
+        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&h=900&fit=crop",
+        "alt": "Precision robotic surgical arm in operating theater",
+        "link": "#robotic-arm",
+        "metric": { "value": "0.1", "unit": "mm", "label": "Tip accuracy" }
+      },
+      {
+        "id": "ar-overlay",
+        "code": "02",
+        "title": "AR anatomical overlay",
+        "description": "Real-time CT and MRI fusion projects vessel maps and tumor margins directly onto the surgical field — letting surgeons see through tissue without opening wider.",
+        "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&h=900&fit=crop",
+        "alt": "Surgeon using augmented reality overlay during operation",
+        "link": "#ar-overlay",
+        "metric": { "value": "1", "unit": "mm", "label": "Overlay precision" }
+      },
+      {
+        "id": "haptic-loop",
+        "code": "03",
+        "title": "Force-feedback haptics",
+        "description": "Bidirectional haptic loops translate tissue resistance back to the surgeon's grip — restoring the tactile cues lost in pure teleoperation or robotic intermediation.",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1600&h=900&fit=crop",
+        "alt": "Haptic feedback controller for surgical robotics",
+        "link": "#haptic-loop",
+        "metric": { "value": "<5", "unit": "ms", "label": "Feedback latency" }
+      },
+      {
+        "id": "ai-segment",
+        "code": "04",
+        "title": "AI tissue segmentation",
+        "description": "On-device vision models delineate nerves, vessels, and malignancy boundaries frame-by-frame — highlighting critical structures the naked eye can miss under blood and glare.",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&h=900&fit=crop",
+        "alt": "AI highlighting tissue boundaries on surgical display",
+        "link": "#ai-segment",
+        "metric": { "value": "97", "unit": "%", "label": "Segmentation IoU" }
+      },
+      {
+        "id": "tele-surgery",
+        "code": "05",
+        "title": "Ultra-low latency telesurgery",
+        "description": "Edge-compressed video and haptic streams traverse dedicated 5G slices at sub-20 ms round-trip — enabling specialist surgeons to operate across continents in real time.",
+        "image": "https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=1600&h=900&fit=crop",
+        "alt": "Remote telesurgery console connected to operating room",
+        "link": "#tele-surgery",
+        "metric": { "value": "<20", "unit": "ms", "label": "Round-trip delay" }
+      }
+    ]
+  }
+}

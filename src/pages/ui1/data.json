@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "badge": {
+      "text": "We're hiring across 40+ locations",
+      "pulse": true
+    },
+    "headline": "Create the career you love",
+    "headlineAccent": "career you love",
+    "description": "Join the people behind the product to build a more positive internet for Pinterest users worldwide.",
+    "highlights": [
+      { "label": "Remote-friendly" },
+      { "label": "Inclusive culture" },
+      { "label": "Growth-focused" }
+    ],
+    "cta": {
+      "primary": {
+        "text": "Explore jobs",
+        "link": "/jobs"
+      },
+      "secondary": {
+        "text": "Life at Pinterest",
+        "link": "/culture"
+      }
+    },
+    "stats": [
+      { "value": "3,000+", "label": "Employees worldwide" },
+      { "value": "40+", "label": "Global offices" },
+      { "value": "150+", "label": "Open roles" }
+    ],
+    "image": {
+      "url": "https://www.pinterestcareers.com/media/ujijwmt4/vijaykumarjanani-43.png?width=1600&height=900&rnd=133561097330930000&width=1600&height=900&rmode=crop&format=webp&quality=85",
+      "alt": "Smiling employee in an office setting",
+      "scroll": {
+        "enabled": true,
+        "sectionHeight": "260vh",
+        "expandToFullWidth": true
+      },
+      "overlay": {
+        "quote": "WELCOME TO THE HOME OF INSPIRATION",
+        "caption": "Pinterest HQ · San Francisco"
+      },
+      "floatingCard": {
+        "value": "4.8",
+        "label": "Employee rating",
+        "suffix": "/ 5"
+      }
+    }
+  }
+}

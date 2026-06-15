@@ -1,0 +1,102 @@
+{
+  "theme": {
+    "accent": "#10B981",
+    "accentSecondary": "#0EA5E9",
+    "accentWarm": "#F59E0B",
+    "surface": "#030F0A",
+    "panel": "#0A1A14"
+  },
+  "rippleForge": {
+    "badge": {
+      "text": "Carbon ops · Real-time monitoring",
+      "pulse": true
+    },
+    "eyebrow": "Climate restoration platform",
+    "heading": "Remove carbon at planetary scale with precision",
+    "headingAccent": "planetary scale",
+    "hubLabel": "Carbon ledger",
+    "defaultActive": "direct-capture",
+    "autoPulse": true,
+    "autoPulseMs": 7000,
+    "modules": [
+      {
+        "id": "direct-capture",
+        "ring": 1,
+        "angle": 0,
+        "icon": "◉",
+        "label": "Direct Capture",
+        "title": "Direct air capture at gigaton scale",
+        "description": "Industrial DAC facilities pull CO₂ straight from ambient air using sorbent filters and low-carbon energy — achieving capture costs below $100/ton by 2030.",
+        "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac71?w=1600&h=900&fit=crop",
+        "alt": "Industrial direct air capture facility with green technology",
+        "link": "#direct-capture",
+        "metric": { "value": "2.1", "unit": "Gt", "label": "Annual removal target" }
+      },
+      {
+        "id": "ocean-alkalinity",
+        "ring": 1,
+        "angle": 120,
+        "icon": "≋",
+        "label": "Ocean Alkalinity",
+        "title": "Ocean alkalinity enhancement",
+        "description": "Safely increase ocean CO₂ uptake by adding alkaline minerals — accelerating natural carbon sequestration while monitoring marine ecosystem health in real time.",
+        "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600&h=900&fit=crop",
+        "alt": "Aerial view of ocean with research vessel",
+        "link": "#ocean-alkalinity",
+        "metric": { "value": "4.2", "unit": "B t", "label": "CO₂ absorbed / yr" }
+      },
+      {
+        "id": "methane-watch",
+        "ring": 1,
+        "angle": 240,
+        "icon": "◎",
+        "label": "Methane Watch",
+        "title": "Satellite methane detection",
+        "description": "Hyperspectral satellites pinpoint methane leaks from oil, gas, and agriculture within hours — enabling rapid mitigation that prevents 80× more warming than CO₂ per molecule.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop",
+        "alt": "Satellite view of Earth showing atmospheric monitoring",
+        "link": "#methane-watch",
+        "metric": { "value": "50", "unit": "km", "label": "Detection resolution" }
+      },
+      {
+        "id": "carbon-ledger",
+        "ring": 2,
+        "angle": 60,
+        "icon": "⬡",
+        "label": "Carbon Ledger",
+        "title": "Immutable carbon credit ledger",
+        "description": "Blockchain-verified carbon credits with full provenance tracing — from capture event to retirement, eliminating double-counting and greenwashing across global markets.",
+        "image": "https://images.unsplash.com/photo-1639765487010-a6c5e2c0bf08?w=1600&h=900&fit=crop",
+        "alt": "Digital blockchain ledger visualization",
+        "link": "#carbon-ledger",
+        "metric": { "value": "100%", "unit": "", "label": "Traceability" }
+      },
+      {
+        "id": "reforest-ai",
+        "ring": 2,
+        "angle": 180,
+        "icon": "↗",
+        "label": "Reforest AI",
+        "title": "AI-guided reforestation",
+        "description": "Drone swarms and ML models identify optimal planting sites, species mixes, and survival rates — restoring degraded land 10× faster than manual methods.",
+        "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600&h=900&fit=crop",
+        "alt": "Lush green forest canopy from aerial view",
+        "link": "#reforest-ai",
+        "metric": { "value": "12M", "unit": "", "label": "Trees planted" }
+      },
+      {
+        "id": "geothermal-store",
+        "ring": 2,
+        "angle": 300,
+        "icon": "◈",
+        "label": "Geo Storage",
+        "title": "Geological carbon storage",
+        "description": "Inject captured CO₂ into basalt formations where it mineralizes permanently within two years — the most durable carbon removal method known to science.",
+        "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&h=900&fit=crop",
+        "alt": "Geological rock formations for carbon storage",
+        "link": "#geothermal-store",
+        "metric": { "value": "1000+", "unit": "yr", "label": "Storage permanence" }
+      }
+    ]
+  }
+}

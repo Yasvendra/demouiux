@@ -1,0 +1,155 @@
+{
+  "theme": {
+    "canvas": "#F4F1EA",
+    "ink": "#14213D",
+    "muted": "#5C6478",
+    "line": "#D4CFC4",
+    "board": "#0F2A1E",
+    "boardLine": "#1E4D38",
+    "amber": "#F4A261",
+    "cream": "#F8F4E8",
+    "signal": "#2A9D8F",
+    "rust": "#E76F51",
+    "violet": "#7B61FF",
+    "sky": "#3A86FF"
+  },
+  "transitNexus": {
+    "badge": "Mobility board · live departures",
+    "heading": "Watch skills travel between industries",
+    "subheading": "Students, coders, professionals, and educators — one live feed of cross-sector journeys. No single lane. No gatekeeping.",
+    "liveJourneys": 1384291,
+    "refreshLabel": "Departures refresh every 60s",
+    "defaultActive": "edu-saas",
+    "autoFlip": true,
+    "autoFlipMs": 7200,
+    "personas": [
+      "Students",
+      "Coders",
+      "Professionals",
+      "Educators",
+      "Career builders"
+    ],
+    "routes": [
+      {
+        "id": "edu-saas",
+        "from": { "code": "EDU", "label": "EdTech", "color": "#7B61FF" },
+        "to": { "code": "SAS", "label": "SaaS / Cloud", "color": "#3A86FF" },
+        "inTransit": 24180,
+        "avgWeeks": 9,
+        "audiences": ["Professionals", "Educators", "Career builders"],
+        "persona": "Instructional designers → platform engineers",
+        "insight": "LMS builders are the fastest cohort entering multi-tenant SaaS — API design and tenant isolation are the top bridge skills.",
+        "paths": ["Platform APIs", "DevOps basics", "Product analytics"]
+      },
+      {
+        "id": "fin-health",
+        "from": { "code": "FIN", "label": "FinTech", "color": "#2A9D8F" },
+        "to": { "code": "HLT", "label": "HealthTech", "color": "#E76F51" },
+        "inTransit": 11240,
+        "avgWeeks": 14,
+        "audiences": ["Coders", "Professionals"],
+        "persona": "Payments engineers → clinical data platforms",
+        "insight": "HIPAA-aware ledger engineers move into claims automation — compliance fluency transfers faster than domain knowledge.",
+        "paths": ["Regulatory APIs", "FHIR basics", "Audit logging"]
+      },
+      {
+        "id": "cyber-gov",
+        "from": { "code": "SEC", "label": "CyberSecurity", "color": "#14213D" },
+        "to": { "code": "GOV", "label": "GovTech", "color": "#F4A261" },
+        "inTransit": 9870,
+        "avgWeeks": 11,
+        "audiences": ["Coders", "Professionals"],
+        "persona": "SOC analysts → civic infrastructure teams",
+        "insight": "Zero-trust architects are joining digital-ID programs — threat modeling maps directly to public-sector resilience.",
+        "paths": ["Zero-trust", "Identity federation", "Incident response"]
+      },
+      {
+        "id": "ai-retail",
+        "from": { "code": "AI", "label": "AI & ML", "color": "#7B61FF" },
+        "to": { "code": "RTL", "label": "E-Commerce", "color": "#E76F51" },
+        "inTransit": 31650,
+        "avgWeeks": 7,
+        "audiences": ["Students", "Coders", "Career builders"],
+        "persona": "ML learners → personalization squads",
+        "insight": "Recommendation-system projects are the #1 portfolio piece retail teams hire from — ranking, embeddings, and A/B fluency.",
+        "paths": ["Recsys", "Feature stores", "Experiment design"]
+      },
+      {
+        "id": "mkt-saas",
+        "from": { "code": "MKT", "label": "Digital Marketing", "color": "#F4A261" },
+        "to": { "code": "SAS", "label": "SaaS / Cloud", "color": "#3A86FF" },
+        "inTransit": 15420,
+        "avgWeeks": 10,
+        "audiences": ["Professionals", "Career builders"],
+        "persona": "Growth marketers → PLG product teams",
+        "insight": "Funnel analysts who ship SQL dashboards transition into growth engineering — instrumentation is the shared language.",
+        "paths": ["Event pipelines", "SQL + dbt", "Activation metrics"]
+      },
+      {
+        "id": "log-agri",
+        "from": { "code": "LOG", "label": "Logistics", "color": "#2A9D8F" },
+        "to": { "code": "AGR", "label": "AgriTech", "color": "#5C8A4A" },
+        "inTransit": 6340,
+        "avgWeeks": 12,
+        "audiences": ["Professionals", "Career builders"],
+        "persona": "Supply-chain ops → cold-chain IoT",
+        "insight": "Route-optimization engineers pivot to perishable telemetry — sensor mesh and ETA models reuse 70% of prior tooling.",
+        "paths": ["IoT telemetry", "Route optimization", "Edge compute"]
+      },
+      {
+        "id": "game-media",
+        "from": { "code": "GAM", "label": "Gaming", "color": "#E76F51" },
+        "to": { "code": "OTT", "label": "OTT & Media", "color": "#7B61FF" },
+        "inTransit": 8920,
+        "avgWeeks": 8,
+        "audiences": ["Coders", "Professionals"],
+        "persona": "Game engineers → streaming infra",
+        "insight": "Real-time netcode specialists join live-event platforms — latency budgets and CDN edge logic transfer cleanly.",
+        "paths": ["WebRTC", "CDN edge", "Live ops"]
+      },
+      {
+        "id": "hr-insure",
+        "from": { "code": "HRT", "label": "HR Tech", "color": "#3A86FF" },
+        "to": { "code": "INS", "label": "InsurTech", "color": "#2A9D8F" },
+        "inTransit": 7210,
+        "avgWeeks": 13,
+        "audiences": ["Professionals", "Career builders"],
+        "persona": "People-analytics → risk underwriting",
+        "insight": "Workforce attrition models inform dynamic premium pricing — actuarial teams actively recruit from HR data science.",
+        "paths": ["Predictive modeling", "Fairness audits", "Policy APIs"]
+      },
+      {
+        "id": "clean-prop",
+        "from": { "code": "CLN", "label": "CleanTech", "color": "#5C8A4A" },
+        "to": { "code": "PRP", "label": "PropTech", "color": "#F4A261" },
+        "inTransit": 5480,
+        "avgWeeks": 15,
+        "audiences": ["Professionals", "Career builders"],
+        "persona": "Energy analysts → smart-building teams",
+        "insight": "Grid-forecast engineers embed in BMS platforms — carbon accounting and occupancy models converge in one dashboard.",
+        "paths": ["BMS integration", "Carbon accounting", "Sensor fusion"]
+      },
+      {
+        "id": "code-edu",
+        "from": { "code": "DEV", "label": "Software / IT", "color": "#14213D" },
+        "to": { "code": "EDU", "label": "EdTech", "color": "#7B61FF" },
+        "inTransit": 19870,
+        "avgWeeks": 6,
+        "audiences": ["Coders", "Educators", "Professionals"],
+        "persona": "Engineers → curriculum creators",
+        "insight": "Open-source maintainers mentor cohorts while building courseware — the reverse commute into education is surging.",
+        "paths": ["Curriculum design", "Live coding", "Mentor matching"]
+      }
+    ],
+    "totals": [
+      { "id": "journeys", "value": "1.3M+", "label": "Active journeys" },
+      { "id": "sectors", "value": "28", "label": "Sectors connected" },
+      { "id": "mentors", "value": "62K", "label": "Transit mentors" },
+      { "id": "countries", "value": "148", "label": "Countries in flow" }
+    ],
+    "actions": [
+      { "id": "board", "label": "View full mobility map", "primary": true },
+      { "id": "mentor", "label": "Guide a transition", "primary": false }
+    ]
+  }
+}

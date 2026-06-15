@@ -1,0 +1,82 @@
+{
+  "theme": {
+    "accent": "#FF000F",
+    "accentSecondary": "#00D4AA",
+    "surface": "#0A0F1C"
+  },
+  "explorer": {
+    "subheading": "Integrated technology stack",
+    "heading": "Explore the future of industrial operations",
+    "defaultActive": "electrification",
+    "autoPlay": true,
+    "autoPlayInterval": 5500,
+    "items": [
+      {
+        "id": "electrification",
+        "label": "Electrification",
+        "title": "Power the world with lower emissions",
+        "description": "As a global leader in electrical distribution, we accelerate decarbonization and energy efficiency — connecting generation, storage, and consumption into one intelligent grid.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQp-TLjZDMCFVSfde70b6dIBYbLlfJuipCA&s",
+        "alt": "Technician in safety gear working in an industrial facility",
+        "link": "#electrification",
+        "metric": { "value": "40%", "label": "Emissions reduction" },
+        "highlight": { "text": "GRID-READY INFRASTRUCTURE", "caption": "Global · Energy Systems" }
+      },
+      {
+        "id": "automation",
+        "label": "Automation",
+        "title": "Connect machines, data, and people",
+        "description": "Digital transformation reshapes how industries operate. Our automation platforms improve productivity, reliability, and safety across the most complex operations on earth.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkeGS4VXWpA58XyOwmNJcYLTZCWXrim5uew&s",
+        "alt": "Automated manufacturing line in a modern factory",
+        "link": "#automation",
+        "metric": { "value": "3.2×", "label": "Productivity gain" },
+        "highlight": { "text": "INDUSTRY 4.0 ENABLED", "caption": "Smart Factory · OT/IT Fusion" }
+      },
+      {
+        "id": "life-sciences",
+        "label": "Life Sciences",
+        "title": "The plant of the future starts here",
+        "description": "Maximize profitability while maintaining compliance. Forward-thinking companies build plants with safe, sustainable operations — future-proofed against regulatory and market pressures.",
+        "image": "https://media-d.global.abb/is/image/abbc/ABB%20AGM%20location:16x9?wid=1440&hei=810",
+        "alt": "Professional in cleanroom suit in a life sciences facility",
+        "link": "#life-sciences",
+        "metric": { "value": "99.7%", "label": "Batch yield" },
+        "highlight": { "text": "GxP COMPLIANT BY DESIGN", "caption": "Pharma · Biotech · MedTech" }
+      },
+      {
+        "id": "renewables",
+        "label": "Renewable Power",
+        "title": "Scale clean generation with confidence",
+        "description": "Wind, solar, and hybrid solutions are scaling faster than ever. We help operators integrate clean generation while maintaining grid stability and peak performance.",
+        "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac71?w=1600&h=900&fit=crop",
+        "alt": "Wind turbines generating renewable electricity",
+        "link": "#renewables",
+        "metric": { "value": "35%", "label": "Carbon reduction" },
+        "highlight": { "text": "CLEAN ENERGY AT SCALE", "caption": "Wind · Solar · Hybrid" }
+      },
+      {
+        "id": "robotics",
+        "label": "Robotics",
+        "title": "Extend human capability with precision",
+        "description": "Intelligent robotics combine sensing, motion control, and software to automate demanding tasks — extending what teams can achieve in the most challenging environments.",
+        "image": "https://picsum.photos/seed/robotics-industrial/1600/900",
+        "alt": "Robotic arm operating in an industrial workspace",
+        "link": "#robotics",
+        "metric": { "value": "47ms", "label": "Edge response" },
+        "highlight": { "text": "AUTONOMOUS OPERATIONS", "caption": "Motion · Sensing · AI" }
+      },
+      {
+        "id": "digital-twin",
+        "label": "Digital Twin",
+        "title": "See your operations before they happen",
+        "description": "Mirror physical assets in real time. Simulate scenarios, predict failures, and optimize performance across your entire value chain from a single digital command center.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQp-TLjZDMCFVSfde70b6dIBYbLlfJuipCA&s",
+        "alt": "Digital twin operations dashboard",
+        "link": "#digital-twin",
+        "metric": { "value": "60%", "label": "Fewer deviations" },
+        "highlight": { "text": "PREDICTIVE INTELLIGENCE", "caption": "Simulation · Real-time Sync" }
+      }
+    ]
+  }
+}

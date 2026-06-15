@@ -1,0 +1,132 @@
+{
+  "theme": {
+    "accent": "#0A66C2",
+    "accentSoft": "#70B5F9",
+    "accentOk": "#057642",
+    "accentWarn": "#B24020",
+    "surface": "#F3F2EF",
+    "panel": "#FFFFFF",
+    "ink": "#191919",
+    "muted": "#666666",
+    "line": "#E0E0E0"
+  },
+  "skillSpectrum": {
+    "title": "Global skill demand pulse",
+    "subtitle": "Live demand signals from learners, professionals, and hiring teams worldwide",
+    "indexLabel": "Community demand index",
+    "liveIndex": 94,
+    "updatedAt": "Updated 2 min ago",
+    "defaultActive": "cloud",
+    "autoAdvance": true,
+    "autoAdvanceMs": 7500,
+    "personas": [
+      "Students",
+      "Professionals",
+      "Career builders",
+      "Teams & educators"
+    ],
+    "bands": [
+      {
+        "id": "web",
+        "label": "Web dev",
+        "short": "WEB",
+        "demand": 82,
+        "learners": 42100,
+        "roles": 12800,
+        "trend": "+11%",
+        "trendDir": "up",
+        "color": "#3B82F6",
+        "insight": "React and TypeScript remain the most enrolled stack for full-stack paths."
+      },
+      {
+        "id": "cloud",
+        "label": "Cloud & DevOps",
+        "short": "CLD",
+        "demand": 94,
+        "learners": 38700,
+        "roles": 14200,
+        "trend": "+18%",
+        "trendDir": "up",
+        "color": "#6366F1",
+        "insight": "Kubernetes and platform engineering cohorts saw the largest weekly jump."
+      },
+      {
+        "id": "data",
+        "label": "Data & AI",
+        "short": "AI",
+        "demand": 91,
+        "learners": 51200,
+        "roles": 9600,
+        "trend": "+22%",
+        "trendDir": "up",
+        "color": "#14B8A6",
+        "insight": "Applied ML and prompt engineering drive cross-persona enrollment."
+      },
+      {
+        "id": "design",
+        "label": "Design & UX",
+        "short": "UX",
+        "demand": 76,
+        "learners": 29800,
+        "roles": 5400,
+        "trend": "+7%",
+        "trendDir": "up",
+        "color": "#EC4899",
+        "insight": "Design systems and accessibility skills trend across all experience levels."
+      },
+      {
+        "id": "product",
+        "label": "Product",
+        "short": "PRD",
+        "demand": 68,
+        "learners": 22400,
+        "roles": 7100,
+        "trend": "+4%",
+        "trendDir": "up",
+        "color": "#F59E0B",
+        "insight": "Roadmapping and discovery skills spike before quarterly planning cycles."
+      },
+      {
+        "id": "security",
+        "label": "Cybersecurity",
+        "short": "SEC",
+        "demand": 88,
+        "learners": 18600,
+        "roles": 8900,
+        "trend": "+15%",
+        "trendDir": "up",
+        "color": "#EF4444",
+        "insight": "Cloud security and incident response paths lead enterprise demand."
+      },
+      {
+        "id": "mobile",
+        "label": "Mobile",
+        "short": "MOB",
+        "demand": 61,
+        "learners": 15200,
+        "roles": 4200,
+        "trend": "-2%",
+        "trendDir": "down",
+        "color": "#8B5CF6",
+        "insight": "Cross-platform frameworks consolidate interest away from native-only tracks."
+      },
+      {
+        "id": "leadership",
+        "label": "Leadership",
+        "short": "LDR",
+        "demand": 59,
+        "learners": 34100,
+        "roles": 11200,
+        "trend": "+5%",
+        "trendDir": "up",
+        "color": "#64748B",
+        "insight": "People management and async collaboration rank high for mid-career upskilling."
+      }
+    ],
+    "actions": [
+      { "id": "paths", "label": "Browse learning paths", "primary": true },
+      { "id": "compare", "label": "Compare skills", "primary": false },
+      { "id": "alerts", "label": "Set demand alerts", "primary": false }
+    ]
+  }
+}

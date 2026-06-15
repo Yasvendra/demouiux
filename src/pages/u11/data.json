@@ -1,0 +1,101 @@
+{
+  "theme": {
+    "accent": "#A855F7",
+    "accentSecondary": "#84CC16",
+    "accentGlow": "rgba(168, 85, 247, 0.32)",
+    "surface": "#0C0C14",
+    "node": "#16161F"
+  },
+  "synapseLattice": {
+    "badge": {
+      "text": "Neuromorphic fabric · 847 TOPS analog",
+      "pulse": true
+    },
+    "eyebrow": "Brain-inspired silicon",
+    "heading": "Compute like biology thinks in silicon",
+    "headingAccent": "biology thinks",
+    "defaultActive": "memristor-grid",
+    "autoPulse": true,
+    "autoPulseMs": 6200,
+    "nodes": [
+      {
+        "id": "memristor-grid",
+        "icon": "◇",
+        "tag": "Memristor",
+        "title": "Memristor crossbar arrays",
+        "description": "Non-volatile resistive memory cells perform multiply-accumulate in-place — eliminating the von Neumann bottleneck and slashing inference energy by orders of magnitude.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=900&fit=crop",
+        "alt": "Microchip wafer with dense transistor grid",
+        "link": "#memristor-grid",
+        "metric": { "value": "10⁶", "unit": "", "label": "Synapses per mm²" },
+        "x": 30,
+        "y": 20
+      },
+      {
+        "id": "spiking-core",
+        "icon": "◎",
+        "tag": "SNN",
+        "title": "Spiking neural processors",
+        "description": "Event-driven cores fire only when inputs change — mirroring biological neurons to achieve sub-milliwatt always-on perception for robotics, wearables, and edge sensors.",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&h=900&fit=crop",
+        "alt": "Neural network visualization with glowing nodes",
+        "link": "#spiking-core",
+        "metric": { "value": "<1", "unit": "mW", "label": "Idle power" },
+        "x": 70,
+        "y": 20
+      },
+      {
+        "id": "in-memory",
+        "icon": "▣",
+        "tag": "IMC",
+        "title": "In-memory compute engines",
+        "description": "Weights live where computation happens — SRAM and ReRAM macros execute matrix ops without shuttling tensors across a memory bus, unlocking 100× bandwidth efficiency.",
+        "image": "https://images.unsplash.com/photo-1535378620166-273708bad44e?w=1600&h=900&fit=crop",
+        "alt": "Server rack with high-density memory modules",
+        "link": "#in-memory",
+        "metric": { "value": "100×", "unit": "", "label": "Bandwidth gain" },
+        "x": 85,
+        "y": 50
+      },
+      {
+        "id": "analog-ai",
+        "icon": "∿",
+        "tag": "Analog",
+        "title": "Analog AI accelerators",
+        "description": "Continuous-valued MAC arrays run inference in the analog domain — delivering tera-ops per watt for always-listening voice, vision, and sensor fusion workloads.",
+        "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600&h=900&fit=crop",
+        "alt": "Oscilloscope traces showing analog signal processing",
+        "link": "#analog-ai",
+        "metric": { "value": "847", "unit": "TOPS", "label": "Analog throughput" },
+        "x": 70,
+        "y": 80
+      },
+      {
+        "id": "plasticity",
+        "icon": "↻",
+        "tag": "Plasticity",
+        "title": "On-chip synaptic plasticity",
+        "description": "Hardware implements STDP and Hebbian learning rules natively — enabling models that adapt in the field without cloud retraining or weight upload cycles.",
+        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1600&h=900&fit=crop",
+        "alt": "Adaptive learning dashboard with live weight updates",
+        "link": "#plasticity",
+        "metric": { "value": "Real-time", "unit": "", "label": "On-device learning" },
+        "x": 30,
+        "y": 80
+      },
+      {
+        "id": "event-bus",
+        "icon": "⚡",
+        "tag": "Event",
+        "title": "Event-driven neuromorphic bus",
+        "description": "Asynchronous address-event representation routes sparse spikes across chiplet meshes — collapsing communication overhead for million-neuron scale fabrics.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop",
+        "alt": "Distributed chiplet architecture diagram on display",
+        "link": "#event-bus",
+        "metric": { "value": "1M+", "unit": "", "label": "Neurons per die" },
+        "x": 15,
+        "y": 50
+      }
+    ]
+  }
+}

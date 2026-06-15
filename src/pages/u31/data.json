@@ -1,0 +1,396 @@
+{
+  "palette": {
+    "cabinet": "#12100E",
+    "face": "#1C1917",
+    "bezel": "#3D3835",
+    "phosphor": "#FFAA33",
+    "phosphorDim": "#FFAA3344",
+    "phosphorBright": "#FFD080",
+    "tube": "#FF6B35",
+    "tubeGlow": "#FF6B3540",
+    "dial": "#8B7355",
+    "dialMark": "#C4A77D",
+    "glass": "#2A2520",
+    "text": "#F5E6D3",
+    "textDim": "#9C8B7A",
+    "needle": "#E63946"
+  },
+  "broadcast": {
+    "stationId": "GLD-FM",
+    "motto": "Cross-band guild radio for builders who ship across every vertical.",
+    "manifesto": "Tune a frequency. Read the transmission script. Relay with crews on your band before the needle sweeps onward.",
+    "signal": {
+      "reach": "14.2k listeners",
+      "bandsLive": 26,
+      "sessionsNow": "2.1k relays"
+    },
+    "tuning": {
+      "startOn": "cyber",
+      "cycleMs": 6600
+    },
+    "bandOrder": [
+      "cyber", "aiMl", "healthMed", "saasCloud", "ecom", "banking", "insure", "wealth",
+      "microfin", "pharma", "hospitals", "biotech", "mental", "ott", "gaming", "adtech",
+      "publishing", "proptech", "cleantech", "oilGas", "construction", "fmcg", "retailD2c",
+      "foodBev", "fashion", "logistics", "auto", "aviation", "agri", "gov", "ngo", "legal"
+    ],
+    "cta": {
+      "transmit": "Transmit on this band",
+      "crew": "Open relay line"
+    },
+    "channels": {
+      "cyber": {
+        "label": "CyberSecurity",
+        "callsign": "AEGIS-88",
+        "band": 88.1,
+        "gain": 96,
+        "crew": 13200,
+        "vertical": "Defense & Trust",
+        "segments": ["Purple range ops", "Zero-trust fabric", "Detection mesh"],
+        "transmission": "Map one ATT&CK technique to a detection rule before sign-off.",
+        "relay": "Range operators desk"
+      },
+      "aiMl": {
+        "label": "AI & Machine Learning",
+        "callsign": "ORACLE-91",
+        "band": 91.4,
+        "gain": 98,
+        "crew": 22100,
+        "vertical": "Inference & Eval",
+        "segments": ["RAG faithfulness", "Agent orchestration", "Model cards"],
+        "transmission": "Run eval on twenty synthetic queries — log pass/fail on the relay board.",
+        "relay": "ML Commons booth"
+      },
+      "healthMed": {
+        "label": "HealthTech / MedTech",
+        "callsign": "PULSE-94",
+        "band": 94.2,
+        "gain": 89,
+        "crew": 9600,
+        "vertical": "Care Interop",
+        "segments": ["FHIR R4 pipes", "Consent lattice", "Clinical UX"],
+        "transmission": "Parse one synthetic Patient resource — no live PHI on air.",
+        "relay": "Care tech relay"
+      },
+      "saasCloud": {
+        "label": "SaaS / Cloud Computing",
+        "callsign": "NIMBUS-97",
+        "band": 97.8,
+        "gain": 92,
+        "crew": 15900,
+        "vertical": "Platform Scale",
+        "segments": ["Tenant RLS", "Usage metering", "Edge workers"],
+        "transmission": "Add tenant_id guard to one API route — announce on the ops channel.",
+        "relay": "Platform guild desk"
+      },
+      "ecom": {
+        "label": "E-Commerce",
+        "callsign": "CART-101",
+        "band": 101.3,
+        "gain": 90,
+        "crew": 18400,
+        "vertical": "Conversion Ops",
+        "segments": ["Funnel telemetry", "Cart recovery", "Payments UX"],
+        "transmission": "Log one funnel drop-off hypothesis — compare anonymized cohort notes.",
+        "relay": "D2C operators line"
+      },
+      "banking": {
+        "label": "Banking & Financial Services",
+        "callsign": "LEDGER-104",
+        "band": 104.7,
+        "gain": 94,
+        "crew": 10900,
+        "vertical": "Open Finance",
+        "segments": ["Idempotent rails", "Consent APIs", "Audit trails"],
+        "transmission": "Write one idempotent payment handler test — sandbox only.",
+        "relay": "Open finance booth"
+      },
+      "insure": {
+        "label": "Insurance (InsurTech)",
+        "callsign": "SHIELD-107",
+        "band": 107.2,
+        "gain": 81,
+        "crew": 5200,
+        "vertical": "Policy Lifecycle",
+        "segments": ["Parametric triggers", "Claims NLP", "Explainable risk"],
+        "transmission": "Tag obligations in one sample policy — actuaries on relay.",
+        "relay": "InsurTech desk"
+      },
+      "wealth": {
+        "label": "Investment & Wealth Management",
+        "callsign": "PRISM-110",
+        "band": 110.5,
+        "gain": 86,
+        "crew": 6800,
+        "vertical": "Fiduciary Tech",
+        "segments": ["Rebalance sim", "ESG overlay", "Tax-loss harvest"],
+        "transmission": "Run one paper-portfolio scenario — no live alpha on broadcast.",
+        "relay": "Wealth relay line"
+      },
+      "microfin": {
+        "label": "Microfinance & NBFCs",
+        "callsign": "VILLAGE-112",
+        "band": 112.9,
+        "gain": 77,
+        "crew": 3300,
+        "vertical": "Last-Mile Credit",
+        "segments": ["Group lending UX", "Field collection", "Offline sync"],
+        "transmission": "Sketch one offline-first repayment flow for field officers.",
+        "relay": "Impact finance booth"
+      },
+      "pharma": {
+        "label": "Pharmaceuticals",
+        "callsign": "COMPOUND-115",
+        "band": 115.4,
+        "gain": 85,
+        "crew": 5800,
+        "vertical": "Trial Data Ops",
+        "segments": ["CDISC pipelines", "Blinding rules", "eCRF validation"],
+        "transmission": "Validate one eCRF field rule against synthetic trial set.",
+        "relay": "Life sciences line"
+      },
+      "hospitals": {
+        "label": "Hospitals & Healthcare",
+        "callsign": "WARD-118",
+        "band": 118.1,
+        "gain": 83,
+        "crew": 7100,
+        "vertical": "Ops & Flow",
+        "segments": ["Bed management", "Staff scheduling", "Patient handoffs"],
+        "transmission": "Map one handoff bottleneck — nurses on the relay tonight.",
+        "relay": "Hospital ops desk"
+      },
+      "biotech": {
+        "label": "Biotechnology",
+        "callsign": "HELIX-121",
+        "band": 121.6,
+        "gain": 87,
+        "crew": 4200,
+        "vertical": "Lab Compute",
+        "segments": ["Seq pipelines", "LIMS hooks", "Bioinformatics"],
+        "transmission": "Pin one pipeline step with version hash — reproducibility check.",
+        "relay": "Bio builders booth"
+      },
+      "mental": {
+        "label": "Mental Health & Wellness",
+        "callsign": "CALM-124",
+        "band": 124.3,
+        "gain": 82,
+        "crew": 8500,
+        "vertical": "Accessible Care",
+        "segments": ["Crisis routing", "Therapy match", "Outcome tracking"],
+        "transmission": "Review one onboarding screen for trauma-informed safety copy.",
+        "relay": "Wellness relay"
+      },
+      "ott": {
+        "label": "OTT & Streaming",
+        "callsign": "FRAME-127",
+        "band": 127.7,
+        "gain": 91,
+        "crew": 11000,
+        "vertical": "Bitrate & Retention",
+        "segments": ["ABR ladders", "CDN failover", "Engagement ML"],
+        "transmission": "Tune one ladder segment for 4K — sim spike before premiere.",
+        "relay": "Streaming guild line"
+      },
+      "gaming": {
+        "label": "Gaming",
+        "callsign": "ROLLBACK-130",
+        "band": 130.2,
+        "gain": 93,
+        "crew": 15200,
+        "vertical": "Netcode & Live Ops",
+        "segments": ["Rollback sim", "Anti-cheat mesh", "Desync repro"],
+        "transmission": "Ship one desync case — artists and netcode on same frequency.",
+        "relay": "Indie netcode booth"
+      },
+      "adtech": {
+        "label": "AdTech & Media Buying",
+        "callsign": "BID-133",
+        "band": 133.5,
+        "gain": 84,
+        "crew": 6600,
+        "vertical": "Programmatic",
+        "segments": ["RTB hooks", "Brand safety", "Privacy measurement"],
+        "transmission": "Audit one consent-string integration — marketers on relay.",
+        "relay": "Media ops desk"
+      },
+      "publishing": {
+        "label": "Publishing & Content",
+        "callsign": "INKWELL-136",
+        "band": 136.8,
+        "gain": 78,
+        "crew": 4700,
+        "vertical": "Editorial Tech",
+        "segments": ["CMS pipelines", "Paywall UX", "Structured data"],
+        "transmission": "Audit one article for schema markup — editors on the line.",
+        "relay": "Media guild booth"
+      },
+      "proptech": {
+        "label": "Real Estate & PropTech",
+        "callsign": "DEED-139",
+        "band": 139.1,
+        "gain": 79,
+        "crew": 4500,
+        "vertical": "Property Lifecycle",
+        "segments": ["Title chain mock", "Smart building IoT", "Tenant portals"],
+        "transmission": "Sketch one lease renewal notification — brokers on relay.",
+        "relay": "PropTech line"
+      },
+      "cleantech": {
+        "label": "Renewable Energy / CleanTech",
+        "callsign": "PHOTON-142",
+        "band": 142.4,
+        "gain": 86,
+        "crew": 5600,
+        "vertical": "Grid & Forecast",
+        "segments": ["Day-ahead model", "Dispatch logic", "Carbon ledger"],
+        "transmission": "Tune forecast on open weather set — co-op energy on air.",
+        "relay": "Clean energy booth"
+      },
+      "oilGas": {
+        "label": "Oil & Gas",
+        "callsign": "RIG-145",
+        "band": 145.7,
+        "gain": 78,
+        "crew": 2600,
+        "vertical": "Industrial IoT",
+        "segments": ["SCADA safety", "Predictive maint", "Emissions log"],
+        "transmission": "Log one sensor anomaly playbook step — field ops listening.",
+        "relay": "Energy ops relay"
+      },
+      "construction": {
+        "label": "Construction & Engineering",
+        "callsign": "BEAM-148",
+        "band": 148.2,
+        "gain": 75,
+        "crew": 3800,
+        "vertical": "Site & BIM",
+        "segments": ["BIM sync", "Safety IoT", "Subcontractor UX"],
+        "transmission": "Map one RFI workflow bottleneck — site managers on line.",
+        "relay": "Build ops desk"
+      },
+      "fmcg": {
+        "label": "FMCG (Fast-Moving Consumer Goods)",
+        "callsign": "PANTRY-151",
+        "band": 151.5,
+        "gain": 80,
+        "crew": 4300,
+        "vertical": "Shelf Velocity",
+        "segments": ["Demand planning", "Distributor UX", "Stock-out model"],
+        "transmission": "Model one stock-out scenario — planners on relay.",
+        "relay": "FMCG ops booth"
+      },
+      "retailD2c": {
+        "label": "Retail & D2C (Direct-to-Consumer)",
+        "callsign": "SHELF-154",
+        "band": 154.8,
+        "gain": 88,
+        "crew": 12600,
+        "vertical": "Omnichannel",
+        "segments": ["Inventory sync", "Store + digital", "Loyalty loops"],
+        "transmission": "Trace one SKU across channels — ops and growth co-host.",
+        "relay": "Retail builders line"
+      },
+      "foodBev": {
+        "label": "Food & Beverage",
+        "callsign": "KITCHEN-157",
+        "band": 157.3,
+        "gain": 83,
+        "crew": 5300,
+        "vertical": "Trace & Safety",
+        "segments": ["Cold chain", "Batch ledger", "Allergen UX"],
+        "transmission": "Log one batch trace step in mock ledger — kitchen ops on air.",
+        "relay": "F&B tech relay"
+      },
+      "fashion": {
+        "label": "Fashion & Apparel",
+        "callsign": "RUNWAY-160",
+        "band": 160.6,
+        "gain": 84,
+        "crew": 5900,
+        "vertical": "Season & Circularity",
+        "segments": ["Size curves", "Sustainability metrics", "Try-on AR"],
+        "transmission": "Map one size-grade rule to inventory — designers on relay.",
+        "relay": "Fashion tech booth"
+      },
+      "logistics": {
+        "label": "Supply Chain & Logistics",
+        "callsign": "ROUTE-163",
+        "band": 163.9,
+        "gain": 87,
+        "crew": 8700,
+        "vertical": "Last Mile",
+        "segments": ["VRP solvers", "Cold chain IoT", "ETA models"],
+        "transmission": "Run fifty-stop route sim — fleet ops co-transmitting.",
+        "relay": "Fleet operators desk"
+      },
+      "auto": {
+        "label": "Automotive",
+        "callsign": "DRIVE-166",
+        "band": 166.2,
+        "gain": 84,
+        "crew": 7000,
+        "vertical": "Connected Vehicle",
+        "segments": ["OTA rollback", "ADAS sim", "Dealer UX"],
+        "transmission": "Document one OTA rollback path — safety case on broadcast.",
+        "relay": "Mobility guild line"
+      },
+      "aviation": {
+        "label": "Aviation & Travel",
+        "callsign": "JET-169",
+        "band": 169.5,
+        "gain": 85,
+        "crew": 4900,
+        "vertical": "Irregular Ops",
+        "segments": ["Crew roster", "Disruption ML", "Loyalty hooks"],
+        "transmission": "Sim one weather diversion cascade — controllers on relay.",
+        "relay": "Travel ops booth"
+      },
+      "agri": {
+        "label": "AgriTech (Agriculture Technology)",
+        "callsign": "HARVEST-172",
+        "band": 172.8,
+        "gain": 82,
+        "crew": 4600,
+        "vertical": "Farm-to-Fork",
+        "segments": ["Traceability ledger", "Soil IoT", "Co-op markets"],
+        "transmission": "Log one batch custody handoff — smallholders on the line.",
+        "relay": "Agri relay desk"
+      },
+      "gov": {
+        "label": "GovTech",
+        "callsign": "CIVIC-175",
+        "band": 175.1,
+        "gain": 79,
+        "crew": 3400,
+        "vertical": "Citizen Service",
+        "segments": ["Permit APIs", "Open data", "A11y forms"],
+        "transmission": "Fix one form label association — policy fellows co-host.",
+        "relay": "Civic builders booth"
+      },
+      "ngo": {
+        "label": "Non-Profit / NGOs",
+        "callsign": "IMPACT-178",
+        "band": 178.4,
+        "gain": 74,
+        "crew": 2700,
+        "vertical": "Mission Ops",
+        "segments": ["Donor CRM", "Field reporting", "Grant tracking"],
+        "transmission": "Map one outcome metric to dashboard tile — fundraisers on air.",
+        "relay": "Impact guild line"
+      },
+      "legal": {
+        "label": "Legal & LegalTech",
+        "callsign": "CLAUSE-181",
+        "band": 181.7,
+        "gain": 81,
+        "crew": 4000,
+        "vertical": "Accessible Justice",
+        "segments": ["Contract NLP", "Obligation tags", "Multilingual review"],
+        "transmission": "Tag risks in one sample MSA — lawyers and coders co-transmit.",
+        "relay": "A2J practitioners desk"
+      }
+    }
+  }
+}

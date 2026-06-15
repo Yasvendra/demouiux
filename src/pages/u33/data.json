@@ -1,0 +1,354 @@
+{
+  "ambient": {
+    "bg": "#FAFBFE",
+    "bgAlt": "#EEF1F8",
+    "card": "#FFFFFF",
+    "ink": "#141824",
+    "muted": "#6B7289",
+    "rail": "#D8DEE9",
+    "glow": "rgba(79, 70, 229, 0.15)"
+  },
+  "journey": {
+    "line": "Guild Line",
+    "purpose": "Scroll the route, pick a station, complete one board action. One clear path per industry — built for learners and cross-functional teams.",
+    "ridership": {
+      "travelers": "11.6k on route",
+      "stations": 32,
+      "boardsWeek": "2.6k"
+    },
+    "departure": "stop-cyber",
+    "interval": 6200,
+    "buttons": {
+      "board": "Complete board action",
+      "join": "Join platform crew"
+    },
+    "sequence": [
+      "stop-cyber", "stop-ai", "stop-health", "stop-saas", "stop-ecom", "stop-bank", "stop-insure", "stop-wealth",
+      "stop-micro", "stop-pharma", "stop-hospital", "stop-bio", "stop-mental", "stop-ott", "stop-gaming", "stop-adtech",
+      "stop-publish", "stop-proptech", "stop-cleantech", "stop-oil", "stop-construct", "stop-fmcg", "stop-retail",
+      "stop-food", "stop-fashion", "stop-logistics", "stop-auto", "stop-aviation", "stop-agri", "stop-gov", "stop-ngo", "stop-legal"
+    ],
+    "stations": {
+      "stop-cyber": {
+        "name": "CyberSecurity",
+        "code": "CYB",
+        "mile": 78,
+        "riders": 13200,
+        "color": "#4F46E5",
+        "platform": "Range operators platform",
+        "highlights": ["Purple teaming", "Zero-trust", "Detection rules"],
+        "board": "Map one ATT&CK technique to a detection rule."
+      },
+      "stop-ai": {
+        "name": "AI & Machine Learning",
+        "code": "AIM",
+        "mile": 85,
+        "riders": 22100,
+        "color": "#7C3AED",
+        "platform": "ML Commons platform",
+        "highlights": ["RAG evaluation", "Agent loops", "Model cards"],
+        "board": "Run eval on 20 synthetic queries and log pass/fail."
+      },
+      "stop-health": {
+        "name": "HealthTech / MedTech",
+        "code": "HLT",
+        "mile": 71,
+        "riders": 9600,
+        "color": "#E11D48",
+        "platform": "Care tech platform",
+        "highlights": ["FHIR R4", "Consent UX", "Clinical flows"],
+        "board": "Parse one synthetic Patient resource."
+      },
+      "stop-saas": {
+        "name": "SaaS / Cloud Computing",
+        "code": "SAS",
+        "mile": 76,
+        "riders": 15900,
+        "color": "#0284C7",
+        "platform": "Platform guild platform",
+        "highlights": ["Tenant RLS", "Metering", "Edge workers"],
+        "board": "Add tenant_id guard to one API route."
+      },
+      "stop-ecom": {
+        "name": "E-Commerce",
+        "code": "ECM",
+        "mile": 80,
+        "riders": 18400,
+        "color": "#EA580C",
+        "platform": "D2C operators platform",
+        "highlights": ["Funnel analytics", "Cart recovery", "Payments UX"],
+        "board": "Log one funnel drop-off hypothesis."
+      },
+      "stop-bank": {
+        "name": "Banking & Financial Services",
+        "code": "BNK",
+        "mile": 69,
+        "riders": 10900,
+        "color": "#CA8A04",
+        "platform": "Open finance platform",
+        "highlights": ["Idempotency", "Open banking", "Audit trails"],
+        "board": "Write one idempotent payment handler test."
+      },
+      "stop-insure": {
+        "name": "Insurance (InsurTech)",
+        "code": "INS",
+        "mile": 64,
+        "riders": 5200,
+        "color": "#B45309",
+        "platform": "InsurTech platform",
+        "highlights": ["Parametric triggers", "Claims NLP", "Risk scoring"],
+        "board": "Tag obligations in one sample policy."
+      },
+      "stop-wealth": {
+        "name": "Investment & Wealth Management",
+        "code": "WLT",
+        "mile": 72,
+        "riders": 6900,
+        "color": "#A16207",
+        "platform": "Wealth guild platform",
+        "highlights": ["Rebalancing", "ESG overlays", "Tax-loss"],
+        "board": "Run one scenario rebalance simulation."
+      },
+      "stop-micro": {
+        "name": "Microfinance & NBFCs",
+        "code": "MFI",
+        "mile": 61,
+        "riders": 3400,
+        "color": "#16A34A",
+        "platform": "Impact finance platform",
+        "highlights": ["Group lending", "Field ops", "Offline sync"],
+        "board": "Sketch one offline-first collection flow."
+      },
+      "stop-pharma": {
+        "name": "Pharmaceuticals",
+        "code": "PHA",
+        "mile": 74,
+        "riders": 5800,
+        "color": "#059669",
+        "platform": "Life sciences platform",
+        "highlights": ["CDISC", "Trial blinding", "eCRF validation"],
+        "board": "Validate one eCRF field rule."
+      },
+      "stop-hospital": {
+        "name": "Hospitals & Healthcare",
+        "code": "HOS",
+        "mile": 68,
+        "riders": 7200,
+        "color": "#DB2777",
+        "platform": "Hospital ops platform",
+        "highlights": ["Bed management", "Staff scheduling", "Patient flow"],
+        "board": "Map one handoff bottleneck."
+      },
+      "stop-bio": {
+        "name": "Biotechnology",
+        "code": "BIO",
+        "mile": 77,
+        "riders": 4300,
+        "color": "#0D9488",
+        "platform": "Bio builders platform",
+        "highlights": ["Seq pipelines", "LIMS", "Bioinformatics"],
+        "board": "Pin one pipeline step with version hash."
+      },
+      "stop-mental": {
+        "name": "Mental Health & Wellness",
+        "code": "MNT",
+        "mile": 73,
+        "riders": 8600,
+        "color": "#6366F1",
+        "platform": "Wellness platform",
+        "highlights": ["Crisis routing", "Therapy match", "Outcomes"],
+        "board": "Review one onboarding screen for safety copy."
+      },
+      "stop-ott": {
+        "name": "OTT & Streaming",
+        "code": "OTT",
+        "mile": 82,
+        "riders": 11100,
+        "color": "#DC2626",
+        "platform": "Streaming guild platform",
+        "highlights": ["ABR ladders", "CDN failover", "Engagement ML"],
+        "board": "Tune one 4K ladder segment."
+      },
+      "stop-gaming": {
+        "name": "Gaming",
+        "code": "GAM",
+        "mile": 84,
+        "riders": 15300,
+        "color": "#9333EA",
+        "platform": "Indie netcode platform",
+        "highlights": ["Rollback netcode", "Anti-cheat", "Live ops"],
+        "board": "Ship one desync reproduction case."
+      },
+      "stop-adtech": {
+        "name": "AdTech & Media Buying",
+        "code": "ADV",
+        "mile": 70,
+        "riders": 6700,
+        "color": "#F97316",
+        "platform": "Media ops platform",
+        "highlights": ["RTB hooks", "Brand safety", "Privacy measure"],
+        "board": "Audit one consent-string integration."
+      },
+      "stop-publish": {
+        "name": "Publishing & Content",
+        "code": "PUB",
+        "mile": 65,
+        "riders": 4800,
+        "color": "#57534E",
+        "platform": "Media guild platform",
+        "highlights": ["CMS pipelines", "Paywall UX", "Schema markup"],
+        "board": "Audit one article for structured data."
+      },
+      "stop-proptech": {
+        "name": "Real Estate & PropTech",
+        "code": "PRP",
+        "mile": 66,
+        "riders": 4600,
+        "color": "#92400E",
+        "platform": "PropTech platform",
+        "highlights": ["Title chain", "Smart building IoT", "Tenant portals"],
+        "board": "Sketch one lease renewal flow."
+      },
+      "stop-cleantech": {
+        "name": "Renewable Energy / CleanTech",
+        "code": "CLN",
+        "mile": 75,
+        "riders": 5700,
+        "color": "#16A34A",
+        "platform": "Clean energy platform",
+        "highlights": ["Forecast models", "Grid dispatch", "Carbon ledger"],
+        "board": "Tune day-ahead forecast on historical data."
+      },
+      "stop-oil": {
+        "name": "Oil & Gas",
+        "code": "OIL",
+        "mile": 62,
+        "riders": 2700,
+        "color": "#78350F",
+        "platform": "Energy ops platform",
+        "highlights": ["SCADA safety", "Predictive maint", "Emissions"],
+        "board": "Log one sensor anomaly playbook step."
+      },
+      "stop-construct": {
+        "name": "Construction & Engineering",
+        "code": "CST",
+        "mile": 63,
+        "riders": 3900,
+        "color": "#EAB308",
+        "platform": "Build ops platform",
+        "highlights": ["BIM sync", "Safety IoT", "Subcontractor UX"],
+        "board": "Map one RFI workflow bottleneck."
+      },
+      "stop-fmcg": {
+        "name": "FMCG (Fast-Moving Consumer Goods)",
+        "code": "FMC",
+        "mile": 67,
+        "riders": 4400,
+        "color": "#D97706",
+        "platform": "FMCG ops platform",
+        "highlights": ["Demand planning", "Shelf analytics", "Distributor UX"],
+        "board": "Model one stock-out scenario."
+      },
+      "stop-retail": {
+        "name": "Retail & D2C (Direct-to-Consumer)",
+        "code": "RTL",
+        "mile": 79,
+        "riders": 12700,
+        "color": "#BE123C",
+        "platform": "Retail builders platform",
+        "highlights": ["Inventory sync", "Omnichannel", "Loyalty"],
+        "board": "Trace one SKU across channels."
+      },
+      "stop-food": {
+        "name": "Food & Beverage",
+        "code": "FNB",
+        "mile": 71,
+        "riders": 5500,
+        "color": "#C2410C",
+        "platform": "F&B tech platform",
+        "highlights": ["Cold chain", "Batch ledger", "Allergen UX"],
+        "board": "Log one batch trace in mock ledger."
+      },
+      "stop-fashion": {
+        "name": "Fashion & Apparel",
+        "code": "FSH",
+        "mile": 74,
+        "riders": 6000,
+        "color": "#7C3AED",
+        "platform": "Fashion tech platform",
+        "highlights": ["Size curves", "Circularity", "Try-on AR"],
+        "board": "Map one size-grade rule to inventory."
+      },
+      "stop-logistics": {
+        "name": "Supply Chain & Logistics",
+        "code": "LOG",
+        "mile": 77,
+        "riders": 8900,
+        "color": "#0369A1",
+        "platform": "Fleet operators platform",
+        "highlights": ["VRP solvers", "Cold chain", "ETA models"],
+        "board": "Run 50-stop route simulation."
+      },
+      "stop-auto": {
+        "name": "Automotive",
+        "code": "AUT",
+        "mile": 73,
+        "riders": 7100,
+        "color": "#1D4ED8",
+        "platform": "Mobility guild platform",
+        "highlights": ["OTA updates", "ADAS sim", "Dealer UX"],
+        "board": "Document one OTA rollback path."
+      },
+      "stop-aviation": {
+        "name": "Aviation & Travel",
+        "code": "AVN",
+        "mile": 74,
+        "riders": 5000,
+        "color": "#0284C7",
+        "platform": "Travel ops platform",
+        "highlights": ["Crew roster", "Disruption ML", "Loyalty"],
+        "board": "Simulate one weather diversion cascade."
+      },
+      "stop-agri": {
+        "name": "AgriTech (Agriculture Technology)",
+        "code": "AGR",
+        "mile": 72,
+        "riders": 4700,
+        "color": "#4D7C0F",
+        "platform": "Agri handlers platform",
+        "highlights": ["Traceability", "Soil IoT", "Co-op markets"],
+        "board": "Log one batch custody handoff."
+      },
+      "stop-gov": {
+        "name": "GovTech",
+        "code": "GOV",
+        "mile": 65,
+        "riders": 3500,
+        "color": "#2563EB",
+        "platform": "Civic builders platform",
+        "highlights": ["Permit APIs", "Open data", "A11y forms"],
+        "board": "Fix one form label association."
+      },
+      "stop-ngo": {
+        "name": "Non-Profit / NGOs",
+        "code": "NGO",
+        "mile": 60,
+        "riders": 2800,
+        "color": "#EAB308",
+        "platform": "Impact guild platform",
+        "highlights": ["Donor CRM", "Field reporting", "Grant tracking"],
+        "board": "Map one outcome metric to dashboard."
+      },
+      "stop-legal": {
+        "name": "Legal & LegalTech",
+        "code": "LEG",
+        "mile": 71,
+        "riders": 4100,
+        "color": "#475569",
+        "platform": "A2J practitioners platform",
+        "highlights": ["Contract NLP", "Obligation tags", "Multilingual"],
+        "board": "Tag risks in one sample MSA."
+      }
+    }
+  }
+}

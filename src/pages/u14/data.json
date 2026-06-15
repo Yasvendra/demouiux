@@ -1,0 +1,85 @@
+{
+  "theme": {
+    "accent": "#2DD4BF",
+    "accentAlt": "#7C3AED",
+    "accentGlow": "rgba(45, 212, 191, 0.2)",
+    "surface": "#050508",
+    "band": "#0C0C12"
+  },
+  "fluxBand": {
+    "label": "Synthetic data · Series B",
+    "title": "Train models on data that never existed",
+    "titleHighlight": "never existed",
+    "defaultActive": "gen-engine",
+    "autoExpand": true,
+    "autoExpandMs": 6800,
+    "bands": [
+      {
+        "id": "gen-engine",
+        "code": "GEN",
+        "title": "Generative data engine",
+        "description": "Diffusion and GAN pipelines synthesize photorealistic training samples — balancing class distribution, edge cases, and demographic parity without touching raw PII.",
+        "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1600&h=900&fit=crop",
+        "alt": "Generative AI creating synthetic training data samples",
+        "link": "#gen-engine",
+        "stat": { "value": "10M", "unit": "+", "label": "Samples / hour" },
+        "tone": "#2DD4BF"
+      },
+      {
+        "id": "label-auto",
+        "code": "LBL",
+        "title": "Autonomous labeling mesh",
+        "description": "Weak supervision and active learning loops auto-annotate synthetic datasets — human reviewers only adjudicate low-confidence edges, cutting labeling cost by 90%.",
+        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1600&h=900&fit=crop",
+        "alt": "Automated data labeling dashboard with confidence scores",
+        "link": "#label-auto",
+        "stat": { "value": "90", "unit": "%", "label": "Cost reduction" },
+        "tone": "#34D399"
+      },
+      {
+        "id": "privacy-vault",
+        "code": "PRV",
+        "title": "Privacy-preserving synthesis",
+        "description": "Differential privacy budgets and k-anonymity guarantees ensure synthetic records carry zero re-identification risk — passing GDPR, HIPAA, and SOC 2 audits by design.",
+        "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&h=900&fit=crop",
+        "alt": "Privacy shield protecting synthetic patient records",
+        "link": "#privacy-vault",
+        "stat": { "value": "ε=0.1", "unit": "", "label": "Privacy budget" },
+        "tone": "#7C3AED"
+      },
+      {
+        "id": "domain-shift",
+        "code": "DOM",
+        "title": "Domain adaptation studio",
+        "description": "Style transfer and feature alignment bridge the sim-to-real gap — fine-tuning vision models on synthetic pre-training that transfers to live camera feeds with minimal real data.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=900&fit=crop",
+        "alt": "Domain adaptation between simulated and real-world imagery",
+        "link": "#domain-shift",
+        "stat": { "value": "94", "unit": "%", "label": "Transfer accuracy" },
+        "tone": "#A78BFA"
+      },
+      {
+        "id": "quality-radar",
+        "code": "QAL",
+        "title": "Quality scoring radar",
+        "description": "FID, precision-recall curves, and downstream task benchmarks score every synthetic batch — rejecting drifted generations before they pollute production training runs.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop",
+        "alt": "Quality metrics radar chart for synthetic data batches",
+        "link": "#quality-radar",
+        "stat": { "value": "99.2", "unit": "%", "label": "Batch pass rate" },
+        "tone": "#22D3EE"
+      },
+      {
+        "id": "fleet-orchestra",
+        "code": "FLT",
+        "title": "Fleet orchestration layer",
+        "description": "Kubernetes-native job schedulers spin up GPU clusters on demand — orchestrating generation, labeling, and validation pipelines across multi-cloud with spot-instance cost optimization.",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&h=900&fit=crop",
+        "alt": "Cloud GPU cluster orchestrating synthetic data pipelines",
+        "link": "#fleet-orchestra",
+        "stat": { "value": "8", "unit": "K", "label": "GPUs managed" },
+        "tone": "#F472B6"
+      }
+    ]
+  }
+}

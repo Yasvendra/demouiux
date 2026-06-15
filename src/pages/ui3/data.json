@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "heading": "The Life Sciences plant of the future starts with an end-to-end solution.",
+    "description": "Maximizing profitability while maintaining compliance with increasingly robust regulations is putting heightened pressure on life science companies to re-imagine what their plants look like. Forward-thinking companies are looking to build new plants that ensure safe and sustainable operations that are future-proofed against market pressures.",
+    "image": "https://media-d.global.abb/is/image/abbc/ABB%20AGM%20location:16x9?wid=1440&hei=810",
+    "alt": "Professional in cleanroom suit using a laptop in a life sciences facility",
+    "accentColor": "#FF000F"
+  },
+  "bottomBanner": {
+    "text": "ABB offers a comprehensive portfolio of integrated automation, digital, and electrical solutions designed to assist life science companies in minimizing time to market, enhancing operational efficiency, and facilitating faster, more intelligent decision-making."
+  }
+}

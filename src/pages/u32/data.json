@@ -1,0 +1,356 @@
+{
+  "finish": {
+    "canvas": "#F8FAFC",
+    "canvasAlt": "#F1F5F9",
+    "card": "#FFFFFF",
+    "ink": "#0F172A",
+    "subtle": "#64748B",
+    "line": "#E2E8F0",
+    "accent": "#4F46E5",
+    "shadow": "rgba(15, 23, 42, 0.08)",
+    "shadowLg": "rgba(15, 23, 42, 0.14)"
+  },
+  "pathfinder": {
+    "brand": "Guild Pathfinder",
+    "intent": "Pick a domain tile, read the learning path, and complete one step today. Clear paths for students, builders, clinicians, and cross-functional teams.",
+    "stats": {
+      "builders": "11.2k active",
+      "domains": 32,
+      "stepsWeek": "2.4k steps/week"
+    },
+    "entry": "t-cyber",
+    "advance": 6500,
+    "cta": {
+      "primary": "Start today's step",
+      "secondary": "View cohort"
+    },
+    "trail": [
+      "t-cyber", "t-ai", "t-health", "t-saas", "t-ecom", "t-bank", "t-insure", "t-wealth",
+      "t-micro", "t-pharma", "t-hospital", "t-bio", "t-mental", "t-ott", "t-gaming", "t-adtech",
+      "t-publish", "t-proptech", "t-cleantech", "t-oil", "t-construct", "t-fmcg", "t-retail",
+      "t-food", "t-fashion", "t-logistics", "t-auto", "t-aviation", "t-agri", "t-gov", "t-ngo", "t-legal"
+    ],
+    "tiles": {
+      "t-cyber": {
+        "sector": "CyberSecurity",
+        "glyph": "🛡",
+        "progress": 78,
+        "cohort": 13200,
+        "accent": "#4F46E5",
+        "summary": "Learn adversary emulation and production guardrails — from tabletop exercises to deployable detection rules.",
+        "skills": ["Purple teaming", "Zero-trust", "Detection rules"],
+        "step": "Map one ATT&CK technique to a detection rule."
+      },
+      "t-ai": {
+        "sector": "AI & Machine Learning",
+        "glyph": "✦",
+        "progress": 85,
+        "cohort": 22100,
+        "accent": "#7C3AED",
+        "summary": "Build grounded AI systems with eval gates, agent orchestration, and model documentation practices.",
+        "skills": ["RAG evaluation", "Agent loops", "Model cards"],
+        "step": "Run eval on 20 synthetic queries and log results."
+      },
+      "t-health": {
+        "sector": "HealthTech / MedTech",
+        "glyph": "♥",
+        "progress": 71,
+        "cohort": 9600,
+        "accent": "#E11D48",
+        "summary": "Ship interoperable care systems using FHIR patterns and synthetic data sandboxes.",
+        "skills": ["FHIR R4", "Consent UX", "Clinical flows"],
+        "step": "Parse one synthetic Patient resource."
+      },
+      "t-saas": {
+        "sector": "SaaS / Cloud Computing",
+        "glyph": "☁",
+        "progress": 76,
+        "cohort": 15900,
+        "accent": "#0284C7",
+        "summary": "Master multi-tenant isolation, metering, and edge deployment for scalable B2B products.",
+        "skills": ["Tenant RLS", "Metering", "Edge workers"],
+        "step": "Add tenant_id guard to one API route."
+      },
+      "t-ecom": {
+        "sector": "E-Commerce",
+        "glyph": "🛒",
+        "progress": 80,
+        "cohort": 18400,
+        "accent": "#EA580C",
+        "summary": "Optimize conversion funnels, cart recovery, and payments UX with measurable experiments.",
+        "skills": ["Funnel analytics", "Cart recovery", "Payments UX"],
+        "step": "Log one funnel drop-off hypothesis."
+      },
+      "t-bank": {
+        "sector": "Banking & Financial Services",
+        "glyph": "⚖",
+        "progress": 69,
+        "cohort": 10900,
+        "accent": "#CA8A04",
+        "summary": "Build reconciliation and open-banking flows with idempotency and audit trails in sandbox.",
+        "skills": ["Idempotency", "Open banking", "Audit trails"],
+        "step": "Write one idempotent payment handler test."
+      },
+      "t-insure": {
+        "sector": "Insurance (InsurTech)",
+        "glyph": "◉",
+        "progress": 64,
+        "cohort": 5200,
+        "accent": "#B45309",
+        "summary": "Automate policy lifecycle with explainable underwriting and claims NLP patterns.",
+        "skills": ["Parametric triggers", "Claims NLP", "Risk scoring"],
+        "step": "Tag obligations in one sample policy."
+      },
+      "t-wealth": {
+        "sector": "Investment & Wealth Management",
+        "glyph": "◇",
+        "progress": 72,
+        "cohort": 6900,
+        "accent": "#A16207",
+        "summary": "Design robo-advisory flows with fiduciary guardrails and paper-portfolio simulations.",
+        "skills": ["Rebalancing", "ESG overlays", "Tax-loss harvest"],
+        "step": "Run one scenario rebalance simulation."
+      },
+      "t-micro": {
+        "sector": "Microfinance & NBFCs",
+        "glyph": "🌱",
+        "progress": 61,
+        "cohort": 3400,
+        "accent": "#16A34A",
+        "summary": "Build last-mile credit tools for underserved markets with offline-first field flows.",
+        "skills": ["Group lending", "Field ops", "Offline sync"],
+        "step": "Sketch one offline-first collection flow."
+      },
+      "t-pharma": {
+        "sector": "Pharmaceuticals",
+        "glyph": "⚗",
+        "progress": 74,
+        "cohort": 5800,
+        "accent": "#059669",
+        "summary": "Operate clinical data pipelines with CDISC standards and synthetic trial datasets.",
+        "skills": ["CDISC", "Trial blinding", "eCRF validation"],
+        "step": "Validate one eCRF field rule."
+      },
+      "t-hospital": {
+        "sector": "Hospitals & Healthcare",
+        "glyph": "✚",
+        "progress": 68,
+        "cohort": 7200,
+        "accent": "#DB2777",
+        "summary": "Improve operational healthcare with bed management, scheduling, and patient flow mapping.",
+        "skills": ["Bed management", "Staff scheduling", "Patient flow"],
+        "step": "Map one handoff bottleneck."
+      },
+      "t-bio": {
+        "sector": "Biotechnology",
+        "glyph": "🧬",
+        "progress": 77,
+        "cohort": 4300,
+        "accent": "#0D9488",
+        "summary": "Connect wet-lab and compute with reproducible sequencing and LIMS pipelines.",
+        "skills": ["Seq pipelines", "LIMS", "Bioinformatics"],
+        "step": "Pin one pipeline step with version hash."
+      },
+      "t-mental": {
+        "sector": "Mental Health & Wellness",
+        "glyph": "☽",
+        "progress": 73,
+        "cohort": 8600,
+        "accent": "#6366F1",
+        "summary": "Design accessible care pathways with trauma-informed UX and outcome tracking.",
+        "skills": ["Crisis routing", "Therapy match", "Outcomes"],
+        "step": "Review one onboarding screen for safety copy."
+      },
+      "t-ott": {
+        "sector": "OTT & Streaming",
+        "glyph": "▶",
+        "progress": 82,
+        "cohort": 11100,
+        "accent": "#DC2626",
+        "summary": "Engineer bitrate ladders, CDN failover, and retention systems for global streaming.",
+        "skills": ["ABR ladders", "CDN failover", "Engagement ML"],
+        "step": "Tune one 4K ladder segment."
+      },
+      "t-gaming": {
+        "sector": "Gaming",
+        "glyph": "🎮",
+        "progress": 84,
+        "cohort": 15300,
+        "accent": "#9333EA",
+        "summary": "Ship deterministic multiplayer with rollback netcode and desync reproduction.",
+        "skills": ["Rollback netcode", "Anti-cheat", "Live ops"],
+        "step": "Ship one desync reproduction case."
+      },
+      "t-adtech": {
+        "sector": "AdTech & Media Buying",
+        "glyph": "📡",
+        "progress": 70,
+        "cohort": 6700,
+        "accent": "#F97316",
+        "summary": "Build programmatic stacks with brand safety and privacy-first measurement.",
+        "skills": ["RTB hooks", "Brand safety", "Privacy measure"],
+        "step": "Audit one consent-string integration."
+      },
+      "t-publish": {
+        "sector": "Publishing & Content",
+        "glyph": "📖",
+        "progress": 65,
+        "cohort": 4800,
+        "accent": "#57534E",
+        "summary": "Unify editorial and engineering with CMS pipelines and structured data.",
+        "skills": ["CMS pipelines", "Paywall UX", "Schema markup"],
+        "step": "Audit one article for structured data."
+      },
+      "t-proptech": {
+        "sector": "Real Estate & PropTech",
+        "glyph": "⌂",
+        "progress": 66,
+        "cohort": 4600,
+        "accent": "#92400E",
+        "summary": "Digitize property lifecycle with title chains, IoT, and tenant portals.",
+        "skills": ["Title chain", "Smart building IoT", "Tenant portals"],
+        "step": "Sketch one lease renewal flow."
+      },
+      "t-cleantech": {
+        "sector": "Renewable Energy / CleanTech",
+        "glyph": "☀",
+        "progress": 75,
+        "cohort": 5700,
+        "accent": "#16A34A",
+        "summary": "Forecast and dispatch renewable energy with open weather and grid logic.",
+        "skills": ["Forecast models", "Grid dispatch", "Carbon ledger"],
+        "step": "Tune day-ahead forecast on historical data."
+      },
+      "t-oil": {
+        "sector": "Oil & Gas",
+        "glyph": "⛽",
+        "progress": 62,
+        "cohort": 2700,
+        "accent": "#78350F",
+        "summary": "Operate industrial IoT with SCADA safety and predictive maintenance patterns.",
+        "skills": ["SCADA safety", "Predictive maint", "Emissions"],
+        "step": "Log one sensor anomaly playbook step."
+      },
+      "t-construct": {
+        "sector": "Construction & Engineering",
+        "glyph": "🏗",
+        "progress": 63,
+        "cohort": 3900,
+        "accent": "#EAB308",
+        "summary": "Align field and office with BIM sync, safety IoT, and subcontractor UX.",
+        "skills": ["BIM sync", "Safety IoT", "Subcontractor UX"],
+        "step": "Map one RFI workflow bottleneck."
+      },
+      "t-fmcg": {
+        "sector": "FMCG (Fast-Moving Consumer Goods)",
+        "glyph": "📦",
+        "progress": 67,
+        "cohort": 4400,
+        "accent": "#D97706",
+        "summary": "Plan high-velocity supply from factory to shelf with demand and distributor tools.",
+        "skills": ["Demand planning", "Shelf analytics", "Distributor UX"],
+        "step": "Model one stock-out scenario."
+      },
+      "t-retail": {
+        "sector": "Retail & D2C (Direct-to-Consumer)",
+        "glyph": "🏷",
+        "progress": 79,
+        "cohort": 12700,
+        "accent": "#BE123C",
+        "summary": "Unify store and digital with inventory sync, omnichannel, and loyalty loops.",
+        "skills": ["Inventory sync", "Omnichannel", "Loyalty"],
+        "step": "Trace one SKU across channels."
+      },
+      "t-food": {
+        "sector": "Food & Beverage",
+        "glyph": "🍽",
+        "progress": 71,
+        "cohort": 5500,
+        "accent": "#C2410C",
+        "summary": "Build traceability and safety into kitchen-to-consumer cold chain systems.",
+        "skills": ["Cold chain", "Batch ledger", "Allergen UX"],
+        "step": "Log one batch trace in mock ledger."
+      },
+      "t-fashion": {
+        "sector": "Fashion & Apparel",
+        "glyph": "✦",
+        "progress": 74,
+        "cohort": 6000,
+        "accent": "#7C3AED",
+        "summary": "Manage seasonal drops with size curves, circularity metrics, and try-on AR.",
+        "skills": ["Size curves", "Circularity", "Try-on AR"],
+        "step": "Map one size-grade rule to inventory."
+      },
+      "t-logistics": {
+        "sector": "Supply Chain & Logistics",
+        "glyph": "⟁",
+        "progress": 77,
+        "cohort": 8900,
+        "accent": "#0369A1",
+        "summary": "Optimize last-mile delivery with VRP solvers, cold chain, and ETA models.",
+        "skills": ["VRP solvers", "Cold chain", "ETA models"],
+        "step": "Run 50-stop route simulation."
+      },
+      "t-auto": {
+        "sector": "Automotive",
+        "glyph": "⚡",
+        "progress": 73,
+        "cohort": 7100,
+        "accent": "#1D4ED8",
+        "summary": "Connect vehicles from OTA firmware to dealer UX with safety-first patterns.",
+        "skills": ["OTA updates", "ADAS sim", "Dealer UX"],
+        "step": "Document one OTA rollback path."
+      },
+      "t-aviation": {
+        "sector": "Aviation & Travel",
+        "glyph": "✈",
+        "progress": 74,
+        "cohort": 5000,
+        "accent": "#0284C7",
+        "summary": "Handle irregular ops with crew rostering, disruption ML, and loyalty systems.",
+        "skills": ["Crew roster", "Disruption ML", "Loyalty"],
+        "step": "Simulate one weather diversion cascade."
+      },
+      "t-agri": {
+        "sector": "AgriTech (Agriculture Technology)",
+        "glyph": "🌾",
+        "progress": 72,
+        "cohort": 4700,
+        "accent": "#4D7C0F",
+        "summary": "Trace farm-to-fork provenance with soil IoT and co-op market tools.",
+        "skills": ["Traceability", "Soil IoT", "Co-op markets"],
+        "step": "Log one batch custody handoff."
+      },
+      "t-gov": {
+        "sector": "GovTech",
+        "glyph": "⚑",
+        "progress": 65,
+        "cohort": 3500,
+        "accent": "#2563EB",
+        "summary": "Deliver citizen services with permit APIs, open data, and accessible forms.",
+        "skills": ["Permit APIs", "Open data", "A11y forms"],
+        "step": "Fix one form label association."
+      },
+      "t-ngo": {
+        "sector": "Non-Profit / NGOs",
+        "glyph": "☀",
+        "progress": 60,
+        "cohort": 2800,
+        "accent": "#EAB308",
+        "summary": "Run mission ops with donor CRM, field reporting, and grant tracking.",
+        "skills": ["Donor CRM", "Field reporting", "Grant tracking"],
+        "step": "Map one outcome metric to dashboard."
+      },
+      "t-legal": {
+        "sector": "Legal & LegalTech",
+        "glyph": "§",
+        "progress": 71,
+        "cohort": 4100,
+        "accent": "#475569",
+        "summary": "Enable accessible justice with contract NLP and obligation tagging.",
+        "skills": ["Contract NLP", "Obligation tags", "Multilingual"],
+        "step": "Tag risks in one sample MSA."
+      }
+    }
+  }
+}

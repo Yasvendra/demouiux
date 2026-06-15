@@ -1,0 +1,96 @@
+{
+  "theme": {
+    "accent": "#8B5CF6",
+    "accentSecondary": "#67E8F9",
+    "accentWarm": "#F472B6",
+    "surface": "#0D0B1A",
+    "stage": "#16132A"
+  },
+  "fluxPipeline": {
+    "badge": {
+      "text": "Clinical AI · Pipeline live",
+      "pulse": true
+    },
+    "eyebrow": "Precision medicine platform",
+    "heading": "Transform patient outcomes through intelligent care pipelines",
+    "headingAccent": "intelligent care pipelines",
+    "defaultActive": "genomic-analysis",
+    "flowSpeed": 3,
+    "autoAdvance": true,
+    "autoAdvanceMs": 6000,
+    "stages": [
+      {
+        "id": "genomic-analysis",
+        "step": 1,
+        "icon": "🧬",
+        "label": "Genomics",
+        "title": "Whole-genome sequencing analysis",
+        "description": "Process 3 billion base pairs in under 4 hours — identifying pathogenic variants, pharmacogenomic markers, and hereditary risk profiles with 99.97% accuracy.",
+        "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1600&h=900&fit=crop",
+        "alt": "DNA sequencing visualization in a genomics laboratory",
+        "link": "#genomic-analysis",
+        "metric": { "value": "4", "unit": "hr", "label": "Analysis time" }
+      },
+      {
+        "id": "imaging-ai",
+        "step": 2,
+        "icon": "◉",
+        "label": "Imaging AI",
+        "title": "Diagnostic imaging intelligence",
+        "description": "Deep learning models detect tumors, fractures, and anomalies in CT, MRI, and X-ray scans — flagging critical findings for radiologist review within 90 seconds.",
+        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&h=900&fit=crop",
+        "alt": "Medical imaging scan on a diagnostic display",
+        "link": "#imaging-ai",
+        "metric": { "value": "98.4%", "unit": "", "label": "Detection rate" }
+      },
+      {
+        "id": "trial-matching",
+        "step": 3,
+        "icon": "◎",
+        "label": "Trials",
+        "title": "Clinical trial patient matching",
+        "description": "AI matches patient profiles against 40,000+ active trials globally — surfacing eligible studies ranked by efficacy potential and geographic accessibility.",
+        "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1600&h=900&fit=crop",
+        "alt": "Clinical research team reviewing trial data",
+        "link": "#trial-matching",
+        "metric": { "value": "40K+", "unit": "", "label": "Active trials" }
+      },
+      {
+        "id": "drug-discovery",
+        "step": 4,
+        "icon": "◈",
+        "label": "Discovery",
+        "title": "In-silico drug discovery",
+        "description": "Simulate molecular interactions across billions of compound libraries — accelerating lead identification from years to weeks using quantum-accelerated docking models.",
+        "image": "https://images.unsplash.com/photo-1532187863486-abf9db3811de?w=1600&h=900&fit=crop",
+        "alt": "Molecular structure model for drug discovery research",
+        "link": "#drug-discovery",
+        "metric": { "value": "10×", "unit": "", "label": "Faster discovery" }
+      },
+      {
+        "id": "patient-vault",
+        "step": 5,
+        "icon": "⬡",
+        "label": "Data Vault",
+        "title": "HIPAA-compliant patient vault",
+        "description": "Zero-trust architecture encrypts PHI at rest and in transit — with granular consent management and full audit trails for every data access event.",
+        "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&h=900&fit=crop",
+        "alt": "Secure healthcare data management interface",
+        "link": "#patient-vault",
+        "metric": { "value": "256", "unit": "bit", "label": "AES encryption" }
+      },
+      {
+        "id": "telehealth",
+        "step": 6,
+        "icon": "↗",
+        "label": "Telehealth",
+        "title": "Orchestrated telehealth delivery",
+        "description": "Unified platform connects patients, providers, and specialists across video, async messaging, and remote monitoring — with AI triage routing urgent cases in real time.",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&h=900&fit=crop",
+        "alt": "Doctor conducting a telehealth consultation via video",
+        "link": "#telehealth",
+        "metric": { "value": "2.4M", "unit": "", "label": "Consultations / mo" }
+      }
+    ]
+  }
+}

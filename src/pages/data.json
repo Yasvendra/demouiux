@@ -1,0 +1,885 @@
+{
+  "somm": {
+    "theme": {
+      "canvas": "#0B0F14",
+      "surface": "#121820",
+      "elevated": "#1A2230",
+      "border": "#2A3444",
+      "borderSubtle": "#1E2836",
+      "ink": "#F0F3F8",
+      "muted": "#8B95A8",
+      "accent": "#3B82F6",
+      "success": "#22C55E",
+      "warning": "#F59E0B",
+      "danger": "#EF4444",
+      "assistant": "#1E3A5F",
+      "userBubble": "#243044"
+    },
+    "workspace": {
+      "brand": "Somm",
+      "edition": "Enterprise",
+      "org": "Northwind Industries",
+      "summary": "Domain-aware AI workspace. Each thread is a vertical context — Somm reasons across compliance, stack, and live signals while your team stays in the loop.",
+      "status": "All systems operational",
+      "metrics": {
+        "activeThreads": 32,
+        "resolvedToday": "847",
+        "avgLatency": "1.2s",
+        "satisfaction": "94%"
+      },
+      "cta": {
+        "primary": "Approve & deploy",
+        "secondary": "Escalate to human"
+      }
+    },
+    "portfolio": {
+      "title": "Vertical Portfolio",
+      "subtitle": "Cross-vertical coverage, chat throughput, and operational health.",
+      "healthScore": 87,
+      "groups": [
+        { "name": "Core Tech", "share": 16, "hue": "#6366F1" },
+        { "name": "Finance", "share": 16, "hue": "#EAB308" },
+        { "name": "Healthcare", "share": 16, "hue": "#10B981" },
+        { "name": "Media", "share": 16, "hue": "#EF4444" },
+        { "name": "Infrastructure", "share": 12, "hue": "#78716C" },
+        { "name": "Consumer", "share": 16, "hue": "#38BDF8" },
+        { "name": "Mobility", "share": 16, "hue": "#60A5FA" },
+        { "name": "Public", "share": 12, "hue": "#3B82F6" }
+      ],
+      "activityWeek": [
+        { "day": "Mon", "resolved": 118, "opened": 102 },
+        { "day": "Tue", "resolved": 132, "opened": 115 },
+        { "day": "Wed", "resolved": 125, "opened": 108 },
+        { "day": "Thu", "resolved": 141, "opened": 124 },
+        { "day": "Fri", "resolved": 156, "opened": 138 },
+        { "day": "Sat", "resolved": 89, "opened": 76 },
+        { "day": "Sun", "resolved": 86, "opened": 72 }
+      ],
+      "latencyBands": [
+        { "label": "<1s", "pct": 62, "hue": "#22C55E" },
+        { "label": "1–3s", "pct": 28, "hue": "#F59E0B" },
+        { "label": ">3s", "pct": 10, "hue": "#EF4444" }
+      ],
+      "chatStates": [
+        { "state": "Streaming", "pct": 18 },
+        { "state": "Complete", "pct": 52 },
+        { "state": "Waiting", "pct": 14 },
+        { "state": "System", "pct": 16 }
+      ]
+    },
+    "activeThread": "th-cyber",
+    "rotation": 9000,
+    "sequence": [
+      "th-cyber", "th-ai", "th-health", "th-saas", "th-ecom", "th-bank", "th-insure", "th-wealth",
+      "th-micro", "th-pharma", "th-hospital", "th-bio", "th-mental", "th-ott", "th-gaming", "th-adtech",
+      "th-publish", "th-proptech", "th-cleantech", "th-oil", "th-construct", "th-fmcg", "th-retail",
+      "th-food", "th-fashion", "th-logistics", "th-auto", "th-aviation", "th-agri", "th-gov", "th-ngo", "th-legal"
+    ],
+    "threads": {
+      "th-cyber": {
+        "title": "CyberSecurity",
+        "code": "CYB",
+        "group": "Core Tech",
+        "status": "active",
+        "confidence": 92,
+        "hue": "#6366F1",
+        "icon": "🛡",
+        "unread": 2,
+        "participants": 4,
+        "lastActivity": "2m ago",
+        "context": "Purple-team tabletop → detection pipeline for T1059 PowerShell abuse.",
+        "suggestedAction": "Map one ATT&CK technique to a detection rule and push to staging.",
+        "tags": ["Purple teaming", "Zero-trust", "Detection rules"],
+        "charts": {
+          "sparkline": [62, 65, 68, 72, 70, 75, 78],
+          "sparklineLabel": "Detection coverage · 7d",
+          "bars": [
+            { "label": "Ingest", "value": 92 },
+            { "label": "Enrich", "value": 85 },
+            { "label": "Detect", "value": 78 },
+            { "label": "Respond", "value": 71 }
+          ],
+          "barsLabel": "Pipeline health",
+          "flow": {
+            "label": "SOC response path",
+            "steps": ["Alert", "Triage", "Enrich", "Rule", "Deploy"],
+            "active": 3
+          }
+        },
+        "kpis": [
+          { "label": "MTTD", "value": "4.2h", "delta": "-18%", "trend": "up" },
+          { "label": "Coverage", "value": "78%", "delta": "+6%", "trend": "up" },
+          { "label": "Open alerts", "value": "12", "delta": "-3", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "system", "text": "Thread opened · SOC-2847 linked · Compliance: SOC2, ISO 27001", "time": "09:14" },
+          { "id": "m2", "role": "user", "author": "Alex Chen", "text": "We need a detection rule for encoded PowerShell in prod without flooding the queue.", "time": "09:15" },
+          { "id": "m3", "role": "assistant", "text": "I'll scope T1059.001 with a two-stage filter: base64 decode attempt + parent process chain. Estimated false-positive rate ~2.1% on your last 30d sample.", "time": "09:15", "state": "complete", "citations": 3 },
+          { "id": "m4", "role": "user", "author": "Alex Chen", "text": "Show the Sigma draft and staging rollout plan.", "time": "09:16" },
+          { "id": "m5", "role": "assistant", "text": "Drafting Sigma rule and canary deployment to 5% of endpoints…", "time": "09:16", "state": "streaming" }
+        ]
+      },
+      "th-ai": {
+        "title": "AI & Machine Learning",
+        "code": "AIM",
+        "group": "Core Tech",
+        "status": "active",
+        "confidence": 88,
+        "hue": "#8B5CF6",
+        "icon": "✦",
+        "unread": 0,
+        "participants": 6,
+        "lastActivity": "8m ago",
+        "context": "RAG eval gate before Q2 agent release — synthetic query suite.",
+        "suggestedAction": "Run eval on 20 synthetic queries and record pass/fail.",
+        "tags": ["RAG evaluation", "Agent loops", "Model cards"],
+        "charts": {
+          "sparkline": [78, 82, 80, 85, 88, 86, 91],
+          "sparklineLabel": "Eval pass rate · 7d",
+          "bars": [
+            { "label": "Retrieve", "value": 94 },
+            { "label": "Reason", "value": 88 },
+            { "label": "Verify", "value": 91 },
+            { "label": "Ship", "value": 76 }
+          ],
+          "barsLabel": "Agent pipeline",
+          "flow": {
+            "label": "Release gate",
+            "steps": ["Eval", "Review", "Sign-off", "Tag", "Deploy"],
+            "active": 2
+          }
+        },
+        "kpis": [
+          { "label": "Eval pass rate", "value": "91%", "delta": "+4%", "trend": "up" },
+          { "label": "P95 latency", "value": "840ms", "delta": "-12%", "trend": "up" },
+          { "label": "Hallucination", "value": "2.3%", "delta": "-0.8%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "system", "text": "Eval suite v3.2 loaded · 240 synthetic queries", "time": "08:42" },
+          { "id": "m2", "role": "user", "author": "Priya Nair", "text": "Gate the release — anything below 90% on finance queries blocks deploy.", "time": "08:43" },
+          { "id": "m3", "role": "assistant", "text": "Finance vertical: 91.2% pass. Failures cluster on multi-hop date math. Recommend 12 additional golden cases.", "time": "08:44", "state": "complete", "citations": 5 },
+          { "id": "m4", "role": "assistant", "text": "Model card diff ready for review. Awaiting your approval to tag v2.4.1-rc.", "time": "08:45", "state": "waiting" }
+        ]
+      },
+      "th-health": {
+        "title": "HealthTech / MedTech",
+        "code": "HLT",
+        "group": "Core Tech",
+        "status": "idle",
+        "confidence": 85,
+        "hue": "#F43F5E",
+        "icon": "♥",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "1h ago",
+        "context": "FHIR R4 sandbox — synthetic Patient resource parsing.",
+        "suggestedAction": "Parse one synthetic Patient resource and validate consent flags.",
+        "tags": ["FHIR R4", "Consent UX", "Clinical flows"],
+        "kpis": [
+          { "label": "Interop score", "value": "96%", "delta": "+2%", "trend": "up" },
+          { "label": "Consent coverage", "value": "100%", "delta": "—", "trend": "neutral" },
+          { "label": "Open issues", "value": "3", "delta": "-1", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "user", "author": "Dr. Kim", "text": "Validate Patient/12345 against our consent policy before demo.", "time": "07:20" },
+          { "id": "m2", "role": "assistant", "text": "All consent flags present. Marketing use blocked per policy §4.2. Ready for sandbox export.", "time": "07:21", "state": "complete", "citations": 2 }
+        ]
+      },
+      "th-saas": {
+        "title": "SaaS / Cloud Computing",
+        "code": "SAS",
+        "group": "Core Tech",
+        "status": "active",
+        "confidence": 90,
+        "hue": "#0EA5E9",
+        "icon": "☁",
+        "unread": 1,
+        "participants": 5,
+        "lastActivity": "14m ago",
+        "context": "Tenant isolation audit — RLS guard on billing API.",
+        "suggestedAction": "Add tenant_id guard to one API route and run isolation test.",
+        "tags": ["Tenant RLS", "Metering", "Edge workers"],
+        "kpis": [
+          { "label": "Tenant isolation", "value": "100%", "delta": "—", "trend": "neutral" },
+          { "label": "API p99", "value": "124ms", "delta": "-8%", "trend": "up" },
+          { "label": "MRR at risk", "value": "$0", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "system", "text": "Pen-test finding PT-88 assigned to this thread", "time": "10:01" },
+          { "id": "m2", "role": "user", "author": "Jordan Lee", "text": "Billing export endpoint missing tenant guard — patch before Friday.", "time": "10:02" },
+          { "id": "m3", "role": "assistant", "text": "Patch drafted: middleware injects tenant_id from JWT sub claim. Unit tests added. PR #1842 ready.", "time": "10:03", "state": "complete", "citations": 1 }
+        ]
+      },
+      "th-ecom": {
+        "title": "E-Commerce",
+        "code": "ECM",
+        "group": "Core Tech",
+        "status": "resolved",
+        "confidence": 94,
+        "hue": "#F97316",
+        "icon": "🛒",
+        "unread": 0,
+        "participants": 4,
+        "lastActivity": "3h ago",
+        "context": "Checkout funnel drop-off at payment step — hypothesis logged.",
+        "suggestedAction": "Log one funnel drop-off hypothesis and A/B variant.",
+        "tags": ["Funnel analytics", "Cart recovery", "Payments UX"],
+        "kpis": [
+          { "label": "Conversion", "value": "3.8%", "delta": "+0.4%", "trend": "up" },
+          { "label": "Cart recovery", "value": "22%", "delta": "+3%", "trend": "up" },
+          { "label": "Payment errors", "value": "0.9%", "delta": "-0.2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Hypothesis confirmed: mobile wallet button below fold. Variant B lifts conversion +0.4%. Thread marked resolved.", "time": "06:30", "state": "complete", "citations": 4 }
+        ]
+      },
+      "th-bank": {
+        "title": "Banking & Financial Services",
+        "code": "BNK",
+        "group": "Finance",
+        "status": "escalated",
+        "confidence": 76,
+        "hue": "#EAB308",
+        "icon": "⚖",
+        "unread": 5,
+        "participants": 7,
+        "lastActivity": "5m ago",
+        "context": "Idempotent payment handler — audit trail for regulator review.",
+        "suggestedAction": "Write one idempotent payment handler test with audit log assertion.",
+        "tags": ["Idempotency", "Open banking", "Audit trails"],
+        "charts": {
+          "sparkline": [88, 85, 82, 80, 78, 76, 74],
+          "sparklineLabel": "Compliance score · 7d",
+          "bars": [
+            { "label": "Auth", "value": 98 },
+            { "label": "Pay", "value": 92 },
+            { "label": "Audit", "value": 68 },
+            { "label": "Report", "value": 72 }
+          ],
+          "barsLabel": "Control coverage",
+          "flow": {
+            "label": "Escalation path",
+            "steps": ["Detect", "Flag", "Review", "Sign", "Remediate"],
+            "active": 4
+          }
+        },
+        "kpis": [
+          { "label": "Idempotency", "value": "99.99%", "delta": "—", "trend": "neutral" },
+          { "label": "Audit gaps", "value": "2", "delta": "+2", "trend": "down" },
+          { "label": "SLA breach risk", "value": "Medium", "delta": "—", "trend": "down" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "system", "text": "Escalated to Compliance · Human reviewer assigned", "time": "11:00" },
+          { "id": "m2", "role": "user", "author": "Compliance Bot", "text": "Regulator sample requires immutable audit on retry path.", "time": "11:01" },
+          { "id": "m3", "role": "assistant", "text": "I've identified the gap in retry-id logging. Awaiting compliance sign-off before auto-patch.", "time": "11:02", "state": "waiting" }
+        ]
+      },
+      "th-insure": {
+        "title": "Insurance (InsurTech)",
+        "code": "INS",
+        "group": "Finance",
+        "status": "idle",
+        "confidence": 82,
+        "hue": "#D97706",
+        "icon": "◉",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "2h ago",
+        "context": "Policy obligation tagging for claims NLP pipeline.",
+        "suggestedAction": "Tag obligations in one sample policy document.",
+        "tags": ["Parametric triggers", "Claims NLP", "Risk scoring"],
+        "kpis": [
+          { "label": "Auto-adjudication", "value": "67%", "delta": "+5%", "trend": "up" },
+          { "label": "FN rate", "value": "1.1%", "delta": "-0.3%", "trend": "up" },
+          { "label": "Avg claim time", "value": "2.4d", "delta": "-0.2d", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Sample policy tagged: 14 obligations, 3 exclusions. Claims model retrain scheduled.", "time": "05:00", "state": "complete", "citations": 2 }
+        ]
+      },
+      "th-wealth": {
+        "title": "Investment & Wealth Management",
+        "code": "WLT",
+        "group": "Finance",
+        "status": "active",
+        "confidence": 87,
+        "hue": "#CA8A04",
+        "icon": "◇",
+        "unread": 0,
+        "participants": 4,
+        "lastActivity": "22m ago",
+        "context": "Paper-portfolio rebalance scenario for ESG overlay.",
+        "suggestedAction": "Run one scenario rebalance simulation.",
+        "tags": ["Rebalancing", "ESG overlays", "Tax-loss"],
+        "kpis": [
+          { "label": "Tracking error", "value": "0.8%", "delta": "-0.1%", "trend": "up" },
+          { "label": "ESG score", "value": "AA", "delta": "—", "trend": "neutral" },
+          { "label": "Client approvals", "value": "3 pending", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "user", "author": "Morgan Walsh", "text": "Simulate rebalance with 15% ESG tilt — tax impact?", "time": "09:50" },
+          { "id": "m2", "role": "assistant", "text": "Estimated tax drag $2,140. Three lots qualify for harvest. Full report attached.", "time": "09:51", "state": "complete", "citations": 3 }
+        ]
+      },
+      "th-micro": {
+        "title": "Microfinance & NBFCs",
+        "code": "MFI",
+        "group": "Finance",
+        "status": "idle",
+        "confidence": 80,
+        "hue": "#22C55E",
+        "icon": "🌱",
+        "unread": 0,
+        "participants": 2,
+        "lastActivity": "4h ago",
+        "context": "Offline-first field collection flow for rural agents.",
+        "suggestedAction": "Sketch one offline-first collection flow.",
+        "tags": ["Group lending", "Field ops", "Offline sync"],
+        "kpis": [
+          { "label": "Field sync rate", "value": "98%", "delta": "+2%", "trend": "up" },
+          { "label": "Default rate", "value": "2.1%", "delta": "-0.4%", "trend": "up" },
+          { "label": "Active agents", "value": "340", "delta": "+12", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Offline flow wireframe ready. Conflict resolution uses last-write with supervisor override.", "time": "04:00", "state": "complete" }
+        ]
+      },
+      "th-pharma": {
+        "title": "Pharmaceuticals",
+        "code": "PHA",
+        "group": "Healthcare",
+        "status": "active",
+        "confidence": 89,
+        "hue": "#10B981",
+        "icon": "⚗",
+        "unread": 1,
+        "participants": 5,
+        "lastActivity": "35m ago",
+        "context": "eCRF field validation against CDISC standards.",
+        "suggestedAction": "Validate one eCRF field rule.",
+        "tags": ["CDISC", "Trial blinding", "eCRF validation"],
+        "kpis": [
+          { "label": "Query rate", "value": "4.2%", "delta": "-1.1%", "trend": "up" },
+          { "label": "SDV complete", "value": "88%", "delta": "+4%", "trend": "up" },
+          { "label": "Open queries", "value": "7", "delta": "-2", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "user", "author": "Clinical Ops", "text": "Field AESEV violates CDISC codelist — auto-fix or flag?", "time": "08:00" },
+          { "id": "m2", "role": "assistant", "text": "Recommend flag + suggested codelist mapping. Auto-fix risks audit finding.", "time": "08:01", "state": "complete", "citations": 2 }
+        ]
+      },
+      "th-hospital": {
+        "title": "Hospitals & Healthcare",
+        "code": "HOS",
+        "group": "Healthcare",
+        "status": "idle",
+        "confidence": 84,
+        "hue": "#EC4899",
+        "icon": "✚",
+        "unread": 0,
+        "participants": 4,
+        "lastActivity": "1h ago",
+        "context": "Patient flow handoff bottleneck at ED → ICU.",
+        "suggestedAction": "Map one handoff bottleneck.",
+        "tags": ["Bed management", "Staff scheduling", "Patient flow"],
+        "kpis": [
+          { "label": "ED wait", "value": "42m", "delta": "-8m", "trend": "up" },
+          { "label": "Bed occupancy", "value": "87%", "delta": "—", "trend": "neutral" },
+          { "label": "Handoff delays", "value": "3", "delta": "-2", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Bottleneck: ICU bed assignment API latency. Recommend parallel bed search.", "time": "07:00", "state": "complete" }
+        ]
+      },
+      "th-bio": {
+        "title": "Biotechnology",
+        "code": "BIO",
+        "group": "Healthcare",
+        "status": "active",
+        "confidence": 91,
+        "hue": "#14B8A6",
+        "icon": "🧬",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "18m ago",
+        "context": "Sequencing pipeline reproducibility — version pinning.",
+        "suggestedAction": "Pin one pipeline step with version hash.",
+        "tags": ["Seq pipelines", "LIMS", "Bioinformatics"],
+        "kpis": [
+          { "label": "Reproducibility", "value": "99.2%", "delta": "+0.5%", "trend": "up" },
+          { "label": "Pipeline runs", "value": "24/wk", "delta": "+3", "trend": "up" },
+          { "label": "Failed QC", "value": "1", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Step 4 (alignment) pinned to bwa-0.7.17+r1188. Hash logged to LIMS.", "time": "09:30", "state": "complete", "citations": 1 }
+        ]
+      },
+      "th-mental": {
+        "title": "Mental Health & Wellness",
+        "code": "MNT",
+        "group": "Healthcare",
+        "status": "active",
+        "confidence": 86,
+        "hue": "#818CF8",
+        "icon": "☽",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "45m ago",
+        "context": "Onboarding safety copy review — crisis routing.",
+        "suggestedAction": "Review one onboarding screen for safety copy.",
+        "tags": ["Crisis routing", "Therapy match", "Outcomes"],
+        "kpis": [
+          { "label": "Crisis routing", "value": "100%", "delta": "—", "trend": "neutral" },
+          { "label": "Match rate", "value": "78%", "delta": "+4%", "trend": "up" },
+          { "label": "PHQ-9 improve", "value": "62%", "delta": "+2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "user", "author": "Clinical Lead", "text": "Screen 3 needs clearer crisis language per APA guidelines.", "time": "08:30" },
+          { "id": "m2", "role": "assistant", "text": "Revised copy drafted with 988 prominence. Awaiting clinical sign-off.", "time": "08:31", "state": "waiting" }
+        ]
+      },
+      "th-ott": {
+        "title": "OTT & Streaming",
+        "code": "OTT",
+        "group": "Media",
+        "status": "active",
+        "confidence": 90,
+        "hue": "#EF4444",
+        "icon": "▶",
+        "unread": 0,
+        "participants": 5,
+        "lastActivity": "12m ago",
+        "context": "4K ABR ladder tuning for APAC CDN.",
+        "suggestedAction": "Tune one 4K ladder segment.",
+        "tags": ["ABR ladders", "CDN failover", "Engagement ML"],
+        "kpis": [
+          { "label": "Rebuffer rate", "value": "0.3%", "delta": "-0.1%", "trend": "up" },
+          { "label": "Startup time", "value": "1.8s", "delta": "-0.2s", "trend": "up" },
+          { "label": "CDN health", "value": "Green", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Segment 6Mbps optimal for APAC WiFi. Failover path tested — 40ms switch.", "time": "10:10", "state": "complete", "citations": 2 }
+        ]
+      },
+      "th-gaming": {
+        "title": "Gaming",
+        "code": "GAM",
+        "group": "Media",
+        "status": "active",
+        "confidence": 93,
+        "hue": "#A855F7",
+        "icon": "🎮",
+        "unread": 3,
+        "participants": 6,
+        "lastActivity": "6m ago",
+        "context": "Rollback netcode desync reproduction case.",
+        "suggestedAction": "Ship one desync reproduction case.",
+        "tags": ["Rollback netcode", "Anti-cheat", "Live ops"],
+        "kpis": [
+          { "label": "Desync rate", "value": "0.02%", "delta": "-0.01%", "trend": "up" },
+          { "label": "Cheat flags", "value": "8", "delta": "-4", "trend": "up" },
+          { "label": "D1 retention", "value": "44%", "delta": "+1%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "system", "text": "Live ops alert · Match ID #88291 desync reported", "time": "11:05" },
+          { "id": "m2", "role": "assistant", "text": "Repro case captured: frame 1842, input delay 3 frames. Patch candidate ready.", "time": "11:06", "state": "streaming" }
+        ]
+      },
+      "th-adtech": {
+        "title": "AdTech & Media Buying",
+        "code": "ADV",
+        "group": "Media",
+        "status": "idle",
+        "confidence": 81,
+        "hue": "#FB7185",
+        "icon": "◎",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "2h ago",
+        "context": "SKAN vs MMP attribution delta analysis.",
+        "suggestedAction": "Compare one SKAN vs MMP attribution delta.",
+        "tags": ["SKAN", "Clean rooms", "Bid shading"],
+        "kpis": [
+          { "label": "Attribution gap", "value": "12%", "delta": "-2%", "trend": "up" },
+          { "label": "ROAS", "value": "3.2x", "delta": "+0.2x", "trend": "up" },
+          { "label": "Privacy compliance", "value": "Pass", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "SKAN undercounts iOS installs by ~12%. Clean room reconciliation recommended.", "time": "06:00", "state": "complete", "citations": 3 }
+        ]
+      },
+      "th-publish": {
+        "title": "Publishing & Content",
+        "code": "PUB",
+        "group": "Media",
+        "status": "idle",
+        "confidence": 79,
+        "hue": "#F472B6",
+        "icon": "¶",
+        "unread": 0,
+        "participants": 2,
+        "lastActivity": "5h ago",
+        "context": "Paywall rule for premium investigative series.",
+        "suggestedAction": "Draft one paywall rule for premium articles.",
+        "tags": ["Paywalls", "CMS headless", "Newsletter"],
+        "kpis": [
+          { "label": "Sub conversion", "value": "2.1%", "delta": "+0.3%", "trend": "up" },
+          { "label": "Churn", "value": "4.2%", "delta": "-0.5%", "trend": "up" },
+          { "label": "Open rate", "value": "38%", "delta": "+2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Paywall rule: 3 free articles/month, series exempt. Projected +$42k MRR.", "time": "03:00", "state": "complete" }
+        ]
+      },
+      "th-proptech": {
+        "title": "Real Estate & PropTech",
+        "code": "PRP",
+        "group": "Infrastructure",
+        "status": "idle",
+        "confidence": 78,
+        "hue": "#78716C",
+        "icon": "⌂",
+        "unread": 0,
+        "participants": 2,
+        "lastActivity": "6h ago",
+        "context": "Lease renewal trigger automation.",
+        "suggestedAction": "Model one lease renewal trigger.",
+        "tags": ["3D tours", "Lease automation", "Valuation ML"],
+        "kpis": [
+          { "label": "Renewal rate", "value": "72%", "delta": "+3%", "trend": "up" },
+          { "label": "Vacancy", "value": "8%", "delta": "-1%", "trend": "up" },
+          { "label": "Tour → lease", "value": "18%", "delta": "+2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Trigger: 90-day notice + rent index. 24 leases auto-queued.", "time": "02:00", "state": "complete" }
+        ]
+      },
+      "th-cleantech": {
+        "title": "Renewable Energy / CleanTech",
+        "code": "CLN",
+        "group": "Infrastructure",
+        "status": "active",
+        "confidence": 88,
+        "hue": "#4ADE80",
+        "icon": "☀",
+        "unread": 0,
+        "participants": 4,
+        "lastActivity": "28m ago",
+        "context": "Solar forecast vs actual — battery dispatch optimization.",
+        "suggestedAction": "Plot one day of solar forecast vs actual.",
+        "tags": ["Grid forecast", "Battery dispatch", "Carbon ledger"],
+        "kpis": [
+          { "label": "Forecast MAE", "value": "4.2%", "delta": "-0.8%", "trend": "up" },
+          { "label": "Carbon offset", "value": "840t", "delta": "+40t", "trend": "up" },
+          { "label": "Grid stability", "value": "99.1%", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Yesterday: 6% under-forecast 14:00–16:00. Battery dispatch adjusted — $1.2k saved.", "time": "09:00", "state": "complete", "citations": 2 }
+        ]
+      },
+      "th-oil": {
+        "title": "Oil & Gas",
+        "code": "OIL",
+        "group": "Infrastructure",
+        "status": "idle",
+        "confidence": 75,
+        "hue": "#A16207",
+        "icon": "⛽",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "8h ago",
+        "context": "Sensor anomaly threshold for predictive maintenance.",
+        "suggestedAction": "Log one sensor anomaly threshold.",
+        "tags": ["Digital twins", "SCADA", "Predictive maint"],
+        "kpis": [
+          { "label": "Uptime", "value": "99.4%", "delta": "—", "trend": "neutral" },
+          { "label": "Anomalies", "value": "2", "delta": "-1", "trend": "up" },
+          { "label": "Maint savings", "value": "$180k", "delta": "+$20k", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Pump 7 vibration threshold set to 4.2mm/s. Alert wired to SCADA.", "time": "01:00", "state": "complete" }
+        ]
+      },
+      "th-construct": {
+        "title": "Construction & Engineering",
+        "code": "CON",
+        "group": "Infrastructure",
+        "status": "idle",
+        "confidence": 77,
+        "hue": "#FBBF24",
+        "icon": "🏗",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "4h ago",
+        "context": "BIM element linked to schedule task.",
+        "suggestedAction": "Link one BIM element to a schedule task.",
+        "tags": ["BIM 4D", "Safety checklists", "Drone survey"],
+        "kpis": [
+          { "label": "Schedule variance", "value": "3d", "delta": "-2d", "trend": "up" },
+          { "label": "Safety incidents", "value": "0", "delta": "—", "trend": "neutral" },
+          { "label": "BIM coverage", "value": "94%", "delta": "+2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Level 12 slab linked to task CON-442. Critical path updated.", "time": "04:00", "state": "complete" }
+        ]
+      },
+      "th-fmcg": {
+        "title": "FMCG",
+        "code": "FMC",
+        "group": "Consumer",
+        "status": "idle",
+        "confidence": 80,
+        "hue": "#2DD4BF",
+        "icon": "◈",
+        "unread": 0,
+        "participants": 2,
+        "lastActivity": "3h ago",
+        "context": "SKU demand forecast for next 4 weeks.",
+        "suggestedAction": "Forecast one SKU for next 4 weeks.",
+        "tags": ["Demand sensing", "Distributor BI", "Trade promo"],
+        "kpis": [
+          { "label": "Forecast accuracy", "value": "89%", "delta": "+3%", "trend": "up" },
+          { "label": "Stockouts", "value": "2", "delta": "-3", "trend": "up" },
+          { "label": "Promo lift", "value": "14%", "delta": "+2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "SKU-8842: +12% demand week 3 (festival). Reorder recommended.", "time": "05:00", "state": "complete" }
+        ]
+      },
+      "th-retail": {
+        "title": "Retail & D2C",
+        "code": "RTL",
+        "group": "Consumer",
+        "status": "active",
+        "confidence": 87,
+        "hue": "#38BDF8",
+        "icon": "🏪",
+        "unread": 1,
+        "participants": 4,
+        "lastActivity": "20m ago",
+        "context": "Omnichannel return path trace.",
+        "suggestedAction": "Trace one omnichannel return path.",
+        "tags": ["Omnichannel", "Loyalty", "Store ops"],
+        "kpis": [
+          { "label": "Return rate", "value": "8.2%", "delta": "-0.5%", "trend": "up" },
+          { "label": "Loyalty NPS", "value": "62", "delta": "+4", "trend": "up" },
+          { "label": "BOPIS fill", "value": "96%", "delta": "+1%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "user", "author": "Store Ops", "text": "Return R-9921: bought online, returned in-store — inventory sync?", "time": "09:40" },
+          { "id": "m2", "role": "assistant", "text": "Full trace logged. Inventory adjusted at Store #42 within 4min. No leakage.", "time": "09:41", "state": "complete", "citations": 1 }
+        ]
+      },
+      "th-food": {
+        "title": "Food & Beverage",
+        "code": "FOD",
+        "group": "Consumer",
+        "status": "idle",
+        "confidence": 83,
+        "hue": "#FB923C",
+        "icon": "🍽",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "2h ago",
+        "context": "Batch trace from supplier to shelf.",
+        "suggestedAction": "Map one batch trace from supplier to shelf.",
+        "tags": ["Traceability", "Kitchen display", "Last-mile"],
+        "kpis": [
+          { "label": "Trace coverage", "value": "100%", "delta": "—", "trend": "neutral" },
+          { "label": "Spoilage", "value": "1.8%", "delta": "-0.3%", "trend": "up" },
+          { "label": "Delivery SLA", "value": "94%", "delta": "+2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Batch B-7744: farm → DC → store in 38h. Full chain verified.", "time": "07:00", "state": "complete" }
+        ]
+      },
+      "th-fashion": {
+        "title": "Fashion & Apparel",
+        "code": "FSH",
+        "group": "Consumer",
+        "status": "active",
+        "confidence": 85,
+        "hue": "#E879F9",
+        "icon": "✿",
+        "unread": 0,
+        "participants": 3,
+        "lastActivity": "40m ago",
+        "context": "Size curve return reason analysis.",
+        "suggestedAction": "Analyze return reasons for one size curve.",
+        "tags": ["Size AI", "Virtual try-on", "Resale loop"],
+        "kpis": [
+          { "label": "Return rate", "value": "22%", "delta": "-3%", "trend": "up" },
+          { "label": "Size accuracy", "value": "91%", "delta": "+4%", "trend": "up" },
+          { "label": "Resale attach", "value": "18%", "delta": "+2%", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Size M: 34% returns cite 'too small'. Recommend grading +0.5cm chest.", "time": "08:20", "state": "complete", "citations": 2 }
+        ]
+      },
+      "th-logistics": {
+        "title": "Supply Chain & Logistics",
+        "code": "LOG",
+        "group": "Mobility",
+        "status": "active",
+        "confidence": 89,
+        "hue": "#60A5FA",
+        "icon": "⬡",
+        "unread": 2,
+        "participants": 5,
+        "lastActivity": "9m ago",
+        "context": "Route simulation under traffic variance.",
+        "suggestedAction": "Simulate one route under traffic variance.",
+        "tags": ["Route opt", "WMS", "Exception hub"],
+        "kpis": [
+          { "label": "On-time", "value": "96%", "delta": "+1%", "trend": "up" },
+          { "label": "Cost/mile", "value": "$2.14", "delta": "-$0.08", "trend": "up" },
+          { "label": "Exceptions", "value": "5", "delta": "-2", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "system", "text": "Exception EX-441 · Weather delay I-95", "time": "10:50" },
+          { "id": "m2", "role": "assistant", "text": "Reroute via US-1 saves 22min. 3 shipments affected — ETA updated.", "time": "10:51", "state": "streaming" }
+        ]
+      },
+      "th-auto": {
+        "title": "Automotive",
+        "code": "AUT",
+        "group": "Mobility",
+        "status": "idle",
+        "confidence": 86,
+        "hue": "#94A3B8",
+        "icon": "🚗",
+        "unread": 0,
+        "participants": 4,
+        "lastActivity": "1h ago",
+        "context": "OTA rollback criterion definition.",
+        "suggestedAction": "Define one OTA rollback criterion.",
+        "tags": ["OTA", "Telematics", "ADAS data"],
+        "kpis": [
+          { "label": "OTA success", "value": "99.7%", "delta": "—", "trend": "neutral" },
+          { "label": "Fleet coverage", "value": "88%", "delta": "+4%", "trend": "up" },
+          { "label": "Rollback events", "value": "0", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Rollback if >0.1% CAN bus errors within 1h post-update.", "time": "08:00", "state": "complete" }
+        ]
+      },
+      "th-aviation": {
+        "title": "Aviation & Travel",
+        "code": "AVI",
+        "group": "Mobility",
+        "status": "escalated",
+        "confidence": 72,
+        "hue": "#7DD3FC",
+        "icon": "✈",
+        "unread": 4,
+        "participants": 8,
+        "lastActivity": "3m ago",
+        "context": "Irregular ops rebooking path during hub disruption.",
+        "suggestedAction": "Model one irregular-ops rebooking path.",
+        "tags": ["Disruption recovery", "NDC", "Loyalty"],
+        "kpis": [
+          { "label": "Rebooked", "value": "78%", "delta": "+12%", "trend": "up" },
+          { "label": "Avg delay", "value": "94m", "delta": "-18m", "trend": "up" },
+          { "label": "Comp claims", "value": "142", "delta": "+28", "trend": "down" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "system", "text": "IRROPS Level 2 · Hub ORD · 34 cancelled", "time": "11:10" },
+          { "id": "m2", "role": "assistant", "text": "Rebooking engine at capacity. Human agent pool expanded. Priority: elite + connections < 2h.", "time": "11:11", "state": "waiting" }
+        ]
+      },
+      "th-agri": {
+        "title": "AgriTech",
+        "code": "AGR",
+        "group": "Mobility",
+        "status": "idle",
+        "confidence": 81,
+        "hue": "#84CC16",
+        "icon": "🌾",
+        "unread": 0,
+        "participants": 2,
+        "lastActivity": "5h ago",
+        "context": "Soil reading correlated to irrigation schedule.",
+        "suggestedAction": "Correlate one soil reading to irrigation schedule.",
+        "tags": ["Satellite NDVI", "Soil IoT", "Market linkage"],
+        "kpis": [
+          { "label": "Water saved", "value": "18%", "delta": "+3%", "trend": "up" },
+          { "label": "Yield forecast", "value": "+6%", "delta": "—", "trend": "up" },
+          { "label": "Probe uptime", "value": "97%", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Sector 7: moisture 22% → skip irrigation 48h. NDVI confirms.", "time": "03:00", "state": "complete" }
+        ]
+      },
+      "th-gov": {
+        "title": "GovTech",
+        "code": "GOV",
+        "group": "Public",
+        "status": "active",
+        "confidence": 84,
+        "hue": "#3B82F6",
+        "icon": "🏛",
+        "unread": 0,
+        "participants": 5,
+        "lastActivity": "55m ago",
+        "context": "WCAG compliance audit on citizen intake form.",
+        "suggestedAction": "Audit one form for WCAG compliance.",
+        "tags": ["Digital ID", "Open data", "Accessible forms"],
+        "kpis": [
+          { "label": "WCAG score", "value": "AA", "delta": "+1 level", "trend": "up" },
+          { "label": "Completion rate", "value": "68%", "delta": "+5%", "trend": "up" },
+          { "label": "Open issues", "value": "4", "delta": "-2", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "4 contrast failures on step 2. Remediation patch attached.", "time": "08:05", "state": "complete", "citations": 1 }
+        ]
+      },
+      "th-ngo": {
+        "title": "Non-Profit / NGOs",
+        "code": "NGO",
+        "group": "Public",
+        "status": "idle",
+        "confidence": 79,
+        "hue": "#F472B6",
+        "icon": "🤝",
+        "unread": 0,
+        "participants": 2,
+        "lastActivity": "7h ago",
+        "context": "Impact metric dashboard tile for donor report.",
+        "suggestedAction": "Publish one impact metric dashboard tile.",
+        "tags": ["Donor CRM", "Field reporting", "Grant tracking"],
+        "kpis": [
+          { "label": "Funds deployed", "value": "94%", "delta": "+2%", "trend": "up" },
+          { "label": "Beneficiaries", "value": "12.4k", "delta": "+800", "trend": "up" },
+          { "label": "Grant compliance", "value": "100%", "delta": "—", "trend": "neutral" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "assistant", "text": "Tile: 12.4k beneficiaries, 94% funds deployed. Donor-ready export.", "time": "01:00", "state": "complete" }
+        ]
+      },
+      "th-legal": {
+        "title": "Legal & LegalTech",
+        "code": "LGL",
+        "group": "Public",
+        "status": "active",
+        "confidence": 90,
+        "hue": "#A78BFA",
+        "icon": "§",
+        "unread": 0,
+        "participants": 4,
+        "lastActivity": "30m ago",
+        "context": "Contract clause entity extraction for matter workflow.",
+        "suggestedAction": "Extract entities from one contract clause.",
+        "tags": ["Clause library", "Matter workflow", "E-discovery"],
+        "kpis": [
+          { "label": "Extraction F1", "value": "94%", "delta": "+2%", "trend": "up" },
+          { "label": "Review time", "value": "-40%", "delta": "—", "trend": "up" },
+          { "label": "Open matters", "value": "18", "delta": "-3", "trend": "up" }
+        ],
+        "messages": [
+          { "id": "m1", "role": "user", "author": "Legal Ops", "text": "Extract parties and governing law from MSA §12.", "time": "09:00" },
+          { "id": "m2", "role": "assistant", "text": "Parties: Acme Corp, Vendor LLC. Governing law: Delaware. Limitation of liability capped at 12mo fees.", "time": "09:01", "state": "complete", "citations": 4 }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "theme": {
+    "accent": "#3B82F6",
+    "accentWarm": "#F97316",
+    "accentGlow": "rgba(59, 130, 246, 0.25)",
+    "surface": "#030712",
+    "glass": "rgba(255, 255, 255, 0.06)"
+  },
+  "novaDeck": {
+    "kicker": "Tokamak-class · ITER consortium partner",
+    "headline": "Harness the reaction that fuels the stars",
+    "headlineEmphasis": "fuels the stars",
+    "subcopy": "Commercial fusion is no longer a decades-away dream — plasma confinement, tritium breeding, and AI-controlled magnetic fields are converging into grid-ready reactors.",
+    "defaultActive": "plasma-confinement",
+    "autoCycle": true,
+    "autoCycleMs": 7200,
+    "modules": [
+      {
+        "id": "plasma-confinement",
+        "index": "01",
+        "label": "Plasma",
+        "title": "Magnetic plasma confinement",
+        "description": "Superconducting toroidal coils sustain 150 million °C plasma — compressing hydrogen isotopes until fusion ignition crosses the Lawson criterion and energy gain exceeds breakeven.",
+        "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600&h=900&fit=crop",
+        "alt": "Plasma confinement chamber with glowing magnetic field visualization",
+        "link": "#plasma-confinement",
+        "metric": { "value": "150M", "unit": "°C", "label": "Core temperature" }
+      },
+      {
+        "id": "tritium-breed",
+        "index": "02",
+        "label": "Breeder",
+        "title": "Lithium tritium breeding blankets",
+        "description": "Neutron-absorbing lithium blankets inside the reactor vessel breed tritium fuel in situ — closing the fuel cycle and eliminating dependence on scarce external isotope supply.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop",
+        "alt": "Cross-section diagram of fusion reactor breeding blanket layers",
+        "link": "#tritium-breed",
+        "metric": { "value": "1.05", "unit": "×", "label": "Tritium self-sufficiency" }
+      },
+      {
+        "id": "ai-magnetics",
+        "index": "03",
+        "label": "Control",
+        "title": "AI-driven magnetic control",
+        "description": "Reinforcement learning models predict plasma instabilities 30 milliseconds ahead — adjusting coil currents in real time to suppress disruptions before they quench the reaction.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=900&fit=crop",
+        "alt": "AI control system monitoring fusion reactor plasma stability",
+        "link": "#ai-magnetics",
+        "metric": { "value": "30", "unit": "ms", "label": "Instability lead time" }
+      },
+      {
+        "id": "heat-extract",
+        "index": "04",
+        "label": "Extract",
+        "title": "High-efficiency heat extraction",
+        "description": "Liquid metal and helium coolant loops capture 500 MW of fusion thermal output — driving steam turbines at 45% Carnot efficiency for baseload grid injection.",
+        "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac71?w=1600&h=900&fit=crop",
+        "alt": "Industrial heat exchanger system in fusion power plant",
+        "link": "#heat-extract",
+        "metric": { "value": "500", "unit": "MW", "label": "Thermal output" }
+      },
+      {
+        "id": "grid-sync",
+        "index": "05",
+        "label": "Grid",
+        "title": "Grid-synchronous power delivery",
+        "description": "Pulsed fusion output is smoothed through flywheel storage and supercap buffers — delivering continuous AC power that tracks grid frequency within ±0.02 Hz for utility interconnection.",
+        "image": "https://images.unsplash.com/photo-1477959856237-4a59bb5812af?w=1600&h=900&fit=crop",
+        "alt": "Power grid substation connecting fusion plant to city network",
+        "link": "#grid-sync",
+        "metric": { "value": "±0.02", "unit": "Hz", "label": "Frequency stability" }
+      }
+    ]
+  }
+}

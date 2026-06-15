@@ -1,0 +1,90 @@
+{
+  "theme": {
+    "accent": "#14B8A6",
+    "accentSecondary": "#FB7185",
+    "accentGlow": "rgba(20, 184, 166, 0.28)",
+    "surface": "#0F1419",
+    "panel": "#151C24"
+  },
+  "meridianScope": {
+    "badge": {
+      "text": "Post-quantum fabric · NIST Level 5 ready",
+      "pulse": true
+    },
+    "eyebrow": "Quantum-resilient cryptography",
+    "heading": "Secure tomorrow's data against today's threats",
+    "headingAccent": "tomorrow's data",
+    "defaultActive": "lattice-crypto",
+    "autoDrift": true,
+    "autoDriftMs": 6500,
+    "hint": "Drag, scroll, or use ← → keys to scan each security layer",
+    "layers": [
+      {
+        "id": "lattice-crypto",
+        "tag": "Lattice",
+        "title": "Lattice-based encryption",
+        "description": "CRYSTALS-Kyber and Dilithium algorithms resist Shor's algorithm — wrapping every payload in math that even fault-tolerant quantum computers cannot break at scale.",
+        "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&h=900&fit=crop",
+        "alt": "Encrypted data streams visualized as glowing lattice structures",
+        "link": "#lattice-crypto",
+        "metric": { "value": "Level 5", "unit": "", "label": "NIST maturity" },
+        "position": 0
+      },
+      {
+        "id": "qkd-network",
+        "tag": "QKD",
+        "title": "Quantum key distribution",
+        "description": "Photon-encoded keys travel across dedicated fiber links — any eavesdrop attempt collapses the quantum state and triggers instant revocation across the entire mesh.",
+        "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600&h=900&fit=crop",
+        "alt": "Quantum communication network with photon beam pathways",
+        "link": "#qkd-network",
+        "metric": { "value": "256", "unit": "bit", "label": "Key entropy" },
+        "position": 20
+      },
+      {
+        "id": "homomorphic-vault",
+        "tag": "FHE",
+        "title": "Homomorphic compute vaults",
+        "description": "Run analytics directly on ciphertext without ever decrypting — enabling collaborative AI on regulated health, finance, and defense datasets with zero plaintext exposure.",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&h=900&fit=crop",
+        "alt": "Secure vault processing encrypted data in a data center",
+        "link": "#homomorphic-vault",
+        "metric": { "value": "0", "unit": "", "label": "Plaintext touches" },
+        "position": 40
+      },
+      {
+        "id": "zk-proofs",
+        "tag": "ZK",
+        "title": "Zero-knowledge proof engine",
+        "description": "Prove compliance, identity, and asset ownership without revealing underlying data — SNARK and STARK circuits verify in milliseconds on commodity hardware.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop",
+        "alt": "Zero-knowledge proof verification dashboard",
+        "link": "#zk-proofs",
+        "metric": { "value": "<12", "unit": "ms", "label": "Proof verify time" },
+        "position": 60
+      },
+      {
+        "id": "pqc-signatures",
+        "tag": "PQC",
+        "title": "Post-quantum signatures",
+        "description": "SPHINCS+ and Falcon replace RSA and ECDSA across code signing, firmware, and document chains — future-proofing trust anchors before Y2Q migration deadlines.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=900&fit=crop",
+        "alt": "Digital signature chain on blockchain ledger display",
+        "link": "#pqc-signatures",
+        "metric": { "value": "100%", "unit": "", "label": "Algorithm coverage" },
+        "position": 80
+      },
+      {
+        "id": "entropy-harvest",
+        "tag": "Entropy",
+        "title": "Hardware entropy harvesting",
+        "description": "True random number generators sample quantum noise from chip junctions and atmospheric RF — seeding key material with entropy pools audited to NIST SP 800-90B.",
+        "image": "https://images.unsplash.com/photo-1535378620166-273708bad44e?w=1600&h=900&fit=crop",
+        "alt": "Hardware security module generating random entropy",
+        "link": "#entropy-harvest",
+        "metric": { "value": "4.2", "unit": "Gb/s", "label": "Entropy throughput" },
+        "position": 100
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "theme": {
+    "accent": "#A3E635",
+    "accentSecondary": "#38BDF8",
+    "accentGlow": "rgba(163, 230, 53, 0.18)",
+    "surface": "#0A0A0B",
+    "frame": "#111113"
+  },
+  "horizonScroll": {
+    "tag": "Orbital agriculture · LEO station alpha",
+    "defaultActive": "hydro-ring",
+    "autoAdvance": true,
+    "autoAdvanceMs": 7500,
+    "frames": [
+      {
+        "id": "hydro-ring",
+        "code": "HYD",
+        "title": "Rotating hydroponic rings",
+        "description": "Concentric nutrient film channels spin at 2 RPM in microgravity — delivering uniform root exposure, oxygenation, and LED photoperiod cycles across 12 crop varieties simultaneously.",
+        "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600&h=900&fit=crop",
+        "alt": "Rotating hydroponic growing rings in a space greenhouse",
+        "link": "#hydro-ring",
+        "metric": { "value": "12", "unit": "", "label": "Crop varieties" }
+      },
+      {
+        "id": "led-spectrum",
+        "code": "LED",
+        "title": "Adaptive LED spectrum tuning",
+        "description": "Full-spectrum tunable arrays shift from 660 nm red to 450 nm blue across growth phases — maximizing photosynthetic efficiency while cutting energy draw by 40% versus static lighting.",
+        "image": "https://images.unsplash.com/photo-1464226184884-fa280b87eee0?w=1600&h=900&fit=crop",
+        "alt": "Purple and pink LED grow lights over space station plants",
+        "link": "#led-spectrum",
+        "metric": { "value": "40", "unit": "%", "label": "Energy saved" }
+      },
+      {
+        "id": "micro-pollinate",
+        "code": "POL",
+        "title": "Microgravity pollination drones",
+        "description": "Palm-sized electrostatic drones carry pollen between flowering nodes in zero-G — replacing wind and insect vectors that do not exist aboard orbital greenhouses.",
+        "image": "https://images.unsplash.com/photo-1530836369250-59c091685ec0?w=1600&h=900&fit=crop",
+        "alt": "Small drone pollinating plants in a space greenhouse module",
+        "link": "#micro-pollinate",
+        "metric": { "value": "98", "unit": "%", "label": "Pollination rate" }
+      },
+      {
+        "id": "water-loop",
+        "code": "H₂O",
+        "title": "Closed-loop water reclamation",
+        "description": "Condensate capture, UV sterilization, and ion-exchange polish every drop — achieving 97% water recirculation and reducing resupply mass from Earth by tonnes per year.",
+        "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600&h=900&fit=crop",
+        "alt": "Water reclamation system with clear tubing in space habitat",
+        "link": "#water-loop",
+        "metric": { "value": "97", "unit": "%", "label": "Water recycled" }
+      },
+      {
+        "id": "crop-vision",
+        "code": "CV",
+        "title": "Multispectral crop vision",
+        "description": "Hyperspectral cameras detect chlorophyll stress and nitrogen deficiency 72 hours before visible wilting — triggering autonomous nutrient injections via the ring irrigation bus.",
+        "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&h=900&fit=crop",
+        "alt": "Multispectral imaging dashboard monitoring crop health",
+        "link": "#crop-vision",
+        "metric": { "value": "72", "unit": "h", "label": "Early detection" }
+      },
+      {
+        "id": "harvest-bot",
+        "code": "BOT",
+        "title": "Precision harvest robotics",
+        "description": "Soft-grip manipulators identify ripeness via firmness sensors and color index — cutting and bagging produce in vacuum-sealed pouches ready for crew consumption or cold storage.",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&h=900&fit=crop",
+        "alt": "Robotic arm harvesting vegetables in automated greenhouse",
+        "link": "#harvest-bot",
+        "metric": { "value": "3.2", "unit": "kg", "label": "Daily yield" }
+      }
+    ]
+  }
+}

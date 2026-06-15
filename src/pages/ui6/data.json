@@ -1,0 +1,78 @@
+{
+  "theme": {
+    "accent": "#6366F1",
+    "accentAlt": "#22D3EE",
+    "accentWarm": "#F472B6",
+    "surface": "#080B14",
+    "card": "#111827"
+  },
+  "holodeck": {
+    "badge": {
+      "text": "Mission control · Live feed",
+      "pulse": true
+    },
+    "eyebrow": "Orbital connectivity platform",
+    "heading": "Command every signal from ground to orbit",
+    "headingAccent": "ground to orbit",
+    "defaultActive": "constellation",
+    "autoRotate": true,
+    "autoRotateMs": 6500,
+    "cards": [
+      {
+        "id": "constellation",
+        "tag": "LEO Network",
+        "title": "Constellation orchestration",
+        "description": "Coordinate thousands of low-Earth orbit satellites as one adaptive mesh — dynamically routing bandwidth, balancing loads, and maintaining seamless global coverage.",
+        "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1600&h=900&fit=crop",
+        "alt": "Earth viewed from space with satellite network visualization",
+        "link": "#constellation",
+        "stat": { "value": "12K+", "unit": "", "label": "Active nodes" },
+        "gradient": ["#6366F1", "#8B5CF6"]
+      },
+      {
+        "id": "ground-link",
+        "tag": "Ground Segment",
+        "title": "Ultra-low latency ground link",
+        "description": "Edge ground stations process uplink data in milliseconds — enabling real-time decisions for autonomous fleets, emergency response, and precision agriculture.",
+        "image": "https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1600&h=900&fit=crop",
+        "alt": "Satellite dish array at a ground station facility",
+        "link": "#ground-link",
+        "stat": { "value": "8", "unit": "ms", "label": "Avg latency" },
+        "gradient": ["#0EA5E9", "#22D3EE"]
+      },
+      {
+        "id": "secure-uplink",
+        "tag": "Cyber Shield",
+        "title": "Quantum-resilient secure uplink",
+        "description": "End-to-end encrypted channels with post-quantum key exchange protect mission-critical payloads from interception across every hop in the network.",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&h=900&fit=crop",
+        "alt": "Cybersecurity visualization with encrypted data streams",
+        "link": "#secure-uplink",
+        "stat": { "value": "256", "unit": "bit", "label": "Encryption" },
+        "gradient": ["#EC4899", "#F472B6"]
+      },
+      {
+        "id": "telemetry",
+        "tag": "Telemetry AI",
+        "title": "Predictive telemetry intelligence",
+        "description": "AI models analyze orbital telemetry streams to predict anomalies before they impact service — reducing downtime and extending asset lifespan across the fleet.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop",
+        "alt": "Digital globe with data points representing telemetry",
+        "link": "#telemetry",
+        "stat": { "value": "94%", "unit": "", "label": "Prediction accuracy" },
+        "gradient": ["#14B8A6", "#2DD4BF"]
+      },
+      {
+        "id": "mission-ops",
+        "tag": "Mission Ops",
+        "title": "Unified mission operations hub",
+        "description": "A single command interface for launch, deployment, station-keeping, and de-orbit — giving operators full situational awareness across every mission phase.",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&h=900&fit=crop",
+        "alt": "Engineer monitoring mission operations on multiple screens",
+        "link": "#mission-ops",
+        "stat": { "value": "24/7", "unit": "", "label": "Ops coverage" },
+        "gradient": ["#F59E0B", "#FBBF24"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "theme": {
+    "accent": "#FF000F",
+    "accentSecondary": "#00D4AA",
+    "surface": "#0A0F1C"
+  },
+  "orbit": {
+    "subheading": "Capability map",
+    "heading": "Navigate your digital operations stack",
+    "label": "Digital Twin Core",
+    "sublabel": "Select a capability",
+    "defaultActive": "automation",
+    "nodes": [
+      {
+        "id": "automation",
+        "label": "Automation",
+        "icon": "⚡",
+        "title": "Integrated automation",
+        "description": "Orchestrate batch processes, utilities, and packaging lines from a single control layer — reducing manual intervention while maintaining full audit trails for regulatory compliance.",
+        "metric": { "value": "38%", "label": "faster changeovers" },
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkeGS4VXWpA58XyOwmNJcYLTZCWXrim5uew&s",
+        "alt": "Automated manufacturing line in a modern facility"
+      },
+      {
+        "id": "digital",
+        "label": "Digital",
+        "icon": "◈",
+        "title": "Digital operations",
+        "description": "Unify OT and IT data streams into actionable dashboards. Predict deviations before they impact quality, and empower teams with context-rich decision support at every layer.",
+        "metric": { "value": "60%", "label": "fewer deviations" },
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQp-TLjZDMCFVSfde70b6dIBYbLlfJuipCA&s",
+        "alt": "Digital operations dashboard in a life sciences plant"
+      },
+      {
+        "id": "electrical",
+        "label": "Electrical",
+        "icon": "◎",
+        "title": "Electrical infrastructure",
+        "description": "Power distribution, UPS systems, and energy management designed for GxP environments — ensuring uninterrupted operations and traceable energy consumption across critical zones.",
+        "metric": { "value": "22%", "label": "energy savings" },
+        "image": "https://picsum.photos/seed/electrical-ls/1600/900",
+        "alt": "Electrical systems in an industrial life sciences facility"
+      },
+      {
+        "id": "compliance",
+        "label": "Compliance",
+        "icon": "✦",
+        "title": "Compliance by design",
+        "description": "Built-in data integrity, electronic batch records, and validation-ready architectures that scale with FDA, EMA, and global regulatory frameworks — without slowing innovation.",
+        "metric": { "value": "100%", "label": "audit readiness" },
+        "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=1600&h=900&fit=crop",
+        "alt": "Quality compliance documentation in a lab setting"
+      },
+      {
+        "id": "sustainability",
+        "label": "Sustainability",
+        "icon": "↻",
+        "title": "Sustainable operations",
+        "description": "Optimize water, energy, and waste flows across your facility. Measure carbon footprint in real time and align plant performance with corporate sustainability targets.",
+        "metric": { "value": "35%", "label": "carbon reduction" },
+        "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac71?w=1600&h=900&fit=crop",
+        "alt": "Sustainable green energy integration at an industrial site"
+      }
+    ]
+  }
+}

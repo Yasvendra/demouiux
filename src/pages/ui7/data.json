@@ -1,0 +1,93 @@
+{
+  "theme": {
+    "accent": "#3B82F6",
+    "accentSecondary": "#34D399",
+    "accentWarm": "#F97316",
+    "surface": "#0C1017",
+    "tile": "#151B26"
+  },
+  "morphBento": {
+    "badge": {
+      "text": "Autonomy stack · v4.2 live",
+      "pulse": true
+    },
+    "eyebrow": "Smart mobility intelligence",
+    "heading": "Engineer cities that think, move, and adapt",
+    "headingAccent": "think, move, and adapt",
+    "defaultActive": "v2x-mesh",
+    "tiles": [
+      {
+        "id": "v2x-mesh",
+        "icon": "⬡",
+        "label": "V2X Mesh",
+        "title": "Vehicle-to-everything mesh network",
+        "description": "Sub-10ms vehicle-to-infrastructure communication links cars, signals, and pedestrians into a living urban nervous system — preventing collisions before they form.",
+        "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&h=900&fit=crop",
+        "alt": "Connected city intersection with smart traffic systems",
+        "link": "#v2x-mesh",
+        "metric": { "value": "<10", "unit": "ms", "label": "Signal latency" },
+        "span": "large"
+      },
+      {
+        "id": "lidar-fusion",
+        "icon": "◎",
+        "label": "LiDAR Fusion",
+        "title": "Multi-sensor perception fusion",
+        "description": "Fuse LiDAR, radar, and camera streams into a unified 360° world model — delivering centimeter-precision object detection in rain, fog, and darkness.",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1600&h=900&fit=crop",
+        "alt": "Autonomous vehicle sensor array scanning environment",
+        "link": "#lidar-fusion",
+        "metric": { "value": "360°", "unit": "", "label": "Perception field" },
+        "span": "medium"
+      },
+      {
+        "id": "edge-inference",
+        "icon": "◈",
+        "label": "Edge AI",
+        "title": "On-vehicle edge inference",
+        "description": "Run transformer models directly on automotive-grade silicon — making split-second path planning decisions without cloud round-trips.",
+        "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1600&h=900&fit=crop",
+        "alt": "AI processor chip powering edge computing in a vehicle",
+        "link": "#edge-inference",
+        "metric": { "value": "200", "unit": "TOPS", "label": "Compute power" },
+        "span": "small"
+      },
+      {
+        "id": "fleet-orchestration",
+        "icon": "↻",
+        "label": "Fleet Ops",
+        "title": "Autonomous fleet orchestration",
+        "description": "Coordinate hundreds of autonomous shuttles, delivery bots, and robo-taxis from one control plane — optimizing routes, charging, and passenger flow in real time.",
+        "image": "https://images.unsplash.com/photo-1570125909232-e097023b06de?w=1600&h=900&fit=crop",
+        "alt": "Fleet of autonomous electric shuttles in an urban depot",
+        "link": "#fleet-orchestration",
+        "metric": { "value": "500+", "unit": "", "label": "Vehicles managed" },
+        "span": "medium"
+      },
+      {
+        "id": "digital-twin",
+        "icon": "◇",
+        "label": "City Twin",
+        "title": "Urban traffic digital twin",
+        "description": "Mirror entire city traffic flows in simulation — test new signal timings, road closures, and autonomy policies before deploying to real streets.",
+        "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1600&h=900&fit=crop",
+        "alt": "Digital twin visualization of city traffic patterns",
+        "link": "#digital-twin",
+        "metric": { "value": "1:1", "unit": "", "label": "Simulation fidelity" },
+        "span": "small"
+      },
+      {
+        "id": "safety-validation",
+        "icon": "✦",
+        "label": "Safety",
+        "title": "ISO 26262 safety validation",
+        "description": "Formal verification pipelines validate every autonomy decision path — meeting ASIL-D requirements with full traceability from sensor input to actuator output.",
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&h=900&fit=crop",
+        "alt": "Engineer validating autonomous vehicle safety systems",
+        "link": "#safety-validation",
+        "metric": { "value": "ASIL-D", "unit": "", "label": "Safety rating" },
+        "span": "small"
+      }
+    ]
+  }
+}

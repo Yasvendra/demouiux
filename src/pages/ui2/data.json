@@ -1,0 +1,61 @@
+{
+  "tabs": {
+    "defaultActive": "electrification",
+    "items": [
+      {
+        "id": "electrification",
+        "label": "Electrification",
+        "title": "Electrification",
+        "description": "The world needs more power with lower emissions. As a global technology leader in electrical distribution and management, we bring electrification solutions together to accelerate decarbonization and increase energy efficiency.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQp-TLjZDMCFVSfde70b6dIBYbLlfJuipCA&s",
+        "alt": "Technician in safety gear working in an industrial facility",
+        "link": "#electrification"
+      },
+      {
+        "id": "automation",
+        "label": "Automation",
+        "title": "Automation",
+        "description": "Digital transformation is reshaping how industries operate. Our automation platforms connect machines, data, and people to improve productivity, reliability, and safety across complex operations.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkeGS4VXWpA58XyOwmNJcYLTZCWXrim5uew&s",
+        "alt": "Automated manufacturing line in a modern factory",
+        "link": "#automation"
+      },
+      {
+        "id": "motors-and-drives",
+        "label": "Motors and Drives",
+        "title": "Motors and Drives",
+        "description": "From heavy industry to precision applications, advanced motor and drive systems deliver the torque, control, and efficiency needed to power critical infrastructure worldwide.",
+        "image": "https://picsum.photos/seed/motors-drives/1600/900",
+        "alt": "Industrial motors and drive equipment",
+        "link": "#motors-and-drives"
+      },
+      {
+        "id": "power-conversion",
+        "label": "Power Conversion and Control",
+        "title": "Power Conversion and Control",
+        "description": "Reliable power conversion technologies help stabilize grids, protect assets, and enable smarter energy flows from generation through transmission and distribution.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkeGS4VXWpA58XyOwmNJcYLTZCWXrim5uew&s",
+        "alt": "Electrical substation and power control systems",
+        "link": "#power-conversion"
+      },
+      {
+        "id": "renewable-power",
+        "label": "Renewable Power",
+        "title": "Renewable Power",
+        "description": "Wind, solar, and hybrid renewable solutions are scaling faster than ever. We help operators integrate clean generation while maintaining grid stability and performance.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQp-TLjZDMCFVSfde70b6dIBYbLlfJuipCA&s",
+        "alt": "Wind turbines generating renewable electricity",
+        "link": "#renewable-power"
+      },
+      {
+        "id": "robotics",
+        "label": "Robotics",
+        "title": "Robotics",
+        "description": "Intelligent robotics systems extend human capability in demanding environments, combining sensing, motion control, and software to automate tasks with precision.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkeGS4VXWpA58XyOwmNJcYLTZCWXrim5uew&s",
+        "alt": "Robotic arm operating in an industrial workspace",
+        "link": "#robotics"
+      }
+    ]
+  }
+}

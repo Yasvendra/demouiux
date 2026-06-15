@@ -1,0 +1,133 @@
+{
+  "theme": {
+    "accent": "#0F172A",
+    "subway": "#2563EB",
+    "bus": "#D97706",
+    "walk": "#059669",
+    "bike": "#7C3AED",
+    "accentLive": "#EF4444",
+    "surface": "#F1F5F9",
+    "panel": "#FFFFFF",
+    "spine": "#CBD5E1",
+    "muted": "#64748B"
+  },
+  "transitHop": {
+    "tripId": "TH-7K2M9",
+    "title": "Morning commute",
+    "origin": "184 Oak Street, Brooklyn",
+    "destination": "Hudson Tower, Floor 18",
+    "departure": "8:12 AM",
+    "arrival": "8:54 AM",
+    "duration": "42 min",
+    "fare": "$2.90",
+    "liveStatus": "On board",
+    "delayMin": 3,
+    "defaultActive": "subway-6",
+    "autoAdvance": true,
+    "autoAdvanceMs": 8500,
+    "legs": [
+      {
+        "id": "walk-origin",
+        "kind": "segment",
+        "mode": "walk",
+        "lane": "left",
+        "from": "Home",
+        "to": "14th St – Lexington",
+        "line": "6 min walk",
+        "duration": "6 min",
+        "distance": "0.4 mi",
+        "status": "done",
+        "crowding": "low",
+        "note": "Sidewalk construction on 3rd Ave — use east crosswalk."
+      },
+      {
+        "id": "hub-lex",
+        "kind": "hub",
+        "name": "14th St – Lexington",
+        "transfer": false,
+        "platform": "Downtown · Uptown",
+        "status": "done"
+      },
+      {
+        "id": "subway-6",
+        "kind": "segment",
+        "mode": "subway",
+        "lane": "main",
+        "from": "14th St – Lexington",
+        "to": "42nd St – Bryant Park",
+        "line": "6 Av Local",
+        "duration": "14 min",
+        "distance": "4.2 mi",
+        "status": "active",
+        "crowding": "high",
+        "platform": "Track 2 · Board rear cars",
+        "delayMin": 3,
+        "note": "Express bypass at 23 St. Next stop: 28 St."
+      },
+      {
+        "id": "hub-bryant",
+        "kind": "hub",
+        "name": "42nd St – Bryant Park",
+        "transfer": true,
+        "platform": "Shuttle to Times Sq",
+        "status": "pending",
+        "note": "7 min transfer window — follow purple signs to B/D/F/M."
+      },
+      {
+        "id": "subway-shuttle",
+        "kind": "segment",
+        "mode": "subway",
+        "lane": "main",
+        "from": "42nd St – Bryant Park",
+        "to": "Times Sq – 42nd St",
+        "line": "S Shuttle",
+        "duration": "2 min",
+        "distance": "0.5 mi",
+        "status": "pending",
+        "crowding": "medium",
+        "platform": "Track 1"
+      },
+      {
+        "id": "hub-times",
+        "kind": "hub",
+        "name": "Times Sq – 42nd St",
+        "transfer": true,
+        "platform": "Port Authority exit",
+        "status": "pending"
+      },
+      {
+        "id": "bus-m34",
+        "kind": "segment",
+        "mode": "bus",
+        "lane": "right",
+        "from": "Times Sq",
+        "to": "12th Ave & 34th St",
+        "line": "M34 SBS",
+        "duration": "11 min",
+        "distance": "1.8 mi",
+        "status": "pending",
+        "crowding": "medium",
+        "platform": "Stop ID 401234 · All-door boarding",
+        "note": "Use OMNY tap at any door. Bus lane active until 10 AM."
+      },
+      {
+        "id": "walk-dest",
+        "kind": "segment",
+        "mode": "walk",
+        "lane": "right",
+        "from": "12th Ave & 34th St",
+        "to": "Hudson Tower lobby",
+        "line": "4 min walk",
+        "duration": "4 min",
+        "distance": "0.2 mi",
+        "status": "pending",
+        "crowding": "low"
+      }
+    ],
+    "actions": [
+      { "id": "share", "label": "Share live ETA", "primary": true },
+      { "id": "alert", "label": "Delay alert", "primary": false },
+      { "id": "exit", "label": "Get-off reminder", "primary": false }
+    ]
+  }
+}
