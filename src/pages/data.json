@@ -1,63 +1,345 @@
 {
-  "page": {
-    "hero": {
-      "brand": "CAIPIRINHA MOOD",
-      "tagline": "A Website For Marketing & Creative Agencies",
-      "backgroundImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1600&h=700&fit=crop&q=80",
-      "backgroundAlt": "Dark green palm leaves",
-      "portraitImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&h=750&fit=crop&q=80",
-      "portraitAlt": "Woman in sunglasses",
-      "cta": {
-        "prefix": "ARE YOU READY TO TAKE YOUR BRAND TO THE",
-        "emphasis": "NEXT",
-        "suffix": "LEVEL?"
-      },
-      "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "brand": {
-      "heading": "Making your brand beautiful is what we do.",
-      "box": {
-        "title": "WE MAKE YOUR BRAND SHINE BRIGHTER",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-      },
-      "images": [
-        {
-          "src": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=450&h=650&fit=crop&q=80",
-          "alt": "Green palm leaves close-up"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1544986581-efac024faf62?w=450&h=650&fit=crop&q=80",
-          "alt": "Classical stone architecture"
+  "id": "AboutSolutions",
+  "type": "Type1",
+  "left": "Type1",
+  "right": "Type1",
+  "typeDropdown": ["Type1", "Type2", "Type3", "Type4"],
+  "leftDropdown": ["Type1", "Type2"],
+  "rightDropdown": ["Type1", "Type2"],
+  "data": {
+    "header": {
+      "badge": {
+        "text": "ABOUT OUR SOLUTIONS",
+        "icon": {
+          "iconName": "AutoAwesome",
+          "type": "Filled",
+          "fontSize": "medium"
         }
-      ]
+      },
+      "title": "We Are Increasing Business Success With ",
+      "titleHighlight": "Technology",
+      "description": "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue magna at pretium purus pretium ligula rutrum luctus risusd diam eget risus varius blandit."
     },
-    "services": {
-      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&h=750&fit=crop&q=80",
-      "imageAlt": "Person in blazer",
+    "media": {
+      "main": {
+        "media": {
+          "mediaLink": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=1000&fit=crop&q=80",
+          "mediaType": "image",
+          "alt": "Diverse business team collaborating around a laptop"
+        }
+      },
+      "video": {
+        "link": "#video",
+        "clickType": "href",
+        "icon": {
+          "iconName": "PlayArrow",
+          "type": "Filled",
+          "fontSize": "large"
+        }
+      }
+    },
+    "tabs": {
+      "defaultActive": "award-winning",
       "items": [
         {
-          "title": "SOCIAL MEDIA MANAGEMENT",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "id": "award-winning",
+          "label": "AWARD WINNING",
+          "heading": "An Award-Winning Company.",
+          "description": "An enim nullam tempor sapien gravida donec enim ipsum porta justo congue magna at pretium purus pretium ligula rutrum luctus risusd diam eget risus varius blandit.",
+          "image": {
+            "media": {
+              "mediaLink": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=480&fit=crop&q=80",
+              "mediaType": "image",
+              "alt": "Professional executive in formal attire"
+            }
+          },
           "cta": {
-            "text": "Learn more",
-            "link": "#social",
-            "icon": "ArrowForward"
+            "text": "ABOUT MORE",
+            "link": "#about-more",
+            "clickType": "href"
           }
         },
         {
-          "title": "BRAND DESIGN",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "id": "technology-index",
+          "label": "TECHNOLOGY INDEX",
+          "heading": "Leading Technology Innovation.",
+          "description": "We leverage cutting-edge technology solutions to drive digital transformation, improve operational efficiency, and deliver measurable results for businesses worldwide.",
+          "image": {
+            "media": {
+              "mediaLink": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=480&fit=crop&q=80",
+              "mediaType": "image",
+              "alt": "Technology professional in modern office"
+            }
+          },
+          "cta": {
+            "text": "ABOUT MORE",
+            "link": "#technology",
+            "clickType": "href"
+          }
         }
       ]
     },
-    "theme": {
-      "beige": "#D2C4B5",
-      "beigeLight": "#E8E0D5",
-      "beigeSection": "#E0D8CC",
-      "tan": "#A89F91",
-      "tanHover": "#968d80",
-      "ink": "#14120f",
-      "muted": "#5c574f"
+    "statistics": [],
+    "cta": {
+      "primary": {
+        "text": "",
+        "link": "",
+        "clickType": "href"
+      }
     }
+  },
+  "mediaCells": {
+    "topView": [],
+    "bottomView": [],
+    "leftTopView": [],
+    "leftBottomView": [],
+    "rightTopView": [],
+    "rightBottomView": [],
+    "insertView": []
+  },
+  "css": {
+    "colorPalette": {
+      "theme": "light",
+      "light": {
+        "primary": "#5b4fc7",
+        "primaryDark": "#1a1a2e",
+        "accent": "#5b4fc7",
+        "background": "#f8f7fc",
+        "backgroundAlt": "#FFFFFF",
+        "surface": "#FFFFFF",
+        "border": "#f3f4f6",
+        "text": "#0f172a",
+        "textMuted": "#6b7280",
+        "textLight": "#94a3b8",
+        "onPrimary": "#FFFFFF"
+      },
+      "dark": {
+        "primary": "#a78bfa",
+        "primaryDark": "#312e81",
+        "accent": "#a78bfa",
+        "background": "#0f172a",
+        "backgroundAlt": "#1e293b",
+        "surface": "#1e293b",
+        "border": "#334155",
+        "text": "#f8fafc",
+        "textMuted": "#94a3b8",
+        "textLight": "#64748b",
+        "onPrimary": "#0f172a"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "sans": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+      },
+      "standard": {
+        "fontSize": {
+          "xs": "0.75rem",
+          "sm": "0.875rem",
+          "base": "1rem",
+          "lg": "1.125rem",
+          "xl": "1.25rem",
+          "2xl": "1.5rem",
+          "3xl": "1.875rem",
+          "4xl": "2.25rem",
+          "5xl": "2.5rem"
+        },
+        "lineHeight": {
+          "tight": "1.15",
+          "normal": "1.5",
+          "relaxed": "1.75"
+        },
+        "letterSpacing": {
+          "wide": "0.05em",
+          "wider": "0.12em"
+        }
+      }
+    },
+    "borders": {
+      "mainImage": "full",
+      "tabCard": "lg",
+      "tabPanel": "lg",
+      "tabImage": "lg",
+      "cta": "md",
+      "videoButton": "full"
+    },
+    "layout": {
+      "container": {
+        "paddingX": "4",
+        "paddingXSm": "6",
+        "paddingXMd": "8",
+        "paddingXLg": "12",
+        "paddingXXl": "16",
+        "paddingY": "12",
+        "paddingYSm": "16",
+        "paddingYMd": "20"
+      },
+      "grid": {
+        "gap": "10",
+        "gapLg": "14",
+        "gapXl": "20"
+      },
+      "leftColumn": {
+        "maxWidth": "lg"
+      },
+      "rightColumn": {
+        "gap": "0"
+      },
+      "badge": {
+        "marginBottom": "4",
+        "marginBottomSm": "5",
+        "gap": "2"
+      },
+      "title": {
+        "marginBottom": "0"
+      },
+      "description": {
+        "marginTop": "4",
+        "marginTopSm": "5"
+      },
+      "tabCard": {
+        "marginTop": "8",
+        "marginTopSm": "10"
+      },
+      "tabButton": {
+        "paddingX": "3",
+        "paddingXSm": "4",
+        "paddingY": "3.5",
+        "paddingYSm": "4"
+      },
+      "tabPanel": {
+        "gap": "5",
+        "gapSm": "6",
+        "gapMd": "8",
+        "padding": "5",
+        "paddingSm": "6",
+        "paddingMd": "8"
+      },
+      "tabImage": {
+        "maxWidth": "140"
+      },
+      "ctaButton": {
+        "marginTop": "5",
+        "marginTopSm": "6",
+        "paddingX": "6",
+        "paddingY": "3"
+      },
+      "videoButton": {
+        "size": "16",
+        "sizeSm": "20"
+      },
+      "mainImage": {
+        "aspectRatio": "4/5"
+      }
+    },
+    "tailwind": {
+      "global": "relative overflow-hidden min-h-screen overflow-y-auto overflow-x-hidden bg-[var(--aboutSolutions-background,#f8f7fc)] [font-family:var(--aboutSolutions-fontFamily-sans)]",
+      "container": "relative z-10 mx-auto max-w-7xl px-[var(--aboutSolutions-layout-container-paddingX,1rem)] py-[var(--aboutSolutions-layout-container-paddingY,3rem)] sm:px-[var(--aboutSolutions-layout-container-paddingXSm,1.5rem)] sm:py-[var(--aboutSolutions-layout-container-paddingYSm,4rem)] md:px-[var(--aboutSolutions-layout-container-paddingXMd,2rem)] md:py-[var(--aboutSolutions-layout-container-paddingYMd,5rem)] lg:px-[var(--aboutSolutions-layout-container-paddingXLg,3rem)] xl:px-[var(--aboutSolutions-layout-container-paddingXXl,4rem)]",
+      "grid": "grid items-center gap-[var(--aboutSolutions-layout-grid-gap,2.5rem)] lg:grid-cols-2 lg:gap-[var(--aboutSolutions-layout-grid-gapLg,3.5rem)] xl:gap-[var(--aboutSolutions-layout-grid-gapXl,5rem)]",
+      "gridSingleColumn": "grid items-center gap-[var(--aboutSolutions-layout-grid-gap,2.5rem)] grid-cols-1",
+      "leftColumn": "relative mx-auto w-full max-w-[var(--aboutSolutions-layout-leftColumn-maxWidth,32rem)] lg:max-w-none",
+      "rightColumn": "flex flex-col",
+      "blobDecor": "absolute rounded-[45%_55%_52%_48%/48%_45%_55%_52%] opacity-90",
+      "blobDecorSm": "h-10 w-12 sm:h-12 sm:w-14",
+      "blobDecorMd": "h-12 w-14 sm:h-14 sm:w-16",
+      "blobDecorLg": "h-14 w-16 sm:h-16 sm:w-20",
+      "imageContainer": "relative mx-auto aspect-[4/5] w-full max-w-md sm:max-w-lg",
+      "mainImageFrame": "relative h-full w-full overflow-hidden shadow-xl shadow-indigo-900/10 [border-radius:63%_37%_54%_46%/55%_48%_52%_45%] group",
+      "mainImage": "h-full w-full object-cover transition-transform duration-500 group-hover:scale-105",
+      "videoButton": "absolute left-1/2 top-1/2 z-10 flex h-[var(--aboutSolutions-layout-videoButton-size,4rem)] w-[var(--aboutSolutions-layout-videoButton-size,4rem)] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[var(--aboutSolutions-surface,#FFFFFF)] text-[var(--aboutSolutions-text,#0f172a)] shadow-lg sm:h-[var(--aboutSolutions-layout-videoButton-sizeSm,5rem)] sm:w-[var(--aboutSolutions-layout-videoButton-sizeSm,5rem)] transition-transform duration-200 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--aboutSolutions-primary,#5b4fc7)] focus-visible:ring-offset-2",
+      "videoIcon": "text-[var(--aboutSolutions-primary,#5b4fc7)] !text-[32px] sm:!text-[40px]",
+      "badge": "mb-[var(--aboutSolutions-layout-badge-marginBottom,1rem)] flex items-center gap-[var(--aboutSolutions-layout-badge-gap,0.5rem)] sm:mb-[var(--aboutSolutions-layout-badge-marginBottomSm,1.25rem)]",
+      "badgeIcon": "text-[var(--aboutSolutions-primary,#5b4fc7)] !text-[20px] sm:!text-[22px]",
+      "badgeText": "text-[var(--aboutSolutions-fontSize-xs,0.75rem)] font-bold tracking-[var(--aboutSolutions-letterSpacing-wider,0.12em)] text-[var(--aboutSolutions-primary,#5b4fc7)] sm:text-[var(--aboutSolutions-fontSize-sm,0.875rem)]",
+      "title": "max-w-xl text-[var(--aboutSolutions-fontSize-2xl,1.5rem)] font-bold leading-[var(--aboutSolutions-lineHeight-tight,1.15)] text-[var(--aboutSolutions-text,#0f172a)] sm:text-[var(--aboutSolutions-fontSize-3xl,1.875rem)] md:text-[var(--aboutSolutions-fontSize-4xl,2.25rem)] lg:text-[var(--aboutSolutions-fontSize-5xl,2.5rem)]",
+      "mainTitle": "text-[var(--aboutSolutions-text,#0f172a)]",
+      "highlightTitle": "text-[var(--aboutSolutions-primary,#5b4fc7)]",
+      "description": "mt-[var(--aboutSolutions-layout-description-marginTop,1rem)] max-w-xl text-[var(--aboutSolutions-fontSize-sm,0.875rem)] leading-[var(--aboutSolutions-lineHeight-relaxed,1.75)] text-[var(--aboutSolutions-textMuted,#6b7280)] sm:mt-[var(--aboutSolutions-layout-description-marginTopSm,1.25rem)] sm:text-[var(--aboutSolutions-fontSize-base,1rem)] md:text-[1.05rem]",
+      "tabCard": "mt-[var(--aboutSolutions-layout-tabCard-marginTop,2rem)] overflow-hidden rounded-[var(--aboutSolutions-radius-tabCard-tl,0.5rem)] bg-[var(--aboutSolutions-surface,#FFFFFF)] shadow-lg shadow-slate-900/8 sm:mt-[var(--aboutSolutions-layout-tabCard-marginTopSm,2.5rem)] transition-shadow duration-300 hover:shadow-xl",
+      "tabNav": "grid grid-cols-2",
+      "tabButton": "relative px-[var(--aboutSolutions-layout-tabButton-paddingX,0.75rem)] py-[var(--aboutSolutions-layout-tabButton-paddingY,0.875rem)] text-[10px] font-bold tracking-[var(--aboutSolutions-letterSpacing-wide,0.05em)] text-[var(--aboutSolutions-onPrimary,#FFFFFF)] transition-colors duration-200 sm:px-[var(--aboutSolutions-layout-tabButton-paddingXSm,1rem)] sm:py-[var(--aboutSolutions-layout-tabButton-paddingYSm,1rem)] sm:text-[var(--aboutSolutions-fontSize-xs,0.75rem)] md:text-[var(--aboutSolutions-fontSize-sm,0.875rem)] focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[var(--aboutSolutions-primary,#5b4fc7)]",
+      "tabButtonActive": "bg-[var(--aboutSolutions-primary,#5b4fc7)]",
+      "tabButtonInactive": "bg-[var(--aboutSolutions-primaryDark,#1a1a2e)] hover:opacity-90",
+      "tabIndicator": "absolute -bottom-px left-1/2 h-0 w-0 -translate-x-1/2 border-x-[10px] border-t-[10px] border-x-transparent border-t-[var(--aboutSolutions-primary,#5b4fc7)]",
+      "tabPanelWrapper": "border-t border-[var(--aboutSolutions-border,#f3f4f6)]",
+      "tabPanel": "grid gap-[var(--aboutSolutions-layout-tabPanel-gap,1.25rem)] p-[var(--aboutSolutions-layout-tabPanel-padding,1.25rem)] sm:grid-cols-[minmax(0,140px)_1fr] sm:gap-[var(--aboutSolutions-layout-tabPanel-gapSm,1.5rem)] sm:p-[var(--aboutSolutions-layout-tabPanel-paddingSm,1.5rem)] md:gap-[var(--aboutSolutions-layout-tabPanel-gapMd,2rem)] md:p-[var(--aboutSolutions-layout-tabPanel-paddingMd,2rem)]",
+      "tabImageWrapper": "mx-auto w-full max-w-[var(--aboutSolutions-layout-tabImage-maxWidth,140px)] overflow-hidden rounded-[var(--aboutSolutions-radius-tabImage-tl,0.5rem)] sm:mx-0 group",
+      "tabImage": "aspect-[5/6] w-full object-cover transition-transform duration-350 group-hover:scale-[1.04]",
+      "tabContent": "flex flex-col justify-center text-center sm:text-left",
+      "tabHeading": "text-[var(--aboutSolutions-fontSize-lg,1.125rem)] font-bold text-[var(--aboutSolutions-text,#0f172a)] sm:text-[var(--aboutSolutions-fontSize-xl,1.25rem)] md:text-[var(--aboutSolutions-fontSize-2xl,1.5rem)]",
+      "tabDescription": "mt-3 text-[var(--aboutSolutions-fontSize-sm,0.875rem)] leading-[var(--aboutSolutions-lineHeight-relaxed,1.75)] text-[var(--aboutSolutions-textMuted,#6b7280)] sm:text-[0.9375rem] md:text-[var(--aboutSolutions-fontSize-base,1rem)]",
+      "ctaButton": "mt-[var(--aboutSolutions-layout-ctaButton-marginTop,1.25rem)] inline-flex w-full items-center justify-center rounded-[var(--aboutSolutions-radius-cta-tl,0.375rem)] px-[var(--aboutSolutions-layout-ctaButton-paddingX,1.5rem)] py-[var(--aboutSolutions-layout-ctaButton-paddingY,0.75rem)] text-[var(--aboutSolutions-fontSize-xs,0.75rem)] font-bold tracking-[var(--aboutSolutions-letterSpacing-wide,0.05em)] text-[var(--aboutSolutions-onPrimary,#FFFFFF)] bg-[var(--aboutSolutions-primary,#5b4fc7)] transition-all duration-200 hover:bg-[var(--aboutSolutions-primaryDark,#1a1a2e)] sm:mt-[var(--aboutSolutions-layout-ctaButton-marginTopSm,1.5rem)] sm:w-auto sm:text-[var(--aboutSolutions-fontSize-sm,0.875rem)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--aboutSolutions-primary,#5b4fc7)] focus-visible:ring-offset-2",
+      "emptyState": "flex min-h-[50vh] items-center justify-center px-4 sm:px-6",
+      "emptyStateText": "text-[var(--aboutSolutions-fontSize-base,1rem)] text-[var(--aboutSolutions-textMuted,#6b7280)] sm:text-[var(--aboutSolutions-fontSize-lg,1.125rem)]",
+      "backgroundLayer": "absolute inset-0 overflow-hidden pointer-events-none z-0",
+      "contentWrapper": "relative z-10",
+      "mediaCellHtml": "text-left text-sm leading-relaxed text-[var(--aboutSolutions-textMuted,#6b7280)]",
+      "leftColumnType2": "relative mx-auto w-full max-w-lg",
+      "imageContainerType2": "relative aspect-[4/3] w-full overflow-hidden rounded-[var(--aboutSolutions-radius-mainImage-tl,9999px)] shadow-lg",
+      "mainImageType2": "h-full w-full object-cover transition-transform duration-500 hover:scale-105",
+      "tabCardType2": "mt-8 rounded-xl border border-[var(--aboutSolutions-border,#f3f4f6)] bg-[var(--aboutSolutions-surface,#FFFFFF)] p-6 shadow-sm",
+      "tabPanelType2": "space-y-4 text-center sm:text-left",
+      "tabHeadingType2": "text-xl font-bold text-[var(--aboutSolutions-text,#0f172a)]",
+      "tabDescriptionType2": "text-sm text-[var(--aboutSolutions-textMuted,#6b7280)] leading-relaxed"
+    },
+    "antd": {},
+    "mui": {},
+    "customCss": {}
+  },
+  "background": {
+    "type": "FloatingBlobs",
+    "settings": [
+      {
+        "className": "w-72 h-72 -top-16 -right-16 opacity-[0.06]",
+        "duration": 14,
+        "colorKey": "primary"
+      },
+      {
+        "className": "w-96 h-96 -bottom-20 -left-20 opacity-[0.04]",
+        "duration": 18,
+        "colorKey": "accent"
+      }
+    ]
+  },
+  "enhancers": [],
+  "settings": {
+    "type": "AboutSolutions",
+    "animations": {
+      "fadeIn": true,
+      "slideIn": true
+    },
+    "interactions": {
+      "hover": true
+    },
+    "reducedMotion": true,
+    "overlays": {
+      "clickTypeOptions": ["", "href", "modal", "dialog", "popover"],
+      "tailwind": {
+        "modal": {},
+        "dialog": {},
+        "popover": {}
+      }
+    }
+  },
+  "checkboxes": {
+    "isPostCellVisible": true,
+    "isListVisible": true
+  },
+  "list": {
+    "type": "row",
+    "settings": {},
+    "css": {
+      "tailwind": {
+        "global": "",
+        "item": ""
+      }
+    },
+    "items": []
+  },
+  "wrapper": [],
+  "animations": [],
+  "hints": {
+    "typeVariants": "Type1: left→right 2-col | Type2: right→left 2-col | Type3: stacked | Type4: stacked reversed",
+    "leftVariants": "Type1: organic blob media + video | Type2: rounded image frame",
+    "rightVariants": "Type1: badge + tabs with images | Type2: compact text-only tabs"
   }
 }
