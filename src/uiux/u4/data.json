@@ -1,0 +1,46 @@
+{
+  "about": {
+    "badge": {
+      "text": "ABOUT US"
+    },
+    "heading": "Introduction To Best Digital Agency!",
+    "headingAccent": "Introduction",
+    "description": [
+      "We are a leading digital agency dedicated to transforming brands through innovative design, cutting-edge technology, and strategic marketing solutions that drive measurable growth.",
+      "Our team of creative professionals works collaboratively to deliver exceptional results, helping businesses establish a powerful online presence and connect with their target audience."
+    ],
+    "cards": [
+      {
+        "title": "Best Price Guaranteed",
+        "description": "Competitive pricing with transparent packages tailored to your business goals and budget requirements.",
+        "icon": "MonetizationOn",
+        "iconVariant": "primary"
+      },
+      {
+        "title": "Finance Analysis",
+        "description": "Data-driven insights and financial strategies to optimize your digital investments and maximize ROI.",
+        "icon": "Build",
+        "iconVariant": "dark"
+      },
+      {
+        "title": "Professional Team",
+        "description": "Experienced designers, developers, and strategists committed to delivering excellence on every project.",
+        "icon": "Groups",
+        "iconVariant": "primary"
+      }
+    ],
+    "media": {
+      "mainImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=700&fit=crop&q=80",
+      "mainAlt": "Digital agency team collaborating in a modern office",
+      "overlayImage": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=600&fit=crop&q=80",
+      "overlayAlt": "Professional reviewing content on a tablet",
+      "videoUrl": "#video"
+    },
+    "theme": {
+      "primary": "#ef4444",
+      "primaryHover": "#dc2626",
+      "dark": "#111827",
+      "background": "#ffffff"
+    }
+  }
+}

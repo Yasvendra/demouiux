@@ -1,0 +1,52 @@
+{
+  "about": {
+    "badge": {
+      "text": "About Us"
+    },
+    "heading": "Protect Your Assets and Minimize Tax Liability",
+    "headingAccent": "Liability",
+    "description": [
+      "Whether you're facing a tax audit, need assistance with tax compliance, or are looking for ways to maximize tax benefits.",
+      "Explore our website to learn more about our services and get to know our team of tax attorneys. When you're ready Lawyer."
+    ],
+    "features": [
+      { "label": "Range Of Services", "icon": "CheckCircle" },
+      { "label": "Professional Expertise", "icon": "CheckCircle" },
+      { "label": "Online Recourses", "icon": "CheckCircle" },
+      { "label": "Client Success Stories", "icon": "CheckCircle" }
+    ],
+    "cta": {
+      "text": "Book an Appointment",
+      "link": "#appointment"
+    },
+    "stats": [
+      {
+        "value": "98%",
+        "label": "Successful Client",
+        "icon": "Calculate",
+        "variant": "light"
+      },
+      {
+        "value": "1M+",
+        "label": "Tax Return Filed",
+        "icon": "ReceiptLong",
+        "variant": "light"
+      },
+      {
+        "value": "$50M",
+        "label": "Trade Value Filed",
+        "icon": "Savings",
+        "variant": "dark"
+      }
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&h=1100&fit=crop&q=80",
+      "alt": "Tax attorney consulting with a client in a professional office"
+    },
+    "theme": {
+      "primary": "#6349b1",
+      "primaryLight": "#f3eff9",
+      "primaryDark": "#4f3a8f"
+    }
+  }
+}

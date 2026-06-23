@@ -1,0 +1,68 @@
+{
+  "page": {
+    "funds": {
+      "heading": {
+        "lines": [
+          {
+            "parts": [
+              { "text": "Nossos ", "variant": "muted" },
+              { "text": "fundos", "variant": "accent" }
+            ]
+          },
+          {
+            "parts": [{ "text": "atuam em frentes", "variant": "default" }]
+          },
+          {
+            "parts": [{ "text": "específicas, com", "variant": "default" }]
+          },
+          {
+            "parts": [
+              { "text": "alto ", "variant": "muted" },
+              { "text": "potencial de", "variant": "accent" }
+            ]
+          },
+          {
+            "parts": [{ "text": "valorização", "variant": "accent" }]
+          }
+        ]
+      },
+      "description": "Na SunOver, nossa área de Gestão de Fundos de Investimentos é focada em identificar e aproveitar oportunidades únicas dentro do universo de investimentos alternativos.",
+      "cta": {
+        "text": "Fale com nosso Especialista",
+        "link": "#especialista",
+        "icon": "ArrowForward"
+      },
+      "centerIcon": "WbSunny",
+      "items": [
+        {
+          "number": "01",
+          "title": "Empresas em dificuldade (Distressed Private Equity):",
+          "description": "Investimos em companhias endividadas com chances reais de recuperação e crescimento."
+        },
+        {
+          "number": "02",
+          "title": "Créditos inadimplentes (NPLs):",
+          "description": "Compramos e gerimos créditos não performados, tanto individuais quanto em carteiras, com foco em geração de valor."
+        },
+        {
+          "number": "03",
+          "title": "Direitos creditórios e precatórios:",
+          "description": "Alocamos capital em ativos legais com previsibilidade e bom potencial de retorno."
+        },
+        {
+          "number": "04",
+          "title": "Processos judiciais e arbitragens:",
+          "description": "Participamos de disputas com fundamentos sólidos e chances reais de ganho, tanto na justiça comum quanto em tribunais arbitrais."
+        }
+      ]
+    },
+    "theme": {
+      "primary": "#004b5e",
+      "primaryHover": "#003d4d",
+      "text": "#1a1a1a",
+      "muted": "#6b7280",
+      "lightMuted": "#9ca3af",
+      "cardBg": "#f3f4f6"
+    }
+  }
+}

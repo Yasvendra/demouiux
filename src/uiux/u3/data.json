@@ -1,0 +1,48 @@
+{
+  "about": {
+    "label": "ABOUT US",
+    "heading": "We building everything that you needed",
+    "description": "We are committed to delivering high-quality construction services with innovative solutions, expert craftsmanship, and a dedication to building spaces that exceed expectations.",
+    "features": [
+      {
+        "text": "Providing quality for the construction development",
+        "icon": "CheckCircle"
+      },
+      {
+        "text": "Exclusive design for the better lifestyle",
+        "icon": "CheckCircle"
+      }
+    ],
+    "contact": {
+      "phone": "+123 555 8824",
+      "phoneLabel": "Call Now",
+      "icon": "Phone"
+    },
+    "founder": {
+      "name": "John",
+      "title": "CEO & FOUNDER",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&q=80",
+      "avatarAlt": "CEO and founder portrait"
+    },
+    "video": {
+      "thumbnail": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop&q=80",
+      "alt": "Construction worker on site",
+      "videoUrl": "#video"
+    },
+    "highlight": {
+      "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&h=900&fit=crop&q=80",
+      "alt": "Construction worker in hard hat and safety vest",
+      "description": "Our team brings decades of experience in residential and commercial construction, delivering projects on time with uncompromising safety standards.",
+      "cta": {
+        "text": "Get More Information",
+        "link": "#services",
+        "icon": "ArrowForward"
+      }
+    },
+    "theme": {
+      "primary": "#f97316",
+      "primaryHover": "#ea580c",
+      "background": "#ffffff"
+    }
+  }
+}

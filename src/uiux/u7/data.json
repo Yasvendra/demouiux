@@ -1,0 +1,62 @@
+{
+  "landing": {
+    "hero": {
+      "overline": "ARE YOU READY TO",
+      "headline": "Attention Grabbing Headline Goes Here Vestibulum Purus Quam",
+      "headlineScript": "Headline",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "cta": {
+        "text": "ENROLL NOW",
+        "link": "#enroll"
+      },
+      "images": {
+        "left": {
+          "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop&q=80",
+          "alt": "Woman working on laptop in a relaxed setting"
+        },
+        "right": {
+          "url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=600&fit=crop&q=80",
+          "alt": "Cozy workspace on a bed with laptop and pillows"
+        }
+      }
+    },
+    "question": {
+      "overline": "DOES THIS SOUND LIKE YOU",
+      "headline": "Are You Feeling Stuck When It Comes To Aecenas Vestibulum Mollis Diam.",
+      "headlineScript": "Vestibulum"
+    },
+    "features": {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=700&h=900&fit=crop&q=80",
+        "alt": "Woman working on laptop while sitting on a couch"
+      },
+      "cta": {
+        "text": "ENROLL NOW",
+        "link": "#enroll"
+      },
+      "items": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "icon": "Check"
+        },
+        {
+          "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "icon": "Check"
+        },
+        {
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "icon": "Check"
+        },
+        {
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "icon": "Check"
+        }
+      ]
+    },
+    "theme": {
+      "background": "#FDF8F3",
+      "accent": "#A67C52",
+      "accentHover": "#8f6844"
+    }
+  }
+}

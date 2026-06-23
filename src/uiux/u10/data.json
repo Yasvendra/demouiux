@@ -1,0 +1,76 @@
+{
+  "page": {
+    "hero": {
+      "heading": "Financial And Marketing Advisory",
+      "description": "We provide expert financial planning and marketing strategies to help your business grow with confidence and clarity.",
+      "cta": {
+        "text": "CONTACT US",
+        "link": "#contact"
+      },
+      "backgroundImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&h=900&fit=crop&q=80",
+      "backgroundAlt": "Business professionals collaborating in a modern office"
+    },
+    "features": [
+      {
+        "id": "1",
+        "title": "Innovative Solutions",
+        "description": "Creative strategies and smart tools designed to solve complex business challenges and drive sustainable growth.",
+        "icon": "SettingsSuggest",
+        "variant": "light",
+        "link": "#solutions"
+      },
+      {
+        "id": "2",
+        "title": "Professional Team",
+        "description": "Experienced advisors and marketers dedicated to delivering personalized service and exceptional results.",
+        "icon": "Groups",
+        "variant": "featured",
+        "link": "#team"
+      },
+      {
+        "id": "3",
+        "title": "24/7 Support",
+        "description": "Round-the-clock assistance to ensure your business operations run smoothly whenever you need us.",
+        "icon": "SupportAgent",
+        "variant": "light",
+        "link": "#support"
+      }
+    ],
+    "about": {
+      "label": "About Us",
+      "heading": "Discover The World of Financial Planner",
+      "paragraphs": [
+        "Our firm combines deep financial expertise with cutting-edge marketing insights to help businesses navigate today's competitive landscape with confidence.",
+        "From strategic planning to execution, we partner with you every step of the way to achieve measurable results and long-term success."
+      ],
+      "cta": {
+        "text": "READ MORE",
+        "link": "#about"
+      },
+      "video": {
+        "thumbnail": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=550&fit=crop&q=80",
+        "alt": "Professional women in a business meeting",
+        "videoUrl": "#video"
+      },
+      "stats": [
+        {
+          "value": "25",
+          "label": "Years of Experience",
+          "icon": "WorkspacePremium"
+        },
+        {
+          "value": "350",
+          "label": "Completed Projects",
+          "icon": "Send"
+        }
+      ]
+    },
+    "theme": {
+      "primary": "#00C853",
+      "primaryHover": "#00a844",
+      "primaryDark": "#00963d",
+      "overlay": "rgba(40, 44, 52, 0.88)",
+      "sectionBg": "#f8f9fa"
+    }
+  }
+}

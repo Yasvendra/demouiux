@@ -1,0 +1,97 @@
+{
+  "page": {
+    "hero": {
+      "label": "// WELCOME TO PISOLE",
+      "heading": "WELCOME TO THE QUALITY DIGITAL AGENCY",
+      "scrollText": "Discover our best services",
+      "backgroundImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&q=80",
+      "backgroundAlt": "Team collaborating in a modern office"
+    },
+    "services": [
+      {
+        "id": "1",
+        "title": "WEBSITE DEVELOPMENT",
+        "description": "We build fast, responsive websites that convert visitors into loyal customers and grow your brand online.",
+        "icon": "Computer",
+        "variant": "light",
+        "link": "#website"
+      },
+      {
+        "id": "2",
+        "title": "GRAPHIC DESIGNING",
+        "description": "Creative visual solutions that capture attention and communicate your brand story with clarity and impact.",
+        "icon": "Close",
+        "variant": "dark",
+        "backgroundImage": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=700&fit=crop&q=80",
+        "link": "#graphic"
+      },
+      {
+        "id": "3",
+        "title": "DIGITAL MARKETING",
+        "description": "Strategic campaigns that boost visibility, engagement, and measurable results across every digital channel.",
+        "icon": "TrendingUp",
+        "variant": "light",
+        "link": "#marketing"
+      },
+      {
+        "id": "4",
+        "title": "APPLICATION DEVELOPMENT",
+        "description": "Custom mobile and web applications designed to streamline operations and deliver seamless user experiences.",
+        "icon": "AppSettingsAlt",
+        "variant": "light",
+        "link": "#apps"
+      }
+    ],
+    "solutions": {
+      "label": "// Welcome to Agency",
+      "heading": "CREATING MODERN AND NEW SOLUTIONS",
+      "description": "We are a full-service digital agency helping brands innovate, scale, and succeed in an ever-changing digital landscape through strategy, design, and technology.",
+      "mainImage": {
+        "url": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=950&fit=crop&q=80",
+        "alt": "Business professionals in a meeting"
+      },
+      "secondaryImage": {
+        "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=500&h=400&fit=crop&q=80",
+        "alt": "Team working on a laptop"
+      },
+      "features": [
+        {
+          "title": "GOOD MARKETING",
+          "description": "Data-driven strategies that connect your brand with the right audience at the right time.",
+          "icon": "Campaign"
+        },
+        {
+          "title": "PROJECTS DONE",
+          "description": "End-to-end project delivery with precision, creativity, and on-time execution.",
+          "icon": "Settings"
+        }
+      ],
+      "founder": {
+        "name": "MIKE HARDSON",
+        "title": "CEO & CO FOUNDER",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&q=80",
+        "avatarAlt": "Mike Hardson portrait"
+      },
+      "experience": {
+        "value": "38",
+        "label": "YEARS OF EXPERIENCE"
+      }
+    },
+    "cta": {
+      "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=280&fit=crop&q=80",
+      "imageAlt": "Team members working together",
+      "text": "LET'S DISCUSS YOUR PROJECT WITH PISOLE TEAM",
+      "icon": "Groups",
+      "button": {
+        "text": "DISCOVER MORE",
+        "link": "#discover"
+      }
+    },
+    "theme": {
+      "primary": "#FF3D3D",
+      "primaryHover": "#e63535",
+      "dark": "#1a1a1a",
+      "darkAlt": "#111111"
+    }
+  }
+}

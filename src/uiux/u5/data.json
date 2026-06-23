@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "left": {
+      "heading": "A DEDICATED COMMERCIAL CONSTRUCTION COMPANY",
+      "description": "316 Builders is a separate commercial construction company focused on commercial build and remodel projects. The company is structured to provide a clear and direct presence for commercial construction work, serving businesses and commercial property owners."
+    },
+    "right": {
+      "description": "Serving Glenwood Springs and the Roaring Fork Valley, 316 Builders focuses on commercial construction projects, including both new builds and remodel work. The goal is to support commercial construction needs while providing a simple and direct way for businesses to connect and discuss projects.",
+      "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1400&h=900&fit=crop&q=80",
+      "alt": "Commercial construction site with foundation work",
+      "cta": {
+        "text": "Learn More About Us",
+        "link": "#about",
+        "icon": "ArrowForward"
+      }
+    },
+    "theme": {
+      "dark": "#050a14",
+      "accent": "#f9a825",
+      "accentHover": "#f57f17",
+      "border": "#c08e4c",
+      "overlay": "rgba(25, 55, 109, 0.65)"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "page": {
+    "hero": {
+      "cta": {
+        "primary": { "text": "GET IN TOUCH", "link": "#contact" },
+        "video": { "text": "SEE OUR ACTIVITY", "link": "#video", "icon": "PlayCircleOutlined" }
+      },
+      "slides": [
+        {
+          "id": "1",
+          "label": "COACHING, CONSULTING, TRAINING & KEYNOTES",
+          "heading": "Prosper in this volatile market",
+          "headingLine2": "funding.",
+          "description": "Collaborate Business exists to find the place where to being seemingly disparate interests meet.",
+          "backgroundImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&h=900&fit=crop&q=80",
+          "backgroundAlt": "Professional reviewing documents in an office"
+        },
+        {
+          "id": "2",
+          "label": "COACHING, CONSULTING, TRAINING & KEYNOTES",
+          "heading": "Grow your business with",
+          "headingLine2": "expert guidance.",
+          "description": "Our tailored coaching programs help leaders navigate change, build confidence, and unlock sustainable growth.",
+          "backgroundImage": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&h=900&fit=crop&q=80",
+          "backgroundAlt": "Business team in a strategy meeting"
+        },
+        {
+          "id": "3",
+          "label": "COACHING, CONSULTING, TRAINING & KEYNOTES",
+          "heading": "Transform your team's",
+          "headingLine2": "potential.",
+          "description": "From keynotes to hands-on training, we deliver actionable strategies that inspire teams and drive real results.",
+          "backgroundImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&h=900&fit=crop&q=80",
+          "backgroundAlt": "Collaborative workplace discussion"
+        }
+      ]
+    },
+    "features": {
+      "label": "FEATURES",
+      "heading": "We are the best agency to improve your deals.",
+      "description": "Improve efficiency, provide a better customer experience with modern technology services available around the world. Our skilled staff, combined with decades of experience.",
+      "cards": [
+        {
+          "id": "1",
+          "title": "Business & Strategy",
+          "description": "If you're looking for car insurance, we will help you to find the right coverage tailored to your business needs.",
+          "icon": "Hub",
+          "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&q=80"
+        },
+        {
+          "id": "2",
+          "title": "Business Planner",
+          "description": "If you're looking for car insurance, we will help you to find the right coverage tailored to your business needs.",
+          "icon": "Extension",
+          "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=400&fit=crop&q=80"
+        },
+        {
+          "id": "3",
+          "title": "Business Intelligence",
+          "description": "If you're looking for car insurance, we will help you to find the right coverage tailored to your business needs.",
+          "icon": "Psychology",
+          "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop&q=80"
+        }
+      ]
+    },
+    "theme": {
+      "primary": "#D32F2F",
+      "primaryHover": "#b71c1c",
+      "text": "#1a1a1a",
+      "muted": "#666666"
+    }
+  }
+}

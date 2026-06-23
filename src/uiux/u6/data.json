@@ -1,0 +1,47 @@
+{
+  "page": {
+    "brand": {
+      "title": "ABOUT THE BRAND",
+      "intro": "We help ambitious brands tell their story with clarity, confidence, and style.",
+      "paragraphs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ],
+      "cta": {
+        "text": "WORK WITH US",
+        "link": "#contact",
+        "icon": "ArrowForward"
+      },
+      "image": {
+        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&h=900&fit=crop&q=80",
+        "alt": "Professional woman in black blazer holding a laptop"
+      }
+    },
+    "bio": {
+      "name": "MEET AUDREY BLAKE",
+      "title": "CEO | FOUNDER",
+      "tagline": "Mom, photographer and go-to gal for anything social media",
+      "intro": "Tell your personal story here where your audience can connect with you.",
+      "paragraphs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      ],
+      "mainImage": {
+        "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=700&h=950&fit=crop&q=80",
+        "alt": "Audrey Blake reviewing her phone"
+      },
+      "secondaryImage": {
+        "url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=380&fit=crop&q=80",
+        "alt": "Hands holding a phone to capture a table setting"
+      }
+    },
+    "theme": {
+      "beige": "#D2C7BC",
+      "tan": "#B09B82",
+      "tanHover": "#9a8670",
+      "headingTan": "#C6B6A5",
+      "border": "#d1cdc8"
+    }
+  }
+}

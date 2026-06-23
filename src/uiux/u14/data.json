@@ -1,0 +1,86 @@
+{
+  "page": {
+    "hero": {
+      "badge": {
+        "text": "Feel The Convenience",
+        "icon": "FiberManualRecord"
+      },
+      "heading": "Send, Receive, Top-Up Your Money Easily",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      "ctas": [
+        { "text": "Get Started", "link": "#get-started", "variant": "primary" },
+        { "text": "Learn More", "link": "#learn-more", "variant": "outline" }
+      ],
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&h=900&fit=crop&q=80",
+      "imageAlt": "Woman holding credit cards"
+    },
+    "featureCards": {
+      "update": {
+        "title": "Always Update Every Day",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+        "placeholder": "Your Email",
+        "button": { "text": "Request", "link": "#request" }
+      },
+      "features": [
+        "Online Payment",
+        "Platform Support",
+        "Secure Transaction",
+        "Responsive Web App",
+        "Divide Group Payments",
+        "Lock Protection"
+      ],
+      "help": {
+        "title": "How Can I Help You?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+        "link": { "text": "Read More", "link": "#help", "icon": "ArrowForward" }
+      }
+    },
+    "about": {
+      "badge": {
+        "text": "About Company",
+        "icon": "FiberManualRecord"
+      },
+      "heading": "We Are The Best Online Payment Gateway Agency",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore.",
+      "mainImage": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=800&fit=crop&q=80",
+      "mainImageAlt": "Business professional with credit card",
+      "overlayImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop&q=80",
+      "overlayImageAlt": "Woman working on laptop",
+      "trustedBadge": {
+        "value": "1,485+",
+        "label": "Trusted Clients"
+      },
+      "features": [
+        {
+          "title": "Trusted Partner",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "icon": "Handshake"
+        },
+        {
+          "title": "Fastpace Platform",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "icon": "Speed"
+        },
+        {
+          "title": "Tested Reliability",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "icon": "VerifiedUser"
+        }
+      ]
+    },
+    "stats": [
+      { "value": "25+", "label": "Years Of Experience" },
+      { "value": "3,452+", "label": "Total Transaction" },
+      { "value": "751+", "label": "Active User" },
+      { "value": "592+", "label": "Positive Reviews" }
+    ],
+    "theme": {
+      "primary": "#8B5CF6",
+      "primaryDark": "#7C3AED",
+      "primaryHover": "#7C3AED",
+      "lavender": "#F5F3FF",
+      "text": "#1F2937",
+      "muted": "#6B7280"
+    }
+  }
+}

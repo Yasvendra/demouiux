@@ -1,0 +1,80 @@
+{
+  "page": {
+    "hero": {
+      "label": "WE'RE NOT JUST ANOTHER MARKETING AGENCY",
+      "headline": "We turn social media from a time drain into biggest revenue generator",
+      "headlineAccents": ["social media", "revenue generator"],
+      "subheadline": "We understand that behind every scroll, like, and share is a real person waiting to connect with your brand."
+    },
+    "servicesTitle": "SERVICES",
+    "services": [
+      {
+        "id": "1",
+        "number": "1",
+        "title": "Social Media Management",
+        "description": "Keep your channels active and engaging while you focus on your clients.",
+        "features": [
+          "Content creation & scheduling",
+          "Community management & engagement",
+          "Monthly analytics reports"
+        ],
+        "image": {
+          "url": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&h=850&fit=crop&q=80",
+          "alt": "Lifestyle shot with brown shoes on a white surface"
+        },
+        "layout": "text-left",
+        "cta": {
+          "readMore": { "text": "Read More", "link": "#social-media" },
+          "bookNow": { "text": "Book Now", "link": "#book", "icon": "ArrowForward" }
+        }
+      },
+      {
+        "id": "2",
+        "number": "2",
+        "title": "Personal Brand Development",
+        "description": "Build a magnetic online presence that attracts your ideal clients.",
+        "features": [
+          "Strategic positioning & messaging",
+          "LinkedIn & social media optimization",
+          "Brand identity consultation"
+        ],
+        "image": {
+          "url": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&h=850&fit=crop&q=80",
+          "alt": "Minimal beige chair with book and vase"
+        },
+        "layout": "image-left",
+        "cta": {
+          "readMore": { "text": "Read More", "link": "#brand" },
+          "bookNow": { "text": "Book Now", "link": "#book", "icon": "ArrowForward" }
+        }
+      },
+      {
+        "id": "3",
+        "number": "3",
+        "title": "Consulting & Strategy Sessions",
+        "description": "Get expert guidance to clarify your direction and accelerate growth.",
+        "features": [
+          "1-on-1 strategy calls",
+          "Marketing audit & action plans",
+          "Goal setting & roadmap development"
+        ],
+        "image": {
+          "url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&h=850&fit=crop&q=80",
+          "alt": "Hand holding a coffee cup with latte art"
+        },
+        "layout": "text-left",
+        "cta": {
+          "readMore": { "text": "Read More", "link": "#consulting" },
+          "bookNow": { "text": "Book Now", "link": "#book", "icon": "ArrowForward" }
+        }
+      }
+    ],
+    "theme": {
+      "background": "#F9F7F4",
+      "sectionAlt": "#FFFFFF",
+      "accent": "#C4A882",
+      "accentHover": "#b09470",
+      "text": "#2d2a26"
+    }
+  }
+}
